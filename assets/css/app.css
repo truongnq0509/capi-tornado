@@ -648,3 +648,8 @@ input[type="color"]:focus,
 .marquee .marquee__item .marquee__text-3.down {
 	color: #E00101 !important;
 }
+
+
+.method {
+	margin-top: 90px;
+}
