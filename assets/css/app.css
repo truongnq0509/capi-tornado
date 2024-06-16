@@ -1,0 +1,650 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Capi x Tornado
+    Support: truongmoba157@gmail.com
+    Description: Capi x Tornado
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+    CSS INDEX
+    ===================
+
+    :: 1.0 Font Google
+    :: 2.0 Variable CSS 
+	:: 3.0 Reset CSS  
+	:: 4.0 Class Global	
+		:: 4.1 Class Color
+		:: 4.2 Class Background
+		:: 4.3 Class Button
+	:: 5.0 Layout CSS
+	 	:: 5.1 Header
+		:: 5.2 Footer
+	:: 6.0 Home Page
+-----------------------------------------------------------------------------------*/
+
+
+/*=============================
+	:: 1.0 Font Google
+===============================*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/*=============================
+	:: 2.0 Variable CSS
+===============================*/
+
+:root {
+	--primary-font: 'Inter', sans-serif;
+	--cta-bg: #6D15A2;
+	--cta-bg-o: #240044;
+	--black-bg: #161616;
+	--white-bg: #FFFFFF;
+	--primary-bg: #FFDC00;
+
+	--cta-text: #6D15A2;
+	--cta-text-o: #240044;
+	--black-text: #161616;
+	--white-text: #FFFFFF;
+	--primary-text: #FFDC00;
+
+}
+
+/*=============================
+	:: 3.0 Reset CSS  
+===============================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-family: var(--primary-font);
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+	box-shadow: none !important;
+	outline: 0 none !important;
+}
+
+.btn:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+/*=============================
+	:: 4.0 Class Global	
+===============================*/
+
+.container {
+	width: 1200px;
+	max-width: 100%;
+}
+
+
+/*=============================
+	:: 4.1 Class Color	
+===============================*/
+
+.text-primary {
+	color: var(--primary-text) !important;
+}
+
+.text-black {
+	color: var(--black-text) !important;
+}
+
+.text-cta {
+	color: var(--cta-text) !important;
+}
+
+.text-cta-o {
+	color: var(--cta-text-o) !important;
+}
+
+.text-white {
+	color: var(--white-text) !important;
+}
+
+/*=============================
+	:: 4.1 Class Background	
+===============================*/
+
+.bg-primary {
+	background-color: var(--primary-bg) !important;
+}
+
+.bg-black {
+	background-color: var(--black-bg) !important;
+}
+
+.bg-cta {
+	background-color: var(--cta-bg) !important;
+}
+
+.bg-cta-o {
+	background-color: var(--cta-bg-o) !important;
+}
+
+.bg-white {
+	background-color: var(--white-bg) !important;
+}
+
+/*=============================
+	:: 4.3 Class Button	
+===============================*/
+
+.btn.btn-primary {
+	color: var(--white-text);
+	background-color: var(--primary-bg);
+	border-color: var(--primary-text);
+}
+
+
+/*=============================
+	:: 5.0 Layout CSS
+===============================*/
+
+#app {}
+
+/*=============================
+	:: 5.1 Header
+===============================*/
+.header {
+	--black: #000000;
+	--heigth: 88px;
+	height: var(--heigth);
+	background-color: var(--black);
+}
+
+.header>.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	padding: 24px auto;
+}
+
+.header__left {
+	display: flex;
+	align-items: center;
+}
+
+.header__left>.header__logo {
+	display: inline-block;
+	height: 38px;
+	max-height: 100%;
+	margin-right: 32px;
+}
+
+.header__left>.header__logo img {
+	width: auto;
+	height: 100%;
+	object-fit: contain;
+}
+
+
+.header__nav>ul {
+	gap: 16px;
+}
+
+.header__nav>ul>li {
+	padding: 8px 12px;
+}
+
+.header__nav>ul>li>a {
+	color: var(--white-text);
+
+}
+
+.header__right {
+	gap: 8px;
+}
+
+.header__search {
+	cursor: pointer;
+	padding: 8px 12px;
+}
+
+.header__search>img {
+	width: 22px;
+	height: 22px;
+}
+
+.header__right>.btn--register {
+	height: 40px;
+	padding: 8px 24px;
+	color: #2E2C1C;
+	font-weight: 600;
+	border-radius: 8px;
+	background-color: var(--primary-bg) !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/*=============================
+	:: 5.2 Footer
+===============================*/
+
+.footer {
+	--black: #000000;
+	padding: 64px 0;
+	background-color: var(--black);
+}
+
+.footer__top .footer__logo {
+	height: 70px;
+	max-height: 100%;
+}
+
+.footer__top .footer__logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.footer__top .social {
+	margin-top: 48px;
+	display: flex;
+	gap: 24px;
+}
+
+.footer__top .social__link {
+	text-decoration: none;
+}
+
+.footer__bottom {
+	padding: 64px 0;
+}
+
+.footer__bottom .footer__title {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--primary-text);
+	margin-bottom: 24px;
+}
+
+.footer__bottom .footer__nav .footer__item {
+	margin-top: 8px;
+}
+
+.footer__bottom .footer__nav .footer__item a {
+	font-size: 16px;
+	color: var(--white-text);
+	line-height: 1.4;
+	text-decoration: none;
+}
+
+.footer .copy-right {
+	color: var(--primary-text);
+	text-align: center;
+	font-size: 18px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/*=============================
+	:: 6.0 Home Page
+===============================*/
+
+.banner {
+	height: 800px;
+	background-image: url("../img/home/banner.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.banner>.banner__group-1 {
+	position: absolute;
+	z-index: 9;
+	left: 0;
+	bottom: 0;
+}
+
+.banner>.banner__group-1>img {
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
+
+
+.banner>.banner__group-2 {
+	position: absolute;
+	z-index: 9;
+	right: 0;
+	bottom: 0;
+}
+
+.banner>.banner__group-2>img {
+	width: auto;
+	height: auto;
+	object-fit: contain;
+}
+
+
+.banner>.banner__container {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.banner>.banner__container .banner__box {
+	display: inline-block;
+}
+
+.banner>.banner__container .banner__content p {
+	font-size: 50px;
+	color: var(--white-text);
+	line-height: 1.4;
+}
+
+.banner>.banner__container .banner__content h2 {
+	font-size: 53px;
+	color: var(--primary-text);
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+
+.banner>.banner__container .banner__text {
+	margin-top: 36px;
+}
+
+.banner>.banner__container .banner__text p {
+	font-size: 18px;
+	color: #A6BCC1;
+	line-height: 1.4;
+	margin-bottom: 36px;
+}
+
+.banner>.banner__container .banner__text .btn--banner {
+	padding: 12px 24px;
+	color: #2E2C1C;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 8px;
+	text-transform: uppercase;
+	background-color: var(--primary-bg) !important;
+}
+
+.banner>.banner__container .banner__text .banner__chap {
+	width: 80%;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	float: right;
+}
+
+.banner>.banner__container .banner__text .banner__chap .banner__postion {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+
+	span {
+		position: absolute;
+		font-size: 32px;
+		font-weight: 600;
+		color: var(--white-text);
+	}
+}
+
+.banner>.banner__container .banner__text .banner__chap p.year {
+	font-size: 18px !important;
+	line-height: 1.4;
+	margin-top: 16px;
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+.banner>.banner__container .banner__text .banner__chap p.text {
+	font-size: 16px;
+	color: #A6BCC1;
+	line-height: 1.4;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.banner>.banner__container .banner__phone {
+	float: right;
+}
+
+.marquee {
+	margin-top: 40px;
+}
+
+.marquee .marquee__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 24px;
+	position: relative;
+}
+
+.marquee .marquee__item::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 60%;
+	background-color: #ccc;
+}
+
+.marquee .marquee__item .marquee__logo {
+	width: 32px;
+	height: 32px;
+}
+
+.marquee .marquee__item .marquee__logo img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.marquee .marquee__item .marquee__text {
+	display: flex;
+	gap: 14px;
+	margin-left: 14px;
+}
+
+.marquee .marquee__item .marquee__text-1 {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+.marquee .marquee__item .marquee__text-2,
+.marquee .marquee__item .marquee__text-3 {
+	font-size: 16px;
+	font-weight: 500;
+	color: #505050;
+}
+
+.marquee .marquee__item .marquee__text-3.up {
+	color: #0AB97A !important;
+}
+
+.marquee .marquee__item .marquee__text-3.down {
+	color: #E00101 !important;
+}
