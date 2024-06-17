@@ -165,19 +165,19 @@
 		}
 	};
 
-	// var ctx_1 = document.getElementById("chartjs-1").getContext("2d");
-	// var ctx_2 = document.getElementById("chartjs-2").getContext("2d");
-	// var ctx_3 = document.getElementById("chartjs-3").getContext("2d");
-	// var ctx_4 = document.getElementById("chartjs-4").getContext("2d");
-	// var ctx_5 = document.getElementById("chartjs-5").getContext("2d");
-	// var ctx_6 = document.getElementById("chartjs-6").getContext("2d");
+	var ctx_1 = document.getElementById("chartjs-1").getContext("2d");
+	var ctx_2 = document.getElementById("chartjs-2").getContext("2d");
+	var ctx_3 = document.getElementById("chartjs-3").getContext("2d");
+	var ctx_4 = document.getElementById("chartjs-4").getContext("2d");
+	var ctx_5 = document.getElementById("chartjs-5").getContext("2d");
+	var ctx_6 = document.getElementById("chartjs-6").getContext("2d");
 
-	// new Chart(ctx_1, chartData);
-	// new Chart(ctx_2, chartData);
-	// new Chart(ctx_3, chartData);
-	// new Chart(ctx_4, chartData);
-	// new Chart(ctx_5, chartData);
-	// new Chart(ctx_6, chartData);
+	new Chart(ctx_1, chartData);
+	new Chart(ctx_2, chartData);
+	new Chart(ctx_3, chartData);
+	new Chart(ctx_4, chartData);
+	new Chart(ctx_5, chartData);
+	new Chart(ctx_6, chartData);
 
 
 
