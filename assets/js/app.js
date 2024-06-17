@@ -159,7 +159,7 @@
 			elements: {
 				point: {
 					borderWidth: 0,
-					radius: 0.5,
+					radius: 0,
 				}
 			}
 
