@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Capi x Tornado</title>
+
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css" type="text/css" />
+        <link rel="stylesheet" href="vendor/owl-carousel/css/owl.theme.default.min.css" type="text/css" />
+        <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    </head>
+
+    <body>
+        <div id="app">
+            <!--@@@ Start Header  -->
+            <header class="header">
+                <div class="header__container container d-flex align-items-center">
+                    <div class="header__left">
+                        <a href="index.html" class="header__logo">
+                            <img src="assets/img/logo/logo-1.png" alt="F1" />
+                        </a>
+
+                        <nav class="header__nav">
+                            <ul class="d-flex">
+                                <li class="nav__item">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#">Giao dịch</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#">Kiến thức và đào tạo</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#">Thông tin thị trường</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header__right d-flex align-items-center">
+                        <div class="header__search">
+                            <img src="assets/img/icon/icon-search.png" alt="Search" />
+                        </div>
+
+                        <a href="#" class="btn btn--register text-uppercase">Đăng Ký</a>
+                    </div>
+                </div>
+            </header>
+            <!--@@@ End Header  -->
+
+            <!--@@@ Start Main  -->
+            <main class="main">
+                <!--@@@ Start Main  -->
+                <!--@@@ Start Regsitration  -->
+                <section class="container__registration">
+                    <div class="container">
+                        <div class="row">
+                            <!--@@@ Start col left  -->
+                            <div class="registration__col__left col-4 bg-primary">
+                                <div class="registration__group">
+                                    <div class="logo__registration">
+                                        <img src="assets/img/logo/logo-2.png" alt="" />
+                                    </div>
+                                    <div class="title__registrantion">
+                                        <h1>Mở tài khoản trực tuyến</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--@@@ End col left  -->
+                            <!--@@@ Start col Right  -->
+                            <div class="registration__col__right col-8">
+                                <div class="registration__col__right__content">
+                                    <div class="registration__note">
+                                        <p class="registration__note__title">Quý khách vui lòng chuẩn bị:</p>
+
+                                        <div class="registration__lists">
+                                            <div class="item d-flex">
+                                                <img src="assets/img/icon/check-circle.svg" alt="" />
+                                                <p>CMND hoặc CCCD còn hiệu lực theo quy định</p>
+                                            </div>
+                                            <div class="item d-flex">
+                                                <img src="assets/img/icon/check-circle.svg" alt="" />
+                                                <p>GPKD và Giấy Uỷ Quyền nếu là doanh nghiệp</p>
+                                            </div>
+                                            <div class="item d-flex">
+                                                <img src="assets/img/icon/check-circle.svg" alt="" />
+                                                <p>Máy tính hoặc diện thoại có camera</p>
+                                            </div>
+                                            <div class="item d-flex">
+                                                <img src="assets/img/icon/check-circle.svg" alt="" />
+                                                <p>Sử dụng điện thoại iOS 12.4.1 hoặc Android 9.0 trở lên</p>
+                                            </div>
+                                        </div>
+                                        <div class="registration__warning d-flex">
+                                            <img src="assets/img/icon/warning-error.svg" alt="" />
+                                            <p>
+                                                Lưu ý: Quý khách tải/chụp CMND/CCCD và khuôn mặt để được xác thực eKYC
+                                                và ký hợp đồng điện tử
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registrantion__form">
+                                    <form>
+                                        <p class="registration__note__title">Vui lòng lựa chọn loại tài khoản</p>
+                                        <div class="d-flex align-items-center" style="gap: 32px; padding-top: 20px;">
+                                            <div class="radio__input">
+                                                <input type="radio" name="styles" />
+                                                <label for="accent">Doanh nghiệp</label>
+                                            </div>
+
+                                            <div class="radio__input">
+                                                <input type="radio" name="styles" />
+                                                <label for="accent">Cá nhân</label>
+                                            </div>
+                                        </div>
+                                        <div class="registrantion__submit">
+                                            <button class="btn bg-primary">MỞ TÀI KHOẢN</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--@@@ End col Right  -->
+                        </div>
+                        <div class="registrantion__link__login">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex registrantion__link__login__content">
+                                    <img src="assets/img/icon/user-circle.svg" alt="" />
+                                    <div>
+                                        <p class="registration__note__title">Bạn đã có tài khoản?</p>
+                                        <p>Hãy đăng nhập tài khoản của bạn</p>
+                                    </div>
+                                </div>
+                                <div class="btn__link__login">
+                                    <button class="btn bg-primary">ĐĂNG NHẬP</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--@@@ End Regsitration  -->
+            </main>
+            <!--@@@ End Main  -->
+
+            <!--@@@ Start Footer  -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="index.html" class="footer__logo">
+                                <img src="assets/img/logo/logo-1.png" alt="F1" />
+                            </a>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="social">
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/facebook.png" alt="Facebook" />
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/youtube.png" alt="Youtube" />
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/linkedin.png" alt="Linkedin" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <h3 class="footer__title">Giới thiệu</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Về công ty</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Về nền tảng giao dịch Vượt trội CQG</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tin tức nội bộ</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Cơ hội nghề nghiệp</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Thông tin liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <h3 class="footer__title">Giao dịch</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Nền tảng giao dịch Vượt trội CQG</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Hướng dẫn giao dịch A-Z</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Lịch giao dịch & sự kiện</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Biểu phí</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Ký quỹ & đòn bẩy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <h3 class="footer__title">Kiến thức & Đào tạo</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Hướng dẫn sử dụng phần mềm </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tài liệu khoá học</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Khoá học</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <h3 class="footer__title">Thông tin thị trường</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Nhận định hàng ngày</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Báo cáo bởi Tornado</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tin tức</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="copy-right">
+                        <p>@2024 Commomdities Trading. All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+            <!--@@@ End Footer  -->
+        </div>
+
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+        <script src="vendor/chartjs/chart.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
