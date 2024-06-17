@@ -386,10 +386,17 @@
 	function updateSteps() {
 		$steps.removeClass("active").eq(currentStep - 1).addClass("active");
 		$stepBoxes.removeClass("active").eq(currentStep - 1).addClass("active");
-		$progress.css("width", `${((currentStep - 1) / ($steps.length - 1)) * 70}%`);
+		$progress.css("width", `${((currentStep - 1) / ($steps.length - 1)) * 100}%`);
 
 		$prev.prop("disabled", currentStep === 1);
-		$next.prop("disabled", currentStep === $steps.length);
+
+		if (currentStep === $steps.length) {
+			$next.text("Hoàn Thành");
+		} else {
+			$next.text("Tiếp Tục");
+		}
+
+		$next.prop("disabled", currentStep === $steps.length + 1);
 	}
 }(jQuery));
 
