@@ -1122,6 +1122,17 @@ input[type='radio'] {
 .step .step__title div p {
 	font-size: 16px;
 	color: #706582;
-	font-size: initial;
+	font-style: italic;
+}
 
+.step .step__content .step-1 .step__cnd {
+	padding: 40px 24px;
+}
+
+.step .step__content .step-1 .step__cnd p {
+	font-style: italic;
+}
+
+.step .step__content .step-1 .step__cnd .text p {
+	font-style: normal !important;
 }
