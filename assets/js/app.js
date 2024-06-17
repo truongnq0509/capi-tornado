@@ -4,6 +4,8 @@
 // :: 2.0 Marquee
 // :: 3.0 Newspapers
 // :: 4.0 Chartjs
+// :: 5.0 Auth
+// :: 6.0 Step
 
 
 (function ($) {
@@ -29,31 +31,69 @@
 
 	});
 
-	// const fnVal = () => {
-	// 	let hasErr = false;
+	const fnVal = () => {
+		let hasErr = false;
 
-	// 	if (!$('#email').val().trim()) {
-	// 		hasErr = true;
-	// 		createdInvalid($('#email'), 'Email không được để trống !')
-	// 	}
+		if (!$('#fullname').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#fullname'), 'Họ và tên không được để trống !')
+		}
 
-	// 	if (!$('#password').val().trim()) {
-	// 		hasErr = true;
-	// 		createdInvalid($('#password'), 'Mật khẩu không được để trống !')
-	// 	} else if ($('#password').val().trim().length < 6) {
-	// 		hasErr = true;
-	// 		createdInvalid($('#password'), 'Tối thiểu 6 ký tự!')
-	// 	}
+		if (!$('#cmnd').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#cmnd'), 'Số CMND/CCCD/HC không được để trống !')
+		}
 
-	// 	return hasErr
-	// }
 
-	// $('button').click(function (e) {
-	// 	e.preventDefault()
+		if (!$('#email').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#email'), 'Email không được để trống !')
+		}
 
-	// 	if (fnVal()) return;
+		if (!$('#date').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#date'), 'Ngày cấp không được để trống !')
+		}
 
-	// })
+		if (!$('#from').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#from'), 'Nơi cấp không được để trống !')
+		}
+
+		if (!$('#address').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#address'), 'Địa chỉ nơi ở hiện tại (để nhận hợp đồng)  không được để trống !')
+		}
+
+		if (!$('#phone').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#phone'), 'Số điện thoại không được để trống !')
+		}
+
+		if (!$('#birth').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#birth'), 'Ngày sinh không được để trống !')
+		}
+
+		if (!$('#sex').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#sex'), 'Giới tính không được để trống !')
+		}
+
+		if (!$('#country').val().trim()) {
+			hasErr = true;
+			createdInvalid($('#country'), 'Quốc tịch không được để trống !')
+		}
+
+		return hasErr
+	}
+
+	$('#next').click(function (e) {
+		e.preventDefault()
+
+		// if (fnVal()) return;
+
+	})
 
 	// :: 2.0 Marquee
 	var owlMarquee = $('.owl-carousel.marquee');
@@ -165,69 +205,191 @@
 		}
 	};
 
-	var ctx_1 = document.getElementById("chartjs-1").getContext("2d");
-	var ctx_2 = document.getElementById("chartjs-2").getContext("2d");
-	var ctx_3 = document.getElementById("chartjs-3").getContext("2d");
-	var ctx_4 = document.getElementById("chartjs-4").getContext("2d");
-	var ctx_5 = document.getElementById("chartjs-5").getContext("2d");
-	var ctx_6 = document.getElementById("chartjs-6").getContext("2d");
+	var ctx_1 = document.getElementById("chartjs-1") && document.getElementById("chartjs-1").getContext("2d");
+	var ctx_2 = document.getElementById("chartjs-2") && document.getElementById("chartjs-2").getContext("2d");
+	var ctx_3 = document.getElementById("chartjs-3") && document.getElementById("chartjs-3").getContext("2d");
+	var ctx_4 = document.getElementById("chartjs-4") && document.getElementById("chartjs-4").getContext("2d");
+	var ctx_5 = document.getElementById("chartjs-5") && document.getElementById("chartjs-5").getContext("2d");
+	var ctx_6 = document.getElementById("chartjs-6") && document.getElementById("chartjs-6").getContext("2d");
 
-	new Chart(ctx_1, chartData);
-	new Chart(ctx_2, chartData);
-	new Chart(ctx_3, chartData);
-	new Chart(ctx_4, chartData);
-	new Chart(ctx_5, chartData);
-	new Chart(ctx_6, chartData);
-
-
-}(jQuery));
-
-
-
-const progress = document.getElementById("progress");
-const prev = document.getElementById("prev");
-const next = document.getElementById("next");
-const circles = document.querySelectorAll(".step__box");
-
-let currentActive = 1;
-
-next.addEventListener("click", () => {
-	currentActive++;
-	if (currentActive > circles.length) {
-		currentActive = circles.length;
+	if (ctx_1 &&
+		ctx_2 &&
+		ctx_3 &&
+		ctx_4 &&
+		ctx_5 &&
+		ctx_6) {
+		new Chart(ctx_1, chartData);
+		new Chart(ctx_2, chartData);
+		new Chart(ctx_3, chartData);
+		new Chart(ctx_4, chartData);
+		new Chart(ctx_5, chartData);
+		new Chart(ctx_6, chartData);
 	}
-	update();
-});
 
-prev.addEventListener("click", () => {
-	currentActive--;
-	if (currentActive < 1) {
-		currentActive = 1;
-	}
-	update();
-});
 
-function update() {
-	circles.forEach((circle, index) => {
-		if (index < currentActive) {
-			circle.classList.add("active");
-		} else {
-			circle.classList.remove("active");
-		}
+
+	// :: 5.0 Auth
+	$("#add__bank").click(function (e) {
+		$("#step__back__item__one").append(
+			`<div class="step__bank-item">
+				<div class="row">
+					<div class="col-3">
+						<label for="tk" class="form-label mb-2">
+							Số TK <span>*</span>
+						</label>
+
+						<input
+							type="text"
+							class="form-control"
+							id="tk"
+							placeholder=""
+						/>
+					</div>
+					<div class="col-3">
+						<label for="user" class="form-label mb-2">
+							Tên chủ TK <span>*</span>
+						</label>
+
+						<input
+							type="text"
+							class="form-control"
+							id="user"
+							placeholder=""
+						/>
+					</div>
+					<div class="col-3">
+						<label for="bank" class="form-label mb-2">
+							Ngân hàng <span>*</span>
+						</label>
+
+						<select class="form-control form-select" id="bank">
+							<option value="">MB Bank</option>
+							<option value="">TP Bank</option>
+						</select>
+					</div>
+					<div class="col-3">
+						<label for="branch" class="form-label mb-2">
+							Chi nhánh <span>*</span>
+						</label>
+
+						<input
+							type="text"
+							class="form-control"
+							id="branch"
+							placeholder=""
+						/>
+					</div>
+				</div>
+				<div class="close">
+					<img src="assets/img/icon/close.png" alt="" />
+				</div>
+			</div>
+		`
+		);
 	});
-	const actives = document.querySelectorAll(".active");
-	progress.style.width = `${((actives.length - 1) / (circles.length - 1)) * 100
-		}%`;
 
-	if (currentActive === 1) {
-		prev.disabled = true;
-	} else if (currentActive === circles.length) {
-		next.disabled = true;
-	} else {
-		prev.disabled = false;
-		next.disabled = false;
+	$("#step__back__item__one").on("click", ".close", function (e) {
+		$(this).closest(".step__bank-item").remove();
+	});
+
+	$("#add__reciprocal").click(function (e) {
+		$("#step__back__item__two").append(
+			`<div class="step__bank-item">
+				<div class="row">
+					<div class="col-3">
+						<label for="tk" class="form-label mb-2">
+							Số TK <span>*</span>
+						</label>
+
+						<input
+							type="text"
+							class="form-control"
+							id="tk"
+							placeholder=""
+						/>
+					</div>
+					<div class="col-3">
+						<label for="user" class="form-label mb-2">
+							Tên chủ TK <span>*</span>
+						</label>
+
+						<input
+							type="text"
+							class="form-control"
+							id="user"
+							placeholder=""
+						/>
+					</div>
+					<div class="col-3">
+						<label for="bank" class="form-label mb-2">
+							Ngân hàng <span>*</span>
+						</label>
+
+						<select class="form-control form-select" id="bank">
+							<option value="">MB Bank</option>
+							<option value="">TP Bank</option>
+						</select>
+					</div>
+					<div class="col-3">
+						<label for="branch" class="form-label mb-2">
+							Chi nhánh <span>*</span>
+						</label>
+
+						<input
+							type="text"
+							class="form-control"
+							id="branch"
+							placeholder=""
+						/>
+					</div>
+				</div>
+				<div class="close">
+					<img src="assets/img/icon/close.png" alt="" />
+				</div>
+			</div>
+		`
+		);
+	});
+
+	$("#step__back__item__two").on("click", ".close", function (e) {
+		$(this).closest(".step__bank-item").remove();
+	});
+
+
+	// :: 6.0 Step
+	const $progress = $("#progress");
+	const $prev = $("#prev");
+	const $next = $("#next");
+	const $steps = $(".step__Mxds");
+	const $stepBoxes = $(".step__box");
+
+	console.log('$progress', $progress)
+
+	let currentStep = 1;
+
+	$next.on("click", () => {
+		currentStep++;
+		if (currentStep > $steps.length) {
+			currentStep = $steps.length;
+		}
+		updateSteps();
+	});
+
+	$prev.on("click", () => {
+		currentStep--;
+		if (currentStep < 1) {
+			currentStep = 1;
+		}
+		updateSteps();
+	});
+
+	function updateSteps() {
+		$steps.removeClass("active").eq(currentStep - 1).addClass("active");
+		$stepBoxes.removeClass("active").eq(currentStep - 1).addClass("active");
+		$progress.css("width", `${((currentStep - 1) / ($steps.length - 1)) * 70}%`);
+
+		$prev.prop("disabled", currentStep === 1);
+		$next.prop("disabled", currentStep === $steps.length);
 	}
-}
-
-
+}(jQuery));
 

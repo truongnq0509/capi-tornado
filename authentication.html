@@ -66,19 +66,22 @@
                                 <div class="step__top">
                                     <div id="progress" class="step__progress"></div>
                                     <div class="step__box active">
-                                        <div class="step__number">1</div>
+                                        <div class="step__number">
+                                            <span>1</span>
+                                            <span>✔</span>
+                                        </div>
                                         <p>Xác thực</p>
                                     </div>
                                     <div class="step__box">
-                                        <div class="step__number">2</div>
+                                        <div class="step__number"><span>2</span> <span>✔</span></div>
                                         <p>Thông tin</p>
                                     </div>
                                     <div class="step__box">
-                                        <div class="step__number">3</div>
+                                        <div class="step__number"><span>3</span> <span>✔</span></div>
                                         <p>Tài khoản</p>
                                     </div>
                                     <div class="step__box">
-                                        <div class="step__number">4</div>
+                                        <div class="step__number"><span>4</span> <span>✔</span></div>
                                         <p>Ký hợp đồng</p>
                                     </div>
                                 </div>
@@ -88,48 +91,356 @@
 
                     <div class="step__content">
                         <div class="d-flex justify-content-center">
-                            <div class="step-1">
-                                <div class="step__title">
-                                    <h3>01</h3>
-                                    <div>
-                                        <h4>Xác minh danh tính</h4>
-                                        <p>
-                                            Xác minh danh tính người dùng thông qua các loại giấy tờ tuỳ thân và hình
-                                            ảnh.
-                                        </p>
+                            <div class="step__layout">
+                                <!--@@@ Step 1 -->
+                                <div class="step-1 step__Mxds active">
+                                    <div class="step__title">
+                                        <h3>01</h3>
+                                        <div>
+                                            <h4>Xác minh danh tính</h4>
+                                            <p>
+                                                Xác minh danh tính người dùng thông qua các loại giấy tờ tuỳ thân và
+                                                hình ảnh.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step__cnd">
+                                        <div>
+                                            <div class="d-flex">
+                                                <img src="assets/img/icon/warning-error.svg" alt="" />
+                                                <p class="ml-3 fst-italic">
+                                                    Để đảm bảo kết quả xác minh, quý khách vui lòng lưu ý:
+                                                </p>
+                                            </div>
+
+                                            <ul class="mt-4 text">
+                                                <li class="d-flex">
+                                                    <img src="assets/img/icon/check-circle.svg" alt="" />
+                                                    <p class="ml-2">Giấy tờ tuỳ thân phải còn hạn sử dụng.</p>
+                                                </li>
+                                                <li class="d-flex">
+                                                    <img src="assets/img/icon/check-circle.svg" alt="" />
+                                                    <p class="ml-2">
+                                                        Hình chụp đầy đủ mọi góc cạnh của giấy tờ, không được che khuất.
+                                                    </p>
+                                                </li>
+                                                <li class="d-flex">
+                                                    <img src="assets/img/icon/check-circle.svg" alt="" />
+                                                    <p class="ml-2">
+                                                        Hình chụp rõ nét, không bị quá mờ hay bị chói sáng.
+                                                    </p>
+                                                </li>
+                                                <li class="d-flex">
+                                                    <img src="assets/img/icon/check-circle.svg" alt="" />
+                                                    <p class="ml-2">Kích thước tối đa 15 MB.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="step__upload">
+                                            <p>Vui lòng chọn loại giấy tờ :</p>
+
+                                            <div class="d-flex list-check gap-4">
+                                                <p class="d-flex gap-2 align-items-center">
+                                                    <input type="radio" name="radio-group" checked />
+                                                    <label for="test1">CMND/CCCD</label>
+                                                </p>
+                                                <p class="d-flex gap-2 align-items-center">
+                                                    <input type="radio" name="radio-group" />
+                                                    <label for="test1">Hộ chiếu Việt Nam</label>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step__file">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="step__file-item">
+                                                    <h4>CMND/CCCD mặt trước</h4>
+                                                    <img src="assets/img/auth/cmnd-1.png" alt="CMND" />
+
+                                                    <button class="btn btn--upload">
+                                                        Tải lên
+                                                        <input type="file" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="step__file-item">
+                                                    <h4>CMND/CCCD mặt sau</h4>
+                                                    <img src="assets/img/auth/cmnd-2.png" alt="CMND" />
+
+                                                    <button class="btn btn--upload">
+                                                        Tải lên
+                                                        <input type="file" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="step__file-item">
+                                                    <h4>Hình chân dung</h4>
+                                                    <img src="assets/img/auth/cmnd-3.png" alt="CMND" />
+
+                                                    <button class="btn btn--upload">
+                                                        Tải lên
+                                                        <input type="file" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="step__cnd">
-                                    <div>
-                                        <div class="d-flex">
-                                            <img src="assets/img/icon/warning-error.svg" alt="" />
-                                            <p class="ml-3 fst-italic">
-                                                Để đảm bảo kết quả xác minh, quý khách vui lòng lưu ý:
+                                <!--@@@ Step 2 -->
+                                <div class="step-2 step__Mxds">
+                                    <div class="step__title">
+                                        <h3>02</h3>
+                                        <div>
+                                            <h4>Đăng ký thông tin</h4>
+                                            <p>
+                                                Kiểm tra lại thông tin cá nhân / doanh nghiệp và bổ sung các thông tin
+                                                cần thiết.
                                             </p>
                                         </div>
-
-                                        <ul class="mt-4 text">
-                                            <li class="d-flex">
-                                                <img src="assets/img/icon/check-circle.svg" alt="" />
-                                                <p class="ml-2">Giấy tờ tuỳ thân phải còn hạn sử dụng.</p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <img src="assets/img/icon/check-circle.svg" alt="" />
-                                                <p class="ml-2">
-                                                    Hình chụp đầy đủ mọi góc cạnh của giấy tờ, không được che khuất.
-                                                </p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <img src="assets/img/icon/check-circle.svg" alt="" />
-                                                <p class="ml-2">Hình chụp rõ nét, không bị quá mờ hay bị chói sáng.</p>
-                                            </li>
-                                            <li class="d-flex">
-                                                <img src="assets/img/icon/check-circle.svg" alt="" />
-                                                <p class="ml-2">Kích thước tối đa 15 MB.</p>
-                                            </li>
-                                        </ul>
                                     </div>
+
+                                    <div class="step__form">
+                                        <form id="form" class="row">
+                                            <div class="mb-3 col-6">
+                                                <label for="fullname" class="form-label mb-2">
+                                                    Họ và tên <span>*</span>
+                                                </label>
+                                                <input
+                                                    type="email"
+                                                    class="form-control"
+                                                    id="fullname"
+                                                    placeholder="Nguyễn Văn A"
+                                                />
+                                            </div>
+
+                                            <div class="mb-3 col-6">
+                                                <label for="birth" class="form-label mb-2">
+                                                    Ngày sinh <span>*</span>
+                                                </label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control"
+                                                    id="birth"
+                                                    placeholder="Ngày sinh"
+                                                />
+                                            </div>
+
+                                            <div class="mb-3 col-6">
+                                                <label for="sex" class="form-label mb-2">
+                                                    Giới tính <span>*</span>
+                                                </label>
+
+                                                <select id="sex" class="form-control form-select">
+                                                    <option value="">Nam</option>
+                                                    <option value="">Nữ</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="mb-3 col-6">
+                                                <label for="country" class="form-label mb-2">
+                                                    Quốc tịch <span>*</span>
+                                                </label>
+
+                                                <select class="form-control form-select" id="country">
+                                                    <option value="">Việt Nam</option>
+                                                    <option value="">Nhật Bản</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="mb-3 col-6">
+                                                <label for="cmnd" class="form-label mb-2">
+                                                    Số CMND/CCCD/HC <span>*</span>
+                                                </label>
+
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="cmnd"
+                                                    placeholder="0092736481312"
+                                                />
+                                            </div>
+
+                                            <div class="mb-3 col-6">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="date" class="form-label mb-2">
+                                                            Ngày cấp <span>*</span>
+                                                        </label>
+
+                                                        <input
+                                                            type="date"
+                                                            class="form-control"
+                                                            id="date"
+                                                            placeholder="0092736481312"
+                                                        />
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <label for="from" class="form-label mb-2">
+                                                            Nơi cấp <span>*</span>
+                                                        </label>
+
+                                                        <input
+                                                            type="text"
+                                                            class="form-control"
+                                                            id="from"
+                                                            placeholder="CỤC CẢNH SÁT QUẢN LÝ HÀNH CHÍNH VỀ TRẬT TỰ XÃ HỘI"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3 col-12">
+                                                <label for="address" class="form-label mb-2">
+                                                    Địa chỉ nơi ở hiện tại (để nhận hợp đồng) <span>*</span>
+                                                </label>
+
+                                                <input type="text" class="form-control" id="address" placeholder="" />
+                                            </div>
+
+                                            <div class="mb-3 col-6">
+                                                <label for="phone" class="form-label mb-2">
+                                                    Số điện thoại <span>*</span>
+                                                </label>
+
+                                                <input type="text" class="form-control" id="phone" placeholder="" />
+                                            </div>
+
+                                            <div class="mb-3 col-6">
+                                                <label for="email" class="form-label mb-2">
+                                                    Email liên hệ <span>*</span>
+                                                </label>
+
+                                                <input type="text" class="form-control" id="email" placeholder="" />
+                                            </div>
+
+                                            <div class="mb-3 col-6">
+                                                <label for="" class="form-label mb-2"> Mã môi giới (nếu có) </label>
+
+                                                <input type="text" class="form-control" id="agency" placeholder="" />
+                                            </div>
+
+                                            <div class="mb-3 col-6">
+                                                <label for="introduce" class="form-label mb-2">
+                                                    Mã giới thiệu (nếu có)
+                                                </label>
+
+                                                <input type="text" class="form-control" id="introduce" placeholder="" />
+                                            </div>
+                                        </form>
+
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/icon/warning-error.svg" alt="F1" />
+                                            <p class="ml-3">
+                                                Lưu ý: Số điện thoại và email của người giao dịch / uỷ quyền sẽ dùng để
+                                                nhận OTP xác minh ở bước đăng ký cuối cùng.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--@@@ Step 3 -->
+                                <div class="step-3 step__Mxds">
+                                    <div class="step__title">
+                                        <h3>03</h3>
+                                        <div>
+                                            <h4>Đăng Ký Tài Khoản Giao Dịch</h4>
+                                            <p>Đăng ký tài khoản giao dịch, tài khoản ngân hàng, tài khoản đối ứng.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="step__form-mutiple">
+                                        <div class="step__form-bank">
+                                            <h4>Đăng ký tài khoản nhận tiền tại Ngân hàng</h4>
+
+                                            <div id="step__back__item__one" class="step__bank-list">
+                                                <div class="step__bank-item">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <label for="tk" class="form-label mb-2">
+                                                                Số TK <span>*</span>
+                                                            </label>
+
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="tk"
+                                                                placeholder=""
+                                                            />
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <label for="user" class="form-label mb-2">
+                                                                Tên chủ TK <span>*</span>
+                                                            </label>
+
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="user"
+                                                                placeholder=""
+                                                            />
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <label for="bank" class="form-label mb-2">
+                                                                Ngân hàng <span>*</span>
+                                                            </label>
+
+                                                            <select class="form-control form-select" id="bank">
+                                                                <option value="">MB Bank</option>
+                                                                <option value="">TP Bank</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <label for="branch" class="form-label mb-2">
+                                                                Chi nhánh <span>*</span>
+                                                            </label>
+
+                                                            <input
+                                                                type="text"
+                                                                class="form-control"
+                                                                id="branch"
+                                                                placeholder=""
+                                                            />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="close">
+                                                        <img src="assets/img/icon/close.png" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="step__bank-btn">
+                                                <button id="add__bank" class="btn btn--add">
+                                                    <img src="assets/img/icon/add.svg" alt="" />
+                                                    Thêm tài khoản ngân hàng
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="step__form-bank">
+                                            <h4>Đăng ký tài khoản nhận tiền tài khoản đối ứng tại F1 Trading</h4>
+
+                                            <div id="step__back__item__two" class="step__bank-list"></div>
+
+                                            <div id="add__reciprocal" class="step__bank-btn">
+                                                <button class="btn btn--add btn--two">
+                                                    <img src="assets/img/icon/add.svg" alt="" />
+                                                    Thêm tài khoản đối ứng
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step__btn d-flex justify-content-between">
+                                    <button id="prev" class="btn btn--prev">Quay Lại</button>
+                                    <button id="next" class="btn btn--next">Tiếp Tục</button>
                                 </div>
                             </div>
                         </div>
