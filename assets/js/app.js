@@ -29,32 +29,31 @@
 
 	});
 
-	const fnVal = () => {
-		let hasErr = false;
+	// const fnVal = () => {
+	// 	let hasErr = false;
 
-		if (!$('#email').val().trim()) {
-			hasErr = true;
-			createdInvalid($('#email'), 'Email không được để trống !')
-		}
+	// 	if (!$('#email').val().trim()) {
+	// 		hasErr = true;
+	// 		createdInvalid($('#email'), 'Email không được để trống !')
+	// 	}
 
-		if (!$('#password').val().trim()) {
-			hasErr = true;
-			createdInvalid($('#password'), 'Mật khẩu không được để trống !')
-		} else if ($('#password').val().trim().length < 6) {
-			hasErr = true;
-			createdInvalid($('#password'), 'Tối thiểu 6 ký tự!')
-		}
+	// 	if (!$('#password').val().trim()) {
+	// 		hasErr = true;
+	// 		createdInvalid($('#password'), 'Mật khẩu không được để trống !')
+	// 	} else if ($('#password').val().trim().length < 6) {
+	// 		hasErr = true;
+	// 		createdInvalid($('#password'), 'Tối thiểu 6 ký tự!')
+	// 	}
 
-		return hasErr
-	}
+	// 	return hasErr
+	// }
 
-	$('button').click(function (e) {
-		e.preventDefault()
+	// $('button').click(function (e) {
+	// 	e.preventDefault()
 
-		if (fnVal()) return;
+	// 	if (fnVal()) return;
 
-		// CALL API
-	})
+	// })
 
 	// :: 2.0 Marquee
 	var owlMarquee = $('.owl-carousel.marquee');
@@ -166,18 +165,23 @@
 		}
 	};
 
-	var ctx_1 = document.getElementById("chartjs-1").getContext("2d");
-	var ctx_2 = document.getElementById("chartjs-2").getContext("2d");
-	var ctx_3 = document.getElementById("chartjs-3").getContext("2d");
-	var ctx_4 = document.getElementById("chartjs-4").getContext("2d");
-	var ctx_5 = document.getElementById("chartjs-5").getContext("2d");
-	var ctx_6 = document.getElementById("chartjs-6").getContext("2d");
+	// var ctx_1 = document.getElementById("chartjs-1").getContext("2d");
+	// var ctx_2 = document.getElementById("chartjs-2").getContext("2d");
+	// var ctx_3 = document.getElementById("chartjs-3").getContext("2d");
+	// var ctx_4 = document.getElementById("chartjs-4").getContext("2d");
+	// var ctx_5 = document.getElementById("chartjs-5").getContext("2d");
+	// var ctx_6 = document.getElementById("chartjs-6").getContext("2d");
 
-	new Chart(ctx_1, chartData);
-	new Chart(ctx_2, chartData);
-	new Chart(ctx_3, chartData);
-	new Chart(ctx_4, chartData);
-	new Chart(ctx_5, chartData);
-	new Chart(ctx_6, chartData);
+	// new Chart(ctx_1, chartData);
+	// new Chart(ctx_2, chartData);
+	// new Chart(ctx_3, chartData);
+	// new Chart(ctx_4, chartData);
+	// new Chart(ctx_5, chartData);
+	// new Chart(ctx_6, chartData);
+
+
+
 
 }(jQuery));
+
+

@@ -21,6 +21,7 @@
 	 	:: 5.1 Header
 		:: 5.2 Footer
 	:: 6.0 Home Page
+	:: 8.0 Authentication Page
 -----------------------------------------------------------------------------------*/
 
 
@@ -373,6 +374,18 @@ p {
 	background-color: var(--primary-bg) !important;
 }
 
+.header__right>.header__hotline {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.header__right>.header__hotline a {
+	font-size: 16px;
+	color: var(--white-text);
+	text-decoration: none;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 
@@ -698,8 +711,10 @@ p {
 	position: relative;
 	border-radius: 20px;
 	background-color: #F5EFF9 !important;
+	transition: all 0.25s;
 }
 
+.method .method__list .method__item:hover,
 .method .method__list .method__item.active {
 	background-color: var(--primary-bg) !important;
 }
@@ -859,4 +874,48 @@ p {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+}
+
+
+/*=============================
+	:: 8.0 Authenication Page
+===============================*/
+
+.step {
+	box-shadow: rgba(100, 100, 111, 0.1) 0px 5px 20px 0px;
+}
+
+.step .step__top {
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.step .step__top .step__box {
+	display: inline-flex;
+}
+
+.step .step__top .step__box .step__number {
+	width: 24px;
+	height: 24px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primary-bg);
+	color: var(--black-text);
+	border-radius: 50%;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+
+.step .step__top .step__box.active .step__number {
+	color: var(--white-text) !important;
+	background-color: var(--cta-bg) !important;
+}
+
+.step .step__top .step__box p {
+	font-size: 16px;
+	font-weight: 600;
+	margin-left: 10px;
 }
