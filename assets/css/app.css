@@ -878,6 +878,151 @@ p {
 
 
 /*=============================
+	:: 7.0 Registration Page
+===============================*/
+.container__registration {
+	padding: 40px;
+}
+
+.registration__col__left {
+	border-radius: 20px 0 0 20px;
+	background-image: url('../img/logo/logo-3.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.registration__col__left .registration__group {
+	padding: 60px !important;
+}
+
+.title__registrantion {
+	padding-top: 40px;
+	text-align: start;
+}
+
+.title__registrantion h1 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.registration__col__right {
+	background-color: #fff;
+	border-radius: 0 20px 20px 0;
+	padding: 60px !important;
+}
+
+.registration__note__title {
+	color: #161616;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.registration__lists {
+	margin-top: 14px;
+}
+
+.registration__lists .item {
+	margin: 6px auto;
+}
+
+.registration__lists .item img {
+	padding-right: 12px;
+}
+
+.registration__warning {
+	margin-top: 14px;
+}
+
+.registration__warning img {
+	padding-right: 12px;
+}
+
+.registration__warning p {
+	color: #161616;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.registrantion__form {
+	margin-top: 40px;
+}
+
+.registrantion__submit {
+	margin-top: 40px;
+}
+
+.registrantion__submit button {
+	padding: 16px 24px;
+	color: #2e2c1c;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.4px;
+	text-transform: uppercase;
+}
+
+input[type='radio'] {
+	accent-color: red;
+}
+
+.container__registration .container {
+	padding: auto !important;
+}
+
+.registrantion__link__login {
+	width: 100%;
+	margin-top: 24px;
+	padding: 40px 60px;
+}
+
+.registrantion__link__login {
+	border-radius: 20px;
+	background-color: #fff;
+}
+
+.registrantion__link__login__content div {
+	padding-left: 20px;
+}
+
+.registrantion__link__login__content div .registration__note__title {
+	padding-bottom: 4px;
+}
+
+.btn__link__login button {
+	padding: 12px 24px;
+	color: #2e2c1c;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.64px;
+	text-transform: uppercase;
+}
+
+.container__registration {
+	background-color: #000000;
+}
+
+.radio__input input {
+	margin-right: 12px;
+}
+
+.radio__input label {
+	color: #161616;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+
+
+/*=============================
 	:: 8.0 Authenication Page
 ===============================*/
 
@@ -978,4 +1123,5 @@ p {
 	font-size: 16px;
 	color: #706582;
 	font-size: initial;
+
 }
