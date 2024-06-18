@@ -21,7 +21,10 @@
 	 	:: 5.1 Header
 		:: 5.2 Footer
 	:: 6.0 Home Page
-	:: 8.0 Authentication Page
+	:: 7.0 Auth Page
+	:: 8.0 Register Page
+	:: 9.0 Login Page
+	:: 10.0 About Us Page
 -----------------------------------------------------------------------------------*/
 
 
@@ -317,6 +320,23 @@ fw-7 {
 	border-color: var(--primary-text);
 }
 
+.btn.btn--primary {
+	padding: 12px 24px;
+	color: var(--black-text);
+	border-radius: 8px;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: var(--primary-bg);
+}
+
+
+.btn.btn--cta {
+	padding: 12px 24px;
+	color: var(--white-text);
+	border-radius: 8px;
+	background-color: var(--cta-bg);
+}
 
 /*=============================
 	:: 5.0 Layout CSS
@@ -900,164 +920,10 @@ fw-7 {
 }
 
 
-/*=============================
-	:: 7.0 Registration Page
-===============================*/
-.container__registration {
-	padding: 40px;
-}
-
-.registration__col__left {
-	border-radius: 20px 0 0 20px;
-	background-image: url('../img/logo/logo-3.png');
-	background-position: bottom;
-	background-repeat: no-repeat;
-}
-
-.registration__col__left .registration__group {
-	padding: 60px !important;
-}
-
-.title__registrantion {
-	padding-top: 40px;
-	text-align: start;
-}
-
-.title__registrantion h1 {
-	font-size: 38px;
-	font-weight: 600;
-}
-
-.registration__col__right {
-	background-color: #fff;
-	border-radius: 0 20px 20px 0;
-	padding: 60px !important;
-}
-
-.step__KxderD28 {
-	padding: 40px 0;
-}
-
-.registration__note__title {
-	display: flex;
-	align-items: center;
-	margin-bottom: 32px;
-}
-
-.registration__note__title img {
-	width: 22px;
-	height: 22px;
-	object-fit: contain;
-}
-
-.registration__note__title p {
-	font-weight: 600;
-}
-
-
-
-.registration__lists {
-	margin-top: 14px;
-}
-
-.registration__lists .item {
-	margin: 6px auto;
-}
-
-.registration__lists .item img {
-	padding-right: 12px;
-}
-
-.registration__warning {
-	margin-top: 14px;
-}
-
-.registration__warning img {
-	padding-right: 12px;
-}
-
-.registration__warning p {
-	color: #161616;
-	font-size: 16px;
-	font-style: italic;
-	font-weight: 400;
-	line-height: normal;
-}
-
-.registrantion__form {
-	margin-top: 40px;
-}
-
-.registrantion__submit {
-	margin-top: 40px;
-}
-
-.registrantion__submit .btn {
-	padding: 16px 24px;
-	color: #2e2c1c;
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	letter-spacing: 0.4px;
-	text-transform: uppercase;
-	background-color: var(--primary-bg) !important;
-	border-radius: 8px;
-}
-
-
-.registrantion__link__login {
-	width: 100%;
-	margin-top: 24px;
-	padding: 40px 60px;
-}
-
-.registrantion__link__login {
-	border-radius: 20px;
-	background-color: #fff;
-}
-
-.registrantion__link__login__content div {
-	padding-left: 20px;
-}
-
-.registrantion__link__login__content div .registration__note__title {
-	padding-bottom: 4px;
-}
-
-.btn__link__login button {
-	padding: 12px 24px;
-	color: #2e2c1c;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-	letter-spacing: 0.64px;
-	text-transform: uppercase;
-	border-radius: 8px;
-	background-color: var(--primary-bg) !important;
-}
-
-.container__registration {
-	background-color: #000000;
-}
-
-.radio__input input {
-	margin-right: 12px;
-}
-
-.radio__input label {
-	color: #161616;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
-}
-
 
 
 /*=============================
-	:: 8.0 Authenication Page
+	:: 7.0 Auth Page
 ===============================*/
 
 .step {}
@@ -1547,3 +1413,313 @@ fw-7 {
 	line-height: 1.4;
 	font-size: 16px;
 }
+
+
+/*=============================
+	:: 7.0 Register Page
+===============================*/
+.container__register {
+	padding: 40px;
+	background-color: var(--black-bg);
+}
+
+.register__col__left {
+	border-radius: 20px 0 0 20px;
+	background-image: url('../img/logo/logo-3.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.register__col__left .register__group {
+	padding: 60px !important;
+}
+
+.title__register {
+	padding-top: 40px;
+	text-align: start;
+}
+
+.title__register h1 {
+	font-size: 38px;
+	font-weight: 600;
+}
+
+.register__col__right {
+	background-color: #fff;
+	border-radius: 0 20px 20px 0;
+	padding: 60px !important;
+}
+
+.step__KxderD28 {
+	padding: 40px 0;
+}
+
+.register__note__title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 32px;
+}
+
+.register__note__title img {
+	width: 22px;
+	height: 22px;
+	object-fit: contain;
+}
+
+.register__note__title p {
+	font-weight: 600;
+}
+
+
+
+.register__lists {
+	margin-top: 14px;
+}
+
+.register__lists .item {
+	margin: 6px auto;
+}
+
+.register__lists .item img {
+	padding-right: 12px;
+}
+
+.register__warning {
+	margin-top: 14px;
+}
+
+.register__warning img {
+	padding-right: 12px;
+}
+
+.register__warning p {
+	color: #161616;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.register__form {
+	margin-top: 40px;
+}
+
+.register__submit {
+	margin-top: 40px;
+}
+
+.register__submit .btn {
+	padding: 12px 24px;
+	color: #2e2c1c;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	background-color: var(--primary-bg) !important;
+	border-radius: 8px;
+}
+
+
+.register__link__login {
+	width: 100%;
+	margin-top: 24px;
+	padding: 40px 60px;
+}
+
+.register__link__login {
+	border-radius: 20px;
+	background-color: #fff;
+}
+
+.register__link__login__content div {
+	padding-left: 20px;
+}
+
+.register__link__login__content div .register__note__title {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.register__link__login__content div p {
+	margin: 0;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.btn__link__register a {
+	padding: 12px 24px;
+	color: #2e2c1c;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 8px;
+	background-color: var(--primary-bg) !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/*=============================
+	:: 9.0 Login Page
+===============================*/
+.container__login {
+	padding: 40px;
+	background-color: var(--black-bg);
+}
+
+.login__col__left {
+	border-radius: 20px 0 0 20px;
+	background-image: url('../img/logo/logo-3.png');
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.login__col__left .login__group {
+	padding: 60px !important;
+}
+
+.title__login {
+	padding-top: 40px;
+	text-align: start;
+}
+
+.title__login h1 {
+	font-size: 38px;
+	font-weight: 600;
+}
+
+.login__col__right {
+	background-color: #fff;
+	border-radius: 0 20px 20px 0;
+	padding: 60px !important;
+}
+
+
+.login__submit .btn {
+	padding: 16px 24px;
+	color: #2e2c1c;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.4px;
+	text-transform: uppercase;
+	background-color: var(--primary-bg) !important;
+	border-radius: 8px;
+}
+
+
+.login__link__login {
+	width: 100%;
+	margin-top: 24px;
+	padding: 40px 60px;
+}
+
+.login__link__login {
+	border-radius: 20px;
+	background-color: #fff;
+}
+
+.login__link__login__content div {
+	padding-left: 20px;
+}
+
+.login__link__login__content div .login__note__title {
+	font-size: 20px;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.login__link__login__content div p {
+	margin: 0;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.btn__link__login a {
+	padding: 12px 24px;
+	color: #2e2c1c;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.64px;
+	text-transform: uppercase;
+	border-radius: 8px;
+	background-color: var(--primary-bg) !important;
+}
+
+.login__form {
+	margin: 60px 0;
+}
+
+.login__form .login__control {
+	position: relative;
+}
+
+.login__form .login__control .login__icon {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.login__form .login__control .form-control {
+	padding: 12px 12px 12px 48px !important;
+	border: 1px solid #8F8F8F;
+	border-radius: 8px !important;
+}
+
+.login__form .login__forgot {
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	color: var(--black-text);
+	line-height: 1.4;
+}
+
+.login__form .login__btn {
+	margin-top: 40px;
+}
+
+.login__form .login__btn .btn {
+	font-size: 20px !important;
+	font-weight: 700;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/*=============================
+	:: 9.0 About Us Page
+===============================*/
+
+.about {}
