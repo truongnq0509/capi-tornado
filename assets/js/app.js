@@ -6,6 +6,7 @@
 // :: 4.0 Chartjs
 // :: 5.0 Auth
 // :: 6.0 Step
+// :: 7.0 Slide đánh giá khách hàng
 
 
 (function ($) {
@@ -398,5 +399,34 @@
 
 		$next.prop("disabled", currentStep === $steps.length + 1);
 	}
+
+
+
+	// :: 7.0 Slide đánh giá khách hàng
+	var owlCustomer = $('.owl-carousel.transaction__customer-list');
+	owlCustomer.owlCarousel({
+		dots: false,
+		loop: true,
+		margin: 80,
+		stagePadding: 0,
+		smartSpeed: 10000,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: false,
+		slideTransition: 'linear',
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 4
+			},
+			992: {
+				items: 5
+			}
+		}
+	});
+
+	owlCustomer.trigger('next.owl.carousel');
 }(jQuery));
 

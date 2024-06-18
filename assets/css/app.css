@@ -25,6 +25,7 @@
 	:: 8.0 Register Page
 	:: 9.0 Login Page
 	:: 10.0 About Us Page
+	:: 11.0 Transaction Page
 -----------------------------------------------------------------------------------*/
 
 
@@ -1723,3 +1724,293 @@ fw-7 {
 ===============================*/
 
 .about {}
+
+
+
+/*=============================
+	:: 9.0 Transaction Page
+===============================*/
+
+.transaction {}
+
+.transaction__header {
+	background-color: #090618;
+}
+
+.transaction__header .transaction__header-top {
+	padding: 100px 0;
+	background-color: #090618;
+}
+
+
+.transaction__header .transaction__header-top .transaction__header-title {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 740px;
+	width: 100%;
+	position: relative;
+}
+
+.transaction__header .transaction__header-top .transaction__header-Mdkrej {
+	z-index: 10;
+	position: relative;
+}
+
+.transaction__header .transaction__header-top .transaction__header-box h3 {
+	font-size: 28px;
+	color: #B399D4;
+	text-align: center;
+	font-weight: 400;
+}
+
+.transaction__header .transaction__header-top .transaction__header-box h1 {
+	color: var(--white-text);
+	text-align: center;
+	font-size: 60px;
+	margin: 20px 0;
+	font-weight: 600;
+}
+
+
+.transaction__header .transaction__header-top .transaction__header-box p {
+	color: #B399D4;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.transaction__header .transaction__header-top .btn {
+	margin: 40px 0;
+}
+
+.transaction__header .transaction__header-top .transaction__header-bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+}
+
+.transaction__header .transaction__header-center {
+	max-width: 1640px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 40px;
+	padding: 60px 70px;
+	background: var(--white-bg);
+}
+
+.transaction__header .transaction__header-center .transaction__header-title h4 {
+	font-size: 60px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--cta-text);
+}
+
+.transaction__header .transaction__header-center .transaction__header-title p {
+	font-size: 38px;
+	font-weight: 600;
+}
+
+.transaction__header .transaction__header-center .transaction__header-description p {
+	font-size: 18px;
+	color: #161616;
+}
+
+.transaction__header .transaction__header-center .transaction__header-link {
+	margin-top: 32px;
+}
+
+
+.transaction__header .transaction__header-center .transaction__header-link a:nth-child(2) {
+	font-size: 18px;
+	color: var(--cta-text);
+	text-decoration: underline;
+}
+
+.transaction__header .transaction__header-bottom {
+	position: relative;
+	width: 100%;
+	padding: 170px 0;
+}
+
+.transaction__header .transaction__header-bottom .transaction__header-fmRkfdj {
+	z-index: 10;
+	position: relative;
+}
+
+.transaction__header .transaction__header-bottom>.transaction__header-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.transaction__header .transaction__header-bottom>.transaction__header-bg img {
+	width: 100%;
+	height: 100%;
+}
+
+.transaction__header .transaction__header-bottom .transaction__header-box {
+	display: flex;
+	gap: 120px;
+	justify-content: space-between;
+}
+
+.transaction__header .transaction__header-bottom .transaction__header-left {
+	max-width: 430px;
+	width: 100%;
+}
+
+.transaction__header .transaction__header-bottom .transaction__header-left h4 {
+	font-size: 40px;
+	font-weight: 600;
+	color: var(--white-text);
+}
+
+.transaction__header .transaction__header-bottom .transaction__header-left p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #706582;
+	margin: 24px 0;
+
+}
+
+.transaction__header .transaction__header-bottom .transaction__header-rigth {
+	flex: 1;
+}
+
+.transaction__header .transaction__header-bottom .transaction__header-item {
+	padding: 32px 20px;
+	border-radius: 24px;
+	border: 1px solid #CC9DE8;
+	background: rgba(255, 255, 255, 0.10);
+	backdrop-filter: blur(40px);
+}
+
+.transaction__header .transaction__header-bottom .transaction__header-item:hover {
+	transition: all 0.3s;
+	background: linear-gradient(180deg, #6D15A2 0%, #AE64DA 100%);
+}
+
+.transaction__header .transaction__header-bottom .transaction__header-item p {
+	margin-top: 12px;
+}
+
+.transaction .transaction__experience {
+	padding: 120px 0;
+}
+
+.transaction .transaction__experience h3 {
+	font-size: 38px;
+	font-weight: 700;
+	text-align: center;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.transaction .transaction__experience p {
+	color: #8F8F8F;
+	font-weight: 300;
+	text-align: center;
+	max-width: 1000px;
+	margin: 32px auto;
+}
+
+.transaction .transaction__experience .transaction__experience-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.transaction .transaction__experience .transaction__experience-list .transaction__experience-item {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+.transaction .transaction__experience .transaction__experience-list .transaction__experience-item span:nth-child(1) {
+	font-size: 80px;
+	font-weight: 700;
+	color: var(--cta-text);
+}
+
+.transaction .transaction__experience .transaction__experience-list .transaction__experience-item span:nth-child(2) {
+	font-weight: 500;
+	color: #706582;
+	line-height: 1.4;
+	display: inline-block;
+}
+
+.transaction .transaction__customer {
+	padding: 40px 0;
+}
+
+.transaction .transaction__customer h3 {
+	text-align: center;
+	font-size: 38px;
+	font-weight: 700;
+}
+
+.transaction .transaction__customer-list {
+	margin-top: 60px;
+}
+
+.transaction .transaction__customer-list .transaction__customer-item {
+	padding: 40px;
+	border-radius: 24px;
+	background-color: var(--white-bg);
+	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+	position: relative;
+	margin: 40px 0;
+}
+
+.transaction .transaction__customer-list .transaction__customer-img {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: -25px;
+	top: -18px;
+}
+
+.transaction .transaction__customer-list .transaction__customer-info p {
+	margin-left: 50px;
+}
+
+.transaction .transaction__customer-list .transaction__customer-info p:nth-child(1) {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.transaction .transaction__customer-list .transaction__customer-info p:nth-child(2) {
+	font-size: 16px;
+}
+
+.transaction .transaction__customer-list .transaction__customer-desc {
+	margin: 24px 0;
+}
+
+.transaction .transaction__customer-list .transaction__customer-ratings {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.transaction .transaction__customer-list .transaction__customer-ratings .transaction__customer-star {
+	display: inline-block;
+}
+
+.transaction .transaction__customer-list .transaction__customer-ratings .transaction__customer-star:nth-child(1) svg,
+.transaction .transaction__customer-list .transaction__customer-ratings .transaction__customer-star:nth-child(2) svg,
+.transaction .transaction__customer-list .transaction__customer-ratings .transaction__customer-star:nth-child(3) svg,
+.transaction .transaction__customer-list .transaction__customer-ratings .transaction__customer-star:nth-child(4) svg {
+	fill: var(--primary-bg);
+}
