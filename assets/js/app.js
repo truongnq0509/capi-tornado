@@ -235,7 +235,7 @@
 		$("#step__back__item__one").append(
 			`<div class="step__bank-item">
 				<div class="row">
-					<div class="col-3">
+					<div class="col-12 col-md-3">
 						<label for="tk" class="form-label mb-2">
 							Số TK <span>*</span>
 						</label>
@@ -247,7 +247,7 @@
 							placeholder=""
 						/>
 					</div>
-					<div class="col-3">
+					<div class="col-12 col-md-3">
 						<label for="user" class="form-label mb-2">
 							Tên chủ TK <span>*</span>
 						</label>
@@ -259,7 +259,7 @@
 							placeholder=""
 						/>
 					</div>
-					<div class="col-3">
+					<div class="col-12 col-md-3">
 						<label for="bank" class="form-label mb-2">
 							Ngân hàng <span>*</span>
 						</label>
@@ -269,7 +269,7 @@
 							<option value="">TP Bank</option>
 						</select>
 					</div>
-					<div class="col-3">
+					<div class="col-12 col-md-3">
 						<label for="branch" class="form-label mb-2">
 							Chi nhánh <span>*</span>
 						</label>
@@ -298,7 +298,7 @@
 		$("#step__back__item__two").append(
 			`<div class="step__bank-item">
 				<div class="row">
-					<div class="col-3">
+					<div class="col-12 col-md-3">
 						<label for="tk" class="form-label mb-2">
 							Số TK <span>*</span>
 						</label>
