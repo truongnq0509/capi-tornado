@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Capi x Tornado</title>
 
-        <link rel="icon" href="assets/img/logo/logo-1.png">
+        <link rel="icon" href="assets/img/logo/logo-1.png" />
         <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css" type="text/css" />
         <link rel="stylesheet" href="vendor/owl-carousel/css/owl.theme.default.min.css" type="text/css" />
@@ -47,7 +47,25 @@
                             <img src="assets/img/icon/icon-search.png" alt="Search" />
                         </div>
 
-                        <a href="#" class="btn btn--register text-uppercase">Đăng Ký</a>
+                        <a href="login.html" class="btn btn--login text-uppercase">Đăng Nhập</a>
+                        <a href="register.html" class="btn btn--register text-uppercase">Đăng Ký</a>
+
+                        <div class="header__menu-icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                            >
+                                <path
+                                    d="M8 10H23M8 16H23M8 22H23"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -64,7 +82,9 @@
                     <div class="banner__container">
                         <div class="container">
                             <div class="row">
-                                <div class="col-7 d-flex align-items-center">
+                                <div
+                                    class="order-2 order-md-1 order-lg-1 col-12 col-md-12 col-lg-7 d-flex align-items-center"
+                                >
                                     <div class="banner__box">
                                         <div class="banner__content">
                                             <p>Mang đầu tư</p>
@@ -90,7 +110,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-5">
+                                <div class="order-1 order-md-2 order-lg-2 col-12 col-md-12 col-lg-5">
                                     <div class="banner__phone">
                                         <img src="assets/img/home/phone.png" alt="Phone" />
                                     </div>
@@ -221,7 +241,7 @@
 
                         <div class="method__list">
                             <div class="row">
-                                <div class="col-12 col-md-4 px-4">
+                                <div class="col-12 col-md-4 px-3 px-md-4">
                                     <div class="method__item">
                                         <div class="method__item-img">
                                             <img src="assets/img/home/method/goal-target.png" alt="Goal Target" />
@@ -230,7 +250,7 @@
                                         <p>Cùng với giao dịch 2 chiều phái sinh cho việc đầu tư thêm linh hoạt</p>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 px-4">
+                                <div class="col-12 col-md-4 px-3 px-md-4">
                                     <div class="method__item">
                                         <div class="method__item-img">
                                             <img src="assets/img/home/method/Iinvoice.png" alt="IInvoice" />
@@ -239,7 +259,7 @@
                                         <p>Phù hợp với đa dạng ngàng nghề và nhu cầu đầu tư khác biệt</p>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 px-4">
+                                <div class="col-12 col-md-4 px-3 px-md-4">
                                     <div class="method__item">
                                         <div class="method__item-img">
                                             <img src="assets/img/home/method/bag-of-money.png" alt="Bag Of Money" />
@@ -274,7 +294,7 @@
                         <div class="invest__top">
                             <h3>Đầu tư gì <span class="text-cta text-uppercase fw-bold">NGAY HÔM NAY</span></h3>
 
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-end justify-content-between">
                                 <p>Khám phá hàng chục sản phẩm đầu tư phù hợp với nhu cầu của bạn.</p>
                                 <a href="#" class="text-uppercase text-cta all">Xem Tất Cả</a>
                             </div>
@@ -282,14 +302,14 @@
 
                         <div class="invest__list">
                             <div class="row">
-                                <div class="col-12 col-md-4 p-4">
+                                <div class="col-6 col-md-4 p-2 p-md-4">
                                     <div class="invest__item">
                                         <div class="d-flex justify-content-between">
                                             <div class="invest__logo">
                                                 <img src="assets/img/home/invest/invest-1.png" alt="F1" />
                                             </div>
                                             <div class="invest__chart">
-                                                <canvas id="chartjs-1" width="160" height="60"></canvas>
+                                                <canvas id="chartjs-1"></canvas>
                                             </div>
                                         </div>
                                         <div class="invest__text d-flex align-items-center justify-content-between">
@@ -312,14 +332,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 p-4">
+                                <div class="col-6 col-md-4 p-2 p-md-4">
                                     <div class="invest__item">
                                         <div class="d-flex justify-content-between">
                                             <div class="invest__logo">
                                                 <img src="assets/img/home/invest/invest-2.png" alt="F1" />
                                             </div>
                                             <div class="invest__chart">
-                                                <canvas id="chartjs-2" width="160" height="60"></canvas>
+                                                <canvas id="chartjs-2"></canvas>
                                             </div>
                                         </div>
                                         <div class="invest__text d-flex align-items-center justify-content-between">
@@ -342,14 +362,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 p-4">
+                                <div class="col-6 col-md-4 p-2 p-md-4">
                                     <div class="invest__item">
                                         <div class="d-flex justify-content-between">
                                             <div class="invest__logo">
                                                 <img src="assets/img/home/invest/invest-3.png" alt="F1" />
                                             </div>
                                             <div class="invest__chart">
-                                                <canvas id="chartjs-3" width="160" height="60"></canvas>
+                                                <canvas id="chartjs-3"></canvas>
                                             </div>
                                         </div>
                                         <div class="invest__text d-flex align-items-center justify-content-between">
@@ -373,14 +393,14 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-md-4 p-4">
+                                <div class="col-6 col-md-4 p-2 p-md-4">
                                     <div class="invest__item">
                                         <div class="d-flex justify-content-between">
                                             <div class="invest__logo">
                                                 <img src="assets/img/home/invest/invest-6.png" alt="F1" />
                                             </div>
                                             <div class="invest__chart">
-                                                <canvas id="chartjs-4" width="160" height="60"></canvas>
+                                                <canvas id="chartjs-4"></canvas>
                                             </div>
                                         </div>
                                         <div class="invest__text d-flex align-items-center justify-content-between">
@@ -403,14 +423,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 p-4">
+                                <div class="col-6 col-md-4 p-2 p-md-4">
                                     <div class="invest__item">
                                         <div class="d-flex justify-content-between">
                                             <div class="invest__logo">
                                                 <img src="assets/img/home/invest/invest-5.png" alt="F1" />
                                             </div>
                                             <div class="invest__chart">
-                                                <canvas id="chartjs-5" width="160" height="60"></canvas>
+                                                <canvas id="chartjs-5"></canvas>
                                             </div>
                                         </div>
                                         <div class="invest__text d-flex align-items-center justify-content-between">
@@ -433,14 +453,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 p-4">
+                                <div class="col-6 col-md-4 p-2 p-md-4">
                                     <div class="invest__item">
                                         <div class="d-flex justify-content-between">
                                             <div class="invest__logo">
                                                 <img src="assets/img/home/invest/invest-4.png" alt="F1" />
                                             </div>
                                             <div class="invest__chart">
-                                                <canvas id="chartjs-6" width="160" height="60"></canvas>
+                                                <canvas id="chartjs-6"></canvas>
                                             </div>
                                         </div>
                                         <div class="invest__text d-flex align-items-center justify-content-between">
@@ -545,7 +565,7 @@
                         </div>
                     </div>
                     <div class="footer__bottom">
-                        <div class="container">
+                        <div class="container p-0">
                             <div class="row">
                                 <div class="col-12 col-md-3">
                                     <h3 class="footer__title">Giới thiệu</h3>
@@ -568,7 +588,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-12 col-md-3">
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
                                     <h3 class="footer__title">Giao dịch</h3>
 
                                     <ul class="footer__nav">
@@ -589,7 +609,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-12 col-md-3">
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
                                     <h3 class="footer__title">Kiến thức & Đào tạo</h3>
 
                                     <ul class="footer__nav">
@@ -604,7 +624,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-12 col-md-3">
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
                                     <h3 class="footer__title">Thông tin thị trường</h3>
 
                                     <ul class="footer__nav">
