@@ -486,7 +486,9 @@ fw-7 {
 		padding: 28px !important;
 
 	}
-
+	.login__col__left .login__group {
+		padding: 40px 24px !important;
+	}
 	.container__login .container .row .login__col__right .login__form {
 		margin: 0 !important;
 	}
@@ -511,7 +513,9 @@ fw-7 {
 	.register__col__left {
 		border-radius: 20px 20px 0px 0px !important;
 	}
-
+	.register__col__left .register__group{
+		padding: 40px 24px !important;
+	}
 	.register__col__right {
 		border-radius: 0px 0px 20px 20px !important;
 		padding: 28px !important;
@@ -553,11 +557,22 @@ fw-7 {
 		width: 327px !important;
 		height: 200px !important;
 	}
-
+	.step-4  .info .registration__note__title, .account .registration__note__title, .rule .registration__note__title{
+		margin-bottom: 32px;
+	}
 	.signature .row {
 		gap: 24px;
 		justify-content: center;
 	}
+	.step__layout .step__btn{
+		margin: 0 24px;
+		padding: 24px !important;
+
+	}
+	.step__top .step__box p{
+		display: none;
+	}
+	
 
 }
 
@@ -1947,7 +1962,7 @@ fw-7 {
 }
 
 .register__col__left .register__group {
-	padding: 60px !important;
+	padding: 60px;
 }
 
 .register__col__left .register__group .logo__register {
@@ -2168,7 +2183,7 @@ fw-7 {
 }
 
 .login__col__left .login__group {
-	padding: 60px !important;
+	padding: 60px ;
 }
 
 .login__col__left .login__group .logo__login {
