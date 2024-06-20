@@ -472,6 +472,92 @@ fw-7 {
 		display: block;
 	}
 
+	.container__login .container .row {
+		display: inline-block;
+	}
+
+	.container__login .container .row .login__col__left {
+		border-radius: 20px 20px 0px 0px !important;
+	}
+
+	.container__login .container .row .login__col__right {
+		border-radius: 0px 0px 20px 20px !important;
+		padding: 28px !important;
+
+	}
+
+	.container__login .container .row .login__col__right .login__form {
+		margin: 0 !important;
+	}
+
+	.login__btn {
+		text-align: end !important;
+	}
+
+	.login__note__title {
+		font-size: 18px;
+	}
+
+	.btn__link__login {
+		text-align: end;
+	}
+
+	.login__link__login__content p {
+		font-size: 14px;
+	}
+
+	/* đăng kí */
+	.register__col__left {
+		border-radius: 20px 20px 0px 0px !important;
+	}
+
+	.register__col__right {
+		border-radius: 0px 0px 20px 20px !important;
+		padding: 28px !important;
+	}
+
+	.register__submit {
+		text-align: end;
+	}
+
+	.step__file .row {
+		gap: 24px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.step-2 .step__form {
+		margin: 0 auto;
+	}
+
+	.step__bank-item .row {
+		gap: 20px;
+	}
+
+	.step__bank-btn {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.step-1,
+	.step-2,
+	.step-3,
+	.step-4 {
+		margin: 24px !important;
+	}
+
+	.step-4 .signature .pinn {
+		text-align: center;
+		width: 327px !important;
+		height: 200px !important;
+	}
+
+	.signature .row {
+		gap: 24px;
+		justify-content: center;
+	}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -2152,9 +2238,96 @@ fw-7 {
 	font-weight: 700;
 }
 
-
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+
+	.container__login .container .row {
+		display: inline-block;
+	}
+
+	.container__login .container .row .login__col__left {
+		border-radius: 20px 20px 0px 0px !important;
+	}
+
+	.container__login .container .row .login__col__right {
+		border-radius: 0px 0px 20px 20px !important;
+		padding: 28px !important;
+
+	}
+
+	.container__login .container .row .login__col__right .login__form {
+		margin: 0 !important;
+	}
+
+	.login__btn {
+		text-align: end !important;
+	}
+
+	.login__note__title {
+		font-size: 18px;
+	}
+
+	.btn__link__login {
+		text-align: end;
+	}
+
+	.login__link__login__content p {
+		font-size: 14px;
+	}
+
+	/* đăng kí */
+	.register__col__left {
+		border-radius: 20px 20px 0px 0px !important;
+	}
+
+	.register__col__right {
+		border-radius: 0px 0px 20px 20px !important;
+		padding: 28px !important;
+	}
+
+	.register__submit {
+		text-align: end;
+	}
+
+	.step__file .row {
+		gap: 24px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+
+	.step-2 .step__form {
+		margin: 0 auto;
+	}
+
+	.step__bank-item .row {
+		gap: 20px;
+	}
+
+	.step__bank-btn {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.step-1,
+	.step-2,
+	.step-3,
+	.step-4 {
+		margin: 24px !important;
+	}
+
+	.step-4 .signature .pinn {
+		text-align: center;
+		width: 327px !important;
+		height: 200px !important;
+	}
+
+	.signature .row {
+		gap: 24px;
+		justify-content: center;
+	}
+
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
