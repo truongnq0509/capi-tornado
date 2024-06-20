@@ -434,7 +434,7 @@
 		dots: false,
 		loop: true,
 		nav: false,
-		margin: 80,
+		margin: 20,
 		stagePadding: 0,
 		// smartSpeed: 10000,
 		// autoplay: true,
@@ -443,10 +443,10 @@
 		slideTransition: 'linear',
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
 			},
 			768: {
-				items: 2
+				items: 1,
 			},
 			992: {
 				items: 1.5

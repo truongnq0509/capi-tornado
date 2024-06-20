@@ -1908,8 +1908,6 @@ fw-7 {
 	font-weight: 600;
 }
 
-
-
 .register__lists {
 	margin-top: 14px;
 }
@@ -1997,59 +1995,98 @@ fw-7 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-	/* đăng kí */
-	.register__col__left {
+	.container__register {
+		padding: 24px;
+	}
+
+	.container__register .container {
+		padding: 0 !important;
+	}
+
+	.container__register .container .row {
+		/* display: inline-block; */
+	}
+
+	.container__register .container .row .register__col__left {
 		border-radius: 20px 20px 0px 0px !important;
 	}
 
-	.register__col__right {
+	.container__register .container .row .register__col__right {
 		border-radius: 0px 0px 20px 20px !important;
-		padding: 28px !important;
+		padding: 28px 24px !important;
+
 	}
+
+	.container__register .container .row .register__col__right .register__form {
+		margin: 0 !important;
+	}
+
+	.register__btn {
+		text-align: end !important;
+	}
+
+
+	.title__register h1 {
+		font-size: 36px;
+		font-weight: 600;
+	}
+
+	.register__note__title {
+		font-size: 18px;
+		font-weight: 700;
+		margin-top: 24px;
+		padding-bottom: 0px !important;
+	}
+
+	.btn__link__register {
+		text-align: end;
+		margin-top: 24px;
+	}
+
+	.register__link__register__content p {
+		font-size: 14px;
+	}
+
+	.register__col__left .register__group {
+		padding: 40px 15px;
+	}
+
+	.register__form .register__btn .btn {
+		font-size: 14px !important;
+	}
+
+	.register__link__login {
+		width: 100%;
+		margin-top: 24px;
+		padding: 28px 24px;
+	}
+
+	.register__link__login__content div .register__note__title {
+		font-size: 18px;
+	}
+
+	.btn__link__register {
+		width: 100%;
+	}
+
+	.btn__link__register .btn {
+		font-size: 14px;
+		padding: 12px 24px;
+		font-weight: 700;
+	}
+
 
 	.register__submit {
-		text-align: end;
+		margin-top: 40px;
+		float: right;
 	}
 
-	.step__file .row {
-		gap: 24px;
-		margin: 0 auto;
-		margin-bottom: 40px;
-	}
-
-	.step-2 .step__form {
-		margin: 0 auto;
-	}
-
-	.step__bank-item .row {
-		gap: 20px;
-	}
-
-	.step__bank-btn {
-		display: flex;
-		justify-content: center;
-		text-align: center;
-	}
-
-	.step-1,
-	.step-2,
-	.step-3,
-	.step-4 {
-		margin: 24px !important;
-	}
-
-	.step-4 .signature .pinn {
-		text-align: center;
-		width: 327px !important;
-		height: 200px !important;
-	}
-
-	.signature .row {
-		gap: 24px;
-		justify-content: center;
+	.register__submit .btn {
+		font-size: 14px;
 	}
 
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
@@ -2208,8 +2245,16 @@ fw-7 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+	.container__login {
+		padding: 24px;
+	}
+
+	.container__login .container {
+		padding: 0 !important;
+	}
+
 	.container__login .container .row {
-		display: inline-block;
+		/* display: inline-block; */
 	}
 
 	.container__login .container .row .login__col__left {
@@ -2230,19 +2275,47 @@ fw-7 {
 		text-align: end !important;
 	}
 
+
+	.title__login h1 {
+		font-size: 36px;
+		font-weight: 600;
+	}
+
 	.login__note__title {
 		font-size: 18px;
 	}
 
 	.btn__link__login {
 		text-align: end;
+		margin-top: 24px;
 	}
 
 	.login__link__login__content p {
 		font-size: 14px;
 	}
 
+	.login__col__left .login__group {
+		padding: 40px 15px;
+	}
 
+	.login__form .login__btn .btn {
+		font-size: 14px !important;
+	}
+
+	.login__link__login {
+		width: 100%;
+		margin-top: 24px;
+		padding: 28px 24px;
+	}
+
+	.login__link__login__content div .login__note__title {
+		font-size: 18px;
+	}
+
+	.btn__link__login .btn {
+		font-size: 14px;
+		padding: 12px 24px;
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -2363,12 +2436,13 @@ fw-7 {
 	border-radius: 30px;
 	background-color: #090618;
 	position: relative;
+	overflow: hidden;
+
 }
 
 .about .about__wrapper-box .about__wrapper-content {
-	max-width: 290px;
 	width: 100%;
-
+	max-width: 290px;
 }
 
 .about .about__wrapper-box .about__wrapper-content h4 {
@@ -2380,9 +2454,11 @@ fw-7 {
 .about .about__wrapper-box .about__wrapper-bg1 {
 	position: absolute;
 	right: 110px;
-	bottom: 0;
+	bottom: -120px;
 	z-index: 1;
+	width: 200px;
 }
+
 
 .about .about__wrapper-box .about__wrapper-bg2 {
 	position: absolute;
@@ -2390,6 +2466,15 @@ fw-7 {
 	top: 50%;
 	z-index: 0;
 	transform: translateY(-50%);
+	width: 500px;
+}
+
+
+.about .about__wrapper-box .about__wrapper-bg1 img,
+.about .about__wrapper-box .about__wrapper-bg2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 .about .about__wrapper-achievement {
@@ -2496,6 +2581,189 @@ fw-7 {
 	font-weight: 700;
 }
 
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.about .about__banner {
+		width: 100%;
+		max-width: 100%;
+		padding: 16px;
+	}
+
+	.about .about__banner img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.about .about__wrapper-title {
+		padding: 0 0 24px 0;
+	}
+
+	.about .about__wrapper-title .about__wrapper-logo {
+		width: auto;
+		height: 60px;
+	}
+
+	.about .about__wrapper-title h3 {
+		width: 100%;
+		margin: 20px auto;
+		font-size: 18px;
+	}
+
+	.about .about__wrapper-title p {
+		text-align: center;
+		font-weight: 400;
+		max-width: 100%;
+		width: 100%;
+		font-size: 12px;
+	}
+
+	.about .about__wrapper-list {
+		padding-bottom: 0;
+	}
+
+	.about .about__wrapper-list .about__wrapper-item .about__wrapper-img {
+		width: 120px;
+		height: 120px;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.about .about__wrapper-list .about__wrapper-item {
+		border-radius: 10px;
+		padding: 20px;
+		margin: 12px 0;
+	}
+
+	.about .about__wrapper-list .about__wrapper-item .about__wrapper-content {
+		max-width: 200px;
+	}
+
+
+	.about .about__wrapper-list .about__wrapper-item .about__wrapper-date {
+		font-size: 12px;
+	}
+
+	.about .about__wrapper-list .about__wrapper-item h4 {
+		font-size: 16px;
+		margin: 8px 0;
+	}
+
+	.about .about__wrapper-list .about__wrapper-item .about__wrapper-text {
+		font-size: 12px;
+	}
+
+	.about .about__wrapper-box {
+		margin: 40px 0;
+		padding: 40px 60px;
+		border-radius: 30px;
+		height: 600px;
+		max-height: 100%;
+		display: flex;
+		align-items: flex-end;
+	}
+
+	.about .about__wrapper-box .about__wrapper-content {
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.about .about__wrapper-box .about__wrapper-bg1 {
+		position: absolute;
+		top: 40px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+		width: 200px;
+		height: max-content;
+	}
+
+	.about .about__wrapper-box .about__wrapper-bg2 {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -40%);
+		z-index: 0;
+		width: 100%;
+	}
+
+	.about .about__wrapper-box .about__wrapper-bg1 img,
+	.about .about__wrapper-box .about__wrapper-bg2 img {
+		width: 100%;
+		height: auto;
+	}
+
+	.about .about__wrapper-achievement {
+		flex-direction: column;
+		padding: 24px 0;
+	}
+
+	.about .about__wrapper-achievement .about__wrapper-left {
+		width: 100%;
+		height: 320px;
+		max-width: 100%;
+		border-radius: 24px;
+	}
+
+	.about .about__wrapper-achievement .about__wrapper-left .about__wrapper-logo {
+		padding-top: 20px;
+		height: 60px;
+	}
+
+	.about .about__wrapper-achievement .about__wrapper-left .about__wrapper-logo img {
+		width: auto;
+		height: 100%;
+	}
+
+	.about .about__wrapper-achievement .about__wrapper-left .about__wrapper-bg {
+		position: absolute;
+		width: 100%;
+		bottom: -100px;
+		left: 0;
+		right: 0;
+	}
+
+	.about .about__wrapper-achievement .about__wrapper-left .about__wrapper-bg img {
+		width: 100%;
+		height: auto;
+	}
+
+	.about .about__wrapper-achievement .about__wrapper-right {
+		padding: 100px 12px 24px 12px;
+		border-radius: 0 0 24px 24px;
+	}
+
+	.about .about__wrapper-achievement .about__wrapper-right h4 {
+		font-size: 28px;
+	}
+
+	.about .about__wrapper-achievement .about__wrapper-right p {
+		font-size: 14px;
+		margin-top: 12px;
+	}
+
+	.about .about__wrapper-achievement .about__wrapper-right h5 {
+		font-size: 18px;
+		margin: 24px 0;
+		padding-bottom: 16px;
+		border-bottom: 1px solid var(--primary-bg);
+	}
+
+	.about .about__wrapper-link {
+		padding: 24px 0;
+	}
+
+	.about .about__wrapper-link .about__wrapper-tags {
+		color: var(--cta-text);
+		font-size: 16px;
+		margin-left: 0;
+		margin-top: 8px;
+	}
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
