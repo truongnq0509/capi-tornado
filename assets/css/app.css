@@ -1859,7 +1859,7 @@ fw-7 {
 }
 
 .register__col__left .register__group {
-	padding: 60px !important;
+	padding: 60px;
 }
 
 .register__col__left .register__group .logo__register {
@@ -2080,7 +2080,7 @@ fw-7 {
 }
 
 .login__col__left .login__group {
-	padding: 60px !important;
+	padding: 60px;
 }
 
 .login__col__left .login__group .logo__login {
