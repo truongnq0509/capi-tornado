@@ -2290,7 +2290,6 @@ fw-7 {
 		font-weight: 700;
 	}
 
-
 	.register__submit {
 		margin-top: 40px;
 		float: right;
@@ -3421,6 +3420,7 @@ fw-7 {
 
 .account-layout {
 	display: flex;
+	gap: 48px;
 	padding: 40px 0;
 }
 
@@ -3432,6 +3432,105 @@ fw-7 {
 	border-radius: 24px;
 	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
 	backdrop-filter: blur(50px);
+	position: relative;
+	overflow: hidden;
+	height: 1000px;
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.account-layout .account-layout__left .account-layout__top,
+.account-layout .account-layout__left .account-layout__bottom {
+	position: relative;
+	z-index: 9;
+}
+
+.account-layout .account-layout__left .account-layout__info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.account-layout .account-layout__left .account-layout__info p {
+	font-weight: 700;
+	height: max-content;
+	margin-left: 12px;
+}
+
+
+
+.account-layout .account-layout__left .account-layout__info i {
+	display: inline-flex;
+	height: max-content;
+}
+
+.account-layout .account-layout__left .account-layout__input {
+	padding: 32px 0;
+	position: relative;
+}
+
+.account-layout .account-layout__left .account-layout__input i {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.account-layout .account-layout__left .account-layout__input input {
+	padding: 12px 12px 12px 36px;
+	border-radius: 10px;
+	border: 1px solid #D9D9D9;
+}
+
+.account-layout .account-layout__left .account-layout__bg-1 {
+	position: absolute;
+	right: 0;
+	top: 0;
+	/* width: 100%; */
+	height: auto;
+}
+
+.account-layout .account-layout__left .account-layout__item {
+	padding: 12px;
+	border-radius: 10px;
+}
+
+.account-layout .account-layout__left .account-layout__item:hover {
+	background-color: var(--primary-bg);
+}
+
+.account-layout .account-layout__left .account-layout__item .account-layout__link {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	text-decoration: none;
+}
+
+.account-layout .account-layout__left .account-layout__item .account-layout__link i {
+	height: max-content;
+	display: inline-flex;
+	align-items: center;
+}
+
+.account-layout .account-layout__left .account-layout__item .account-layout__link span {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--black-text);
+}
+
+.account-layout .account-layout__left .account-layout__bottom {
+	display: flex;
+	flex-direction: column;
+}
+
+.account-layout .account-layout__left .account-layout__bg-2 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	/* width: 100%; */
+	height: auto;
 }
 
 .account-layout .account-layout__right {
