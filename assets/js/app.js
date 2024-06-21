@@ -8,6 +8,7 @@
 // :: 6.0 Step
 // :: 7.0 Slide đánh giá khách hàng
 // :: 8.0 Slide về công ty
+// :: 9.0 Toggle Menu
 
 
 (function ($) {
@@ -247,7 +248,7 @@
 							placeholder=""
 						/>
 					</div>
-					<div class="col-12 col-md-3">
+					<div class="col-12 col-md-3 mt-3 mt-md-0">
 						<label for="user" class="form-label mb-2">
 							Tên chủ TK <span>*</span>
 						</label>
@@ -259,7 +260,7 @@
 							placeholder=""
 						/>
 					</div>
-					<div class="col-12 col-md-3">
+					<div class="col-12 col-md-3 mt-3 mt-md-0">
 						<label for="bank" class="form-label mb-2">
 							Ngân hàng <span>*</span>
 						</label>
@@ -269,7 +270,7 @@
 							<option value="">TP Bank</option>
 						</select>
 					</div>
-					<div class="col-12 col-md-3">
+					<div class="col-12 col-md-3 mt-3 mt-md-0">
 						<label for="branch" class="form-label mb-2">
 							Chi nhánh <span>*</span>
 						</label>
@@ -310,7 +311,7 @@
 							placeholder=""
 						/>
 					</div>
-					<div class="col-3">
+					<div class="col-12 col-md-3 mt-3 mt-md-0">
 						<label for="user" class="form-label mb-2">
 							Tên chủ TK <span>*</span>
 						</label>
@@ -322,7 +323,7 @@
 							placeholder=""
 						/>
 					</div>
-					<div class="col-3">
+					<div class="col-12 col-md-3 mt-3 mt-md-0">
 						<label for="bank" class="form-label mb-2">
 							Ngân hàng <span>*</span>
 						</label>
@@ -332,7 +333,7 @@
 							<option value="">TP Bank</option>
 						</select>
 					</div>
-					<div class="col-3">
+					<div class="col-12 col-md-3 mt-3 mt-md-0">
 						<label for="branch" class="form-label mb-2">
 							Chi nhánh <span>*</span>
 						</label>
@@ -452,6 +453,12 @@
 				items: 1.5
 			}
 		}
+	});
+
+	// :: 9.0 Toggle Menu
+	$(".header__menu-icon").click(function () {
+		$(this).toggleClass('active')
+		$("#menu").slideToggle("slow");
 	});
 
 }(jQuery));

@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Capi x Tornado | Xác Thực</title>
 
-        <link rel="icon" href="assets/img/logo/logo-1.png">
+        <link rel="icon" href="assets/img/logo/logo-1.png" />
         <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css" type="text/css" />
         <link rel="stylesheet" href="vendor/owl-carousel/css/owl.theme.default.min.css" type="text/css" />
@@ -24,7 +24,7 @@
                             <img src="assets/img/logo/logo-1.png" alt="F1" />
                         </a>
 
-                        <!-- <nav class="header__nav">
+                        <nav class="header__nav">
                             <ul class="d-flex">
                                 <li class="nav__item">
                                     <a href="#">Trang chủ</a>
@@ -39,18 +39,102 @@
                                     <a href="#">Thông tin thị trường</a>
                                 </li>
                             </ul>
-                        </nav> -->
+                        </nav>
                     </div>
 
                     <div class="header__right d-flex align-items-center">
-                        <!-- <div class="header__search">
+                        <div class="header__search">
                             <img src="assets/img/icon/icon-search.png" alt="Search" />
                         </div>
 
-                        <a href="#" class="btn btn--register text-uppercase">Đăng Ký</a> -->
-                        <div class="header__hotline">
-                            <img src="assets/img/home/hotline.png" alt="Hotline" />
-                            <a href="tel: 022 7465 3846"> Hotline: 022 7465 3846 </a>
+                        <a href="login.html" class="btn btn--login text-uppercase">Đăng Nhập</a>
+                        <a href="register.html" class="btn btn--register text-uppercase">Đăng Ký</a>
+
+                        <div class="header__menu-icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                id="bar"
+                            >
+                                <path
+                                    d="M8 10H23M8 16H23M8 22H23"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                />
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                id="close"
+                            >
+                                <path
+                                    d="M21.6565 10.3432L10.3428 21.6569M21.6565 21.6569L10.3428 10.3431"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Nav Mobile -->
+                    <div id="menu" class="header-nav__mobile">
+                        <div class="header-nav__mobile-input">
+                            <i class="header-nav__mobile-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
+                                        stroke="#8F8F8F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M15.7498 15.75L12.4873 12.4875"
+                                        stroke="#8F8F8F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </i>
+                            <input type="text" class="form-control" placeholder="Tìm kiếm" />
+                        </div>
+                        <nav class="header-nav__mobile-list">
+                            <ul class="d-flex flex-column">
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Giao dịch</a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Kiến thức và đào tạo</a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Thông tin thị trường</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="header-nav__mobile-btn">
+                            <a href="login.html" class="btn btn__login btn--primary">Đăng Nhập</a>
+                            <a href="register.html" class="btn btn__register btn--primary">Đăng Ký</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +226,9 @@
                                         <div class="step__upload">
                                             <p>Vui lòng chọn loại giấy tờ :</p>
 
-                                            <div class="d-flex list-check gap-4">
+                                            <div
+                                                class="d-flex flex-column flex-md-row align-items-start list-check gap-4"
+                                            >
                                                 <p class="d-flex gap-2 align-items-center">
                                                     <input type="radio" name="radio-group" checked />
                                                     <label for="test1">CMND/CCCD</label>
@@ -157,7 +243,7 @@
 
                                     <div class="step__file">
                                         <div class="row">
-                                            <div class="col-md-4 col-12">
+                                            <div class="col-12 col-md-4">
                                                 <div class="step__file-item">
                                                     <h4>CMND/CCCD mặt trước</h4>
                                                     <img src="assets/img/auth/cmnd-1.png" alt="CMND" />
@@ -168,7 +254,7 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-12">
+                                            <div class="col-12 col-md-4 mt-4 mt-md-0">
                                                 <div class="step__file-item">
                                                     <h4>CMND/CCCD mặt sau</h4>
                                                     <img src="assets/img/auth/cmnd-2.png" alt="CMND" />
@@ -179,7 +265,7 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 col-12">
+                                            <div class="col-12 col-md-4 mt-4 mt-md-0">
                                                 <div class="step__file-item">
                                                     <h4>Hình chân dung</h4>
                                                     <img src="assets/img/auth/cmnd-3.png" alt="CMND" />
@@ -221,7 +307,7 @@
                                                 />
                                             </div>
 
-                                            <div class="mb-3  col-md-6 col-12">
+                                            <div class="mb-3 col-md-6 col-12">
                                                 <label for="birth" class="form-label mb-2">
                                                     Ngày sinh <span>*</span>
                                                 </label>
@@ -233,7 +319,7 @@
                                                 />
                                             </div>
 
-                                            <div class="mb-3  col-md-6 col-12">
+                                            <div class="mb-3 col-md-6 col-12">
                                                 <label for="sex" class="form-label mb-2">
                                                     Giới tính <span>*</span>
                                                 </label>
@@ -244,7 +330,7 @@
                                                 </select>
                                             </div>
 
-                                            <div class="mb-3  col-md-6 col-12">
+                                            <div class="mb-3 col-md-6 col-12">
                                                 <label for="country" class="form-label mb-2">
                                                     Quốc tịch <span>*</span>
                                                 </label>
@@ -255,7 +341,7 @@
                                                 </select>
                                             </div>
 
-                                            <div class="mb-3  col-md-6 col-12">
+                                            <div class="mb-3 col-md-6 col-12">
                                                 <label for="cmnd" class="form-label mb-2">
                                                     Số CMND/CCCD/HC <span>*</span>
                                                 </label>
@@ -268,9 +354,9 @@
                                                 />
                                             </div>
 
-                                            <div class="mb-3  col-md-6 col-12">
+                                            <div class="mb-3 col-md-6 col-12">
                                                 <div class="row">
-                                                    <div class=" col-md-6 col-12">
+                                                    <div class="col-md-6 col-12">
                                                         <label for="date" class="form-label mb-2">
                                                             Ngày cấp <span>*</span>
                                                         </label>
@@ -282,7 +368,7 @@
                                                             placeholder="0092736481312"
                                                         />
                                                     </div>
-                                                    <div class=" col-md-6 col-12">
+                                                    <div class="col-md-6 col-12 mt-3 mt-md-0">
                                                         <label for="from" class="form-label mb-2">
                                                             Nơi cấp <span>*</span>
                                                         </label>
@@ -305,7 +391,7 @@
                                                 <input type="text" class="form-control" id="address" placeholder="" />
                                             </div>
 
-                                            <div class="mb-3  col-md-6 col-12">
+                                            <div class="mb-3 col-md-6 col-12">
                                                 <label for="phone" class="form-label mb-2">
                                                     Số điện thoại <span>*</span>
                                                 </label>
@@ -313,7 +399,7 @@
                                                 <input type="text" class="form-control" id="phone" placeholder="" />
                                             </div>
 
-                                            <div class="mb-3  col-md-6 col-12">
+                                            <div class="mb-3 col-md-6 col-12">
                                                 <label for="email" class="form-label mb-2">
                                                     Email liên hệ <span>*</span>
                                                 </label>
@@ -321,13 +407,13 @@
                                                 <input type="text" class="form-control" id="email" placeholder="" />
                                             </div>
 
-                                            <div class="mb-3  col-md-6 col-12">
+                                            <div class="mb-3 col-md-6 col-12">
                                                 <label for="" class="form-label mb-2"> Mã môi giới (nếu có) </label>
 
                                                 <input type="text" class="form-control" id="agency" placeholder="" />
                                             </div>
 
-                                            <div class="mb-3  col-md-6 col-12">
+                                            <div class="mb-3 col-md-6 col-12">
                                                 <label for="introduce" class="form-label mb-2">
                                                     Mã giới thiệu (nếu có)
                                                 </label>
@@ -375,7 +461,7 @@
                                                                 placeholder=""
                                                             />
                                                         </div>
-                                                        <div class="col-12 col-md-3">
+                                                        <div class="col-12 col-md-3 mt-3 mt-md-0">
                                                             <label for="user" class="form-label mb-2">
                                                                 Tên chủ TK <span>*</span>
                                                             </label>
@@ -387,7 +473,7 @@
                                                                 placeholder=""
                                                             />
                                                         </div>
-                                                        <div class="col-12 col-md-3">
+                                                        <div class="col-12 col-md-3 mt-3 mt-md-0">
                                                             <label for="bank" class="form-label mb-2">
                                                                 Ngân hàng <span>*</span>
                                                             </label>
@@ -397,7 +483,7 @@
                                                                 <option value="">TP Bank</option>
                                                             </select>
                                                         </div>
-                                                        <div class="col-12 col-md-3">
+                                                        <div class="col-12 col-md-3 mt-3 mt-md-0">
                                                             <label for="branch" class="form-label mb-2">
                                                                 Chi nhánh <span>*</span>
                                                             </label>
@@ -641,6 +727,8 @@
                                     </div>
                                 </div>
 
+                                <div class="step__line"></div>
+
                                 <div class="step__btn d-flex justify-content-between">
                                     <button id="prev" class="btn btn--prev">Quay Lại</button>
                                     <button id="next" class="btn btn--next">Tiếp Tục</button>
@@ -654,6 +742,115 @@
                 <!--@@@ End Step  -->
             </main>
             <!--@@@ End Main  -->
+            <!--@@@ Start Footer  -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="index.html" class="footer__logo">
+                                <img src="assets/img/logo/logo-1.png" alt="F1" />
+                            </a>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="social">
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/facebook.png" alt="Facebook" />
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/youtube.png" alt="Youtube" />
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/linkedin.png" alt="Linkedin" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="container p-0">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <h3 class="footer__title">Giới thiệu</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Về công ty</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Về nền tảng giao dịch Vượt trội CQG</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tin tức nội bộ</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Cơ hội nghề nghiệp</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Thông tin liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3 class="footer__title">Giao dịch</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Nền tảng giao dịch Vượt trội CQG</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Hướng dẫn giao dịch A-Z</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Lịch giao dịch & sự kiện</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Biểu phí</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Ký quỹ & đòn bẩy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3 class="footer__title">Kiến thức & Đào tạo</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Hướng dẫn sử dụng phần mềm </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tài liệu khoá học</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Khoá học</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3 class="footer__title">Thông tin thị trường</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Nhận định hàng ngày</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Báo cáo bởi Tornado</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tin tức</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="copy-right">
+                        <p>@2024 Commomdities Trading. All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+            <!--@@@ End Footer  -->
         </div>
 
         <script src="vendor/jquery/jquery.min.js"></script>
