@@ -3590,7 +3590,7 @@ fw-7 {
 	line-height: normal;
 } 
 .account-layout .account-layout__right .account__form__transaction__history form .account__table__transaction__history{
-	max-width: 700px;
+	max-width: 650px;
 	overflow-x: scroll;
 } 
 .account-layout .account-layout__right .account__form__transaction__history form .account__table__transaction__history table thead tr , tbody tr{
