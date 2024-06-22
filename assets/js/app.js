@@ -9,11 +9,9 @@
 // :: 7.0 Slide đánh giá khách hàng
 // :: 8.0 Slide về công ty
 // :: 9.0 Toggle Menu
+// :: 10.0 Toggle menu quản lý tài khoản 
 
-
-(function ($) {
-	'use strict';
-
+$(document).ready(function () {
 	var $window = $(window);
 
 	// :: 1.0 Xử lý chung validate form
@@ -461,5 +459,23 @@
 		$("#menu").slideToggle("slow");
 	});
 
-}(jQuery));
+    // 10.0 Toggle menu quản lý tài khoản 
+	$(".account-layout__sub").hide();
+	
+	$('.account-layout__item .account-layout__link').click(function () {
+		$(this).toggleClass('active')
+		var $ul = $(this).siblings('ul');
+		if ($ul.length > 0) {
+				$ul.slideToggle(300);
+				$(".account-layout__sub").not($ul).slideUp(400);
+				return false;
+		}
+	});
+})
+
+// (function ($) {
+// 	'use strict';
+
+	
+// }(jQuery));
 

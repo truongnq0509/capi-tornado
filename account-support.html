@@ -150,7 +150,6 @@
             <main class="main">
                 <div class="container">
                     <div class="account-layout">
-                        <!-- Start sidebar -->
                         <div class="account-layout__left">
                             <div class="account-layout__top">
                                 <div class="account-layout__info">
@@ -205,32 +204,285 @@
 
                                 <ul class="account-layout__nav">
                                     <li class="account-layout__item">
-                                        <a href="#" class="account-layout__link">
-                                            <i>
-                                                <svg
-                                                    width="24"
-                                                    height="24"
-                                                    viewBox="0 0 24 24"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <g id="Huge-icon/interface/outline/lock 01">
+                                        <a href="account-info.html" class="account-layout__link">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <i>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                    >
                                                         <path
-                                                            id="Vector"
-                                                            d="M16 8H8M16 8C18.2091 8 20 9.79086 20 12V18C20 20.2091 18.2091 22 16 22H8C5.79086 22 4 20.2091 4 18V12C4 9.79086 5.79086 8 8 8M16 8V6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6V8M12 16V14"
+                                                            d="M18.5588 19.5488C17.5654 16.8918 15.0036 15 12 15C8.99638 15 6.4346 16.8918 5.44117 19.5488M18.5588 19.5488C20.6672 17.7154 22 15.0134 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 15.0134 3.33285 17.7154 5.44117 19.5488M18.5588 19.5488C16.8031 21.0756 14.5095 22 12 22C9.49052 22 7.19694 21.0756 5.44117 19.5488"
                                                             stroke="#161616"
                                                             stroke-width="1.5"
-                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
                                                         />
-                                                    </g>
-                                                </svg>
-                                            </i>
+                                                        <circle
+                                                            cx="3"
+                                                            cy="3"
+                                                            r="3"
+                                                            transform="matrix(1 0 0 -1 9 12)"
+                                                            stroke="#161616"
+                                                            stroke-width="1.5"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </svg>
+                                                </i>
 
-                                            <span>Đổi mật khẩu</span>
+                                                <span class="ml-2">Thông tin tài khoản</span>
+                                            </div>
                                         </a>
                                     </li>
                                     <li class="account-layout__item">
                                         <a href="#" class="account-layout__link">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <i>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M16 4H17C19.2091 4 21 5.79086 21 8V18C21 20.2091 19.2091 22 17 22H7C4.79086 22 3 20.2091 3 18V8C3 5.79086 4.79086 4 7 4H8M16 4C16 5.10457 15.1046 6 14 6H10C8.89543 6 8 5.10457 8 4M16 4C16 2.89543 15.1046 2 14 2H10C8.89543 2 8 2.89543 8 4"
+                                                            stroke="#28303F"
+                                                            stroke-width="1.5"
+                                                        />
+                                                        <path
+                                                            d="M7 13H9L11 11L13 15L15 13H17"
+                                                            stroke="#28303F"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </svg>
+                                                </i>
+
+                                                <span class="ml-2">Dịch vụ</span>
+                                            </div>
+
+                                            <i class="account-layout__arrow">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M10 7L14 12L10 17"
+                                                        stroke="#28303F"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </i>
+                                        </a>
+
+                                        <ul class="account-layout__sub">
+                                            <li class="account-layout__sub-item">
+                                                <a href="software.html">Phần mềm CQG</a>
+                                            </li>
+                                            <li class="account-layout__sub-item">
+                                                <a href="conditional-transaction.html">Giao dịch có điều kiện</a>
+                                            </li>
+                                            <li class="account-layout__sub-item">
+                                                <a href="transaction-spread-lme.html">Giao dịch SPREAD, LME</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="account-layout__item">
+                                        <a href="#" class="account-layout__link">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <i>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M18 17H15M18 14H15M6 21H18C20.2091 21 22 19.2091 22 17V7C22 4.79086 20.2091 3 18 3H6C3.79086 3 2 4.79086 2 7V17C2 19.2091 3.79086 21 6 21ZM8 7H10C11.1046 7 12 7.89543 12 9C12 10.1046 11.1046 11 10 11H8C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7Z"
+                                                            stroke="#28303F"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </svg>
+                                                </i>
+
+                                                <span class="ml-2">Nộp rút tiền</span>
+                                            </div>
+
+                                            <i class="account-layout__arrow">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M10 7L14 12L10 17"
+                                                        stroke="#28303F"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </i>
+                                        </a>
+
+                                        <ul class="account-layout__sub">
+                                            <li class="account-layout__sub-item">
+                                                <a href="info-transfer.html">Nộp tiền</a>
+                                            </li>
+                                            <li class="account-layout__sub-item">
+                                                <a href="request-withdrawal.html">Rút tiền</a>
+                                            </li>
+                                            <li class="account-layout__sub-item">
+                                                <a href="transaction-spread-lme.html">Chuyển tiền nội bộ</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="account-layout__item">
+                                        <a href="account-overview.html" class="account-layout__link">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <i>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M17 7L7 7"
+                                                            stroke="#28303F"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                        <path
+                                                            d="M17 11L7 11"
+                                                            stroke="#28303F"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                        <path
+                                                            d="M12 15L7 15"
+                                                            stroke="#28303F"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                        <path
+                                                            d="M19 2H5C3.89543 2 3 2.89543 3 4V19.1543C3 20.5396 4.37412 21.5053 5.67744 21.0361L7.2392 20.4739C7.72721 20.2982 8.26439 20.319 8.73737 20.5318L11.1793 21.6307C11.7012 21.8655 12.2988 21.8655 12.8207 21.6307L15.2626 20.5318C15.7356 20.319 16.2728 20.2982 16.7608 20.4739L18.3226 21.0361C19.6259 21.5053 21 20.5396 21 19.1543V4C21 2.89543 20.1046 2 19 2Z"
+                                                            stroke="#28303F"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                        />
+                                                    </svg>
+                                                </i>
+
+                                                <span class="ml-2">Trạng thái ký quỹ</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="account-layout__item">
+                                        <a href="#" class="account-layout__link">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <i>
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="24"
+                                                        height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M16 4H17C19.2091 4 21 5.79086 21 8V18C21 20.2091 19.2091 22 17 22H7C4.79086 22 3 20.2091 3 18V8C3 5.79086 4.79086 4 7 4H8M16 4C16 5.10457 15.1046 6 14 6H10C8.89543 6 8 5.10457 8 4M16 4C16 2.89543 15.1046 2 14 2H10C8.89543 2 8 2.89543 8 4M8 10H16M8 14H16M8 18H12"
+                                                            stroke="#28303F"
+                                                            stroke-width="1.5"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </svg>
+                                                </i>
+
+                                                <span class="ml-2">Báo cáo lịch sử giao dịch</span>
+                                            </div>
+
+                                            <i class="account-layout__arrow">
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M10 7L14 12L10 17"
+                                                        stroke="#28303F"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </i>
+                                        </a>
+
+                                        <ul class="account-layout__sub">
+                                            <li class="account-layout__sub-item">
+                                                <a href="account-transaction-history.html">Danh sách lệnh giao dịch</a>
+                                            </li>
+                                            <li class="account-layout__sub-item">
+                                                <a href="account-transaction-history.html">
+                                                    Danh sách lệnh nộp rút tiền
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="account-layout__bottom">
+                                <li class="account-layout__item">
+                                    <a href="#" class="account-layout__link">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <i>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M16 8H8M16 8C18.2091 8 20 9.79086 20 12V18C20 20.2091 18.2091 22 16 22H8C5.79086 22 4 20.2091 4 18V12C4 9.79086 5.79086 8 8 8M16 8V6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6V8M12 16V14"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                    />
+                                                </svg>
+                                            </i>
+
+                                            <span class="ml-2">Đổi mật khẩu</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="account-layout__item">
+                                    <a href="#" class="account-layout__link">
+                                        <div class="d-flex align-items-center justify-content-between">
                                             <i>
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
@@ -256,65 +508,8 @@
                                                 </svg>
                                             </i>
 
-                                            <span>Đăng xuất</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <ul class="account-layout__bottom">
-                                <li class="account-layout__item">
-                                    <a href="#" class="account-layout__link">
-                                        <i>
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <g id="Huge-icon/interface/outline/lock 01">
-                                                    <path
-                                                        id="Vector"
-                                                        d="M16 8H8M16 8C18.2091 8 20 9.79086 20 12V18C20 20.2091 18.2091 22 16 22H8C5.79086 22 4 20.2091 4 18V12C4 9.79086 5.79086 8 8 8M16 8V6C16 3.79086 14.2091 2 12 2C9.79086 2 8 3.79086 8 6V8M12 16V14"
-                                                        stroke="#161616"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                    />
-                                                </g>
-                                            </svg>
-                                        </i>
-
-                                        <span>Đổi mật khẩu</span>
-                                    </a>
-                                </li>
-                                <li class="account-layout__item">
-                                    <a href="#" class="account-layout__link">
-                                        <i>
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                            >
-                                                <path
-                                                    d="M18 9L21 12M21 12L18 15M21 12H9"
-                                                    stroke="#161616"
-                                                    stroke-width="1.5"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                />
-                                                <path
-                                                    d="M15 7.5V7C15 4.79086 13.2091 3 11 3H7C4.79086 3 3 4.79086 3 7V17C3 19.2091 4.79086 21 7 21H11C13.2091 21 15 19.2091 15 17V16.5"
-                                                    stroke="#161616"
-                                                    stroke-width="1.5"
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                />
-                                            </svg>
-                                        </i>
-
-                                        <span>Đăng xuất</span>
+                                            <span class="ml-2">Đăng xuất</span>
+                                        </div>
                                     </a>
                                 </li>
                             </ul>
@@ -326,7 +521,6 @@
                                 <img src="assets/img/background/bg-4.png" alt="F1" />
                             </div>
                         </div>
-                        <!-- End sidebar -->
                         <div class="account-layout__right">
                             <div class="account__form__support">
                                 <h6 class="account__form__support__heading">Yêu cầu hỗ trợ</h6>
