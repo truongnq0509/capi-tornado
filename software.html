@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Capi x Tornado | Lịch sử giao dịch</title>
+        <title>Capi x Tornado | Phần mềm CQG</title>
 
         <link rel="icon" href="assets/img/logo/logo-1.png" />
         <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" />
@@ -150,7 +150,6 @@
             <main class="main">
                 <div class="container">
                     <div class="account-layout">
-                        <!-- Start sidebar -->
                         <div class="account-layout__left">
                             <div class="account-layout__top">
                                 <div class="account-layout__info">
@@ -326,122 +325,180 @@
                                 <img src="assets/img/background/bg-4.png" alt="F1" />
                             </div>
                         </div>
-                        <!-- End sidebar -->
                         <div class="account-layout__right">
-                            <div class="account__form__transaction__history">
-                                <div class="d-flex justify-content-md-between align-items-md-center">
-                                    <h6 class="account__form__suport__heading">Danh sách lệnh giao dịch</h6>
-                                    <button class="btn btn--primary">Xuất PDF</button>
+                            <div class="account-software">
+                                <div class="account-software__title">
+                                    <h4>Thay đổi thông tin tài khoản</h4>
+
+                                    <div class="d-flex">
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="25"
+                                                viewBox="0 0 24 25"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M12 6.5534V20.8025M5 8.75467C6.26578 8.9507 7.67778 9.2766 9 9.78791M5 12.7547C5.63949 12.8537 6.3163 12.9859 7 13.1584M3.99433 3.5113C6.21271 3.76198 9.19313 4.43635 11.3168 5.92448C11.725 6.21048 12.275 6.21048 12.6832 5.92448C14.8069 4.43635 17.7873 3.76198 20.0057 3.5113C21.1036 3.38724 22 4.30405 22 5.43521V16.7C22 17.8311 21.1036 18.7483 20.0057 18.8724C17.7873 19.123 14.8069 19.7974 12.6832 21.2855C12.275 21.5715 11.725 21.5715 11.3168 21.2855C9.19313 19.7974 6.21271 19.123 3.99433 18.8724C2.89642 18.7483 2 17.8311 2 16.7V5.43521C2 4.30405 2.89642 3.38724 3.99433 3.5113Z"
+                                                    stroke="#161616"
+                                                    stroke-width="1.5"
+                                                    stroke-linecap="round"
+                                                />
+                                            </svg>
+                                        </i>
+
+                                        <i class="ml-3">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="24"
+                                                height="25"
+                                                viewBox="0 0 24 25"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M13.6831 10.5808L14.3138 10.9866L13.6831 10.5808ZM9.25 9.5C9.25 9.91421 9.58579 10.25 10 10.25C10.4142 10.25 10.75 9.91421 10.75 9.5H9.25ZM11.25 14C11.25 14.4142 11.5858 14.75 12 14.75C12.4142 14.75 12.75 14.4142 12.75 14H11.25ZM12.75 16.5C12.75 16.0858 12.4142 15.75 12 15.75C11.5858 15.75 11.25 16.0858 11.25 16.5H12.75ZM11.25 17.5C11.25 17.9142 11.5858 18.25 12 18.25C12.4142 18.25 12.75 17.9142 12.75 17.5H11.25ZM21.25 12.5C21.25 17.6086 17.1086 21.75 12 21.75V23.25C17.9371 23.25 22.75 18.4371 22.75 12.5H21.25ZM12 21.75C6.89137 21.75 2.75 17.6086 2.75 12.5H1.25C1.25 18.4371 6.06294 23.25 12 23.25V21.75ZM2.75 12.5C2.75 7.39137 6.89137 3.25 12 3.25V1.75C6.06294 1.75 1.25 6.56294 1.25 12.5H2.75ZM12 3.25C17.1086 3.25 21.25 7.39137 21.25 12.5H22.75C22.75 6.56294 17.9371 1.75 12 1.75V3.25ZM13.25 9.5C13.25 9.74996 13.1774 9.98068 13.0524 10.1749L14.3138 10.9866C14.5899 10.5576 14.75 10.0463 14.75 9.5H13.25ZM10.75 9.5C10.75 8.80964 11.3096 8.25 12 8.25V6.75C10.4812 6.75 9.25 7.98122 9.25 9.5H10.75ZM12 8.25C12.6904 8.25 13.25 8.80964 13.25 9.5H14.75C14.75 7.98122 13.5188 6.75 12 6.75V8.25ZM11.25 13.5V14H12.75V13.5H11.25ZM13.0524 10.1749C12.9265 10.3706 12.7688 10.5731 12.5836 10.8033C12.4063 11.0237 12.1979 11.2764 12.011 11.5333C11.6424 12.0398 11.25 12.7007 11.25 13.5H12.75C12.75 13.1947 12.9003 12.8605 13.2239 12.4158C13.383 12.197 13.558 11.9851 13.7523 11.7436C13.9387 11.5119 14.1409 11.2554 14.3138 10.9866L13.0524 10.1749ZM11.25 16.5V17.5H12.75V16.5H11.25Z"
+                                                    fill="#161616"
+                                                />
+                                            </svg>
+                                        </i>
+                                    </div>
                                 </div>
-                                <form id="form" class="row" style="gap: 20px">
-                                    <div class="row col-12" style="padding: 0; margin: auto 1px; gap: 40px">
-                                        <div class="col" style="padding: 0px">
-                                            <label for="birth" class="form-label mb-2"> Ngày bắt đầu </label>
-                                            <input
-                                                type="date"
-                                                class="form-control"
-                                                id="birth"
-                                                placeholder="Ngày sinh"
-                                            />
-                                        </div>
-                                        <div class="col" style="padding: 0px">
-                                            <label for="birth" class="form-label mb-2"> Ngày kết thúc </label>
-                                            <input
-                                                type="date"
-                                                class="form-control"
-                                                id="birth"
-                                                placeholder="Ngày sinh"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="row col-12" style="padding: 0; margin: auto 1px; gap: 40px">
-                                        <div class="col" style="padding: 0px">
-                                            <label for="fullname" class="form-label mb-2"> Trạng thái </label>
-                                            <select id="status" class="form-control form-select">
-                                                <option value=""></option>
-                                                <option value="">true</option>
-                                                <option value="">false</option>
-                                            </select>
-                                        </div>
-                                        <div class="col" style="padding: 0px">
-                                            <label for="birth" class="form-label mb-2"> Ngày kết thúc </label>
-                                            <div class="account-search__input">
-                                                <i>
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="18"
-                                                        height="18"
-                                                        viewBox="0 0 18 18"
-                                                        fill="none"
-                                                    >
-                                                        <path
-                                                            d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
-                                                            stroke="#8F8F8F"
-                                                            stroke-width="2"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        ></path>
-                                                        <path
-                                                            d="M15.7498 15.75L12.4873 12.4875"
-                                                            stroke="#8F8F8F"
-                                                            stroke-width="2"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        ></path>
-                                                    </svg>
-                                                </i>
-                                                <input type="text" class="form-control" placeholder="Tìm kiếm" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="account__description__transaction__history">
-                                        <p>
-                                            * Để xem dữ liệu giao dịch của STKGD cũ, chọn ngày kết thúc trước hoặc bằng
-                                            ngày 04/01/2024
-                                        </p>
-                                    </div>
-                                    <div class="line"></div>
-                                    <div class="table__common my-4">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Mã hd</th>
-                                                    <th>Tên hợp đồng</th>
-                                                    <th>Mã lệnh</th>
-                                                    <th>loại lệnh</th>
-                                                    <th>chiều gd</th>
-                                                    <th>kl đặt</th>
-                                                    <th>KL khớp</th>
-                                                    <th>qiá giới hạn</th>
-                                                </tr>
-                                            </thead>
 
-                                            <tbody>
-                                                <tr>
-                                                    <th>Mã hd</th>
-                                                    <th>Tên hợp đồng</th>
-                                                    <th>Mã lệnh</th>
-                                                    <th>loại lệnh</th>
-                                                    <th>chiều gd</th>
-                                                    <th>kl đặt</th>
-                                                    <th>KL khớp</th>
-                                                    <th>qiá giới hạn</th>
-                                                </tr>
-
-                                                <tr>
-                                                    <th>Mã hd</th>
-                                                    <th>Tên hợp đồng</th>
-                                                    <th>Mã lệnh</th>
-                                                    <th>loại lệnh</th>
-                                                    <th>chiều gd</th>
-                                                    <th>kl đặt</th>
-                                                    <th>KL khớp</th>
-                                                    <th>qiá giới hạn</th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                <div class="account-software__tags">
+                                    <div class="account-software__tags-item active">
+                                        <p>Tháng hiện tại</p>
+                                        <span>0</span>
                                     </div>
-                                </form>
+                                    <div class="account-software__tags-item">
+                                        <p>Tháng sau</p>
+                                        <span>1</span>
+                                    </div>
+                                </div>
+
+                                <div class="account-software__box">
+                                    <h5>Danh sách gói CQG đang sử dụng</h5>
+
+                                    <div class="d-flex mt-2">
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="18"
+                                                viewBox="0 0 20 18"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M7.96798 1.16592C8.85365 -0.388639 11.1464 -0.388642 12.032 1.16592L19.7041 14.6324C20.5649 16.1433 19.4445 18 17.6721 18H2.32788C0.555459 18 -0.564896 16.1433 0.29587 14.6324L7.96798 1.16592ZM10.9999 14C10.9999 14.5523 10.5522 15 9.99994 15C9.44765 15 8.99994 14.5523 8.99994 14C8.99994 13.4477 9.44765 13 9.99994 13C10.5522 13 10.9999 13.4477 10.9999 14ZM10.7499 6C10.7499 5.58579 10.4142 5.25 9.99994 5.25C9.58572 5.25 9.24994 5.58579 9.24994 6V11C9.24994 11.4142 9.58572 11.75 9.99994 11.75C10.4142 11.75 10.7499 11.4142 10.7499 11V6Z"
+                                                    fill="#FFDC00"
+                                                />
+                                            </svg>
+                                        </i>
+
+                                        <p class="ml-3">Các gói đã hủy vẫn sẽ được sử dụng đến hết tháng hiện tại</p>
+                                    </div>
+                                </div>
+
+                                <div class="account-software__box">
+                                    <h5>Danh sách gói CQG đang sử dụng</h5>
+
+                                    <div class="d-flex mt-2">
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="18"
+                                                viewBox="0 0 20 18"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M7.96798 1.16592C8.85365 -0.388639 11.1464 -0.388642 12.032 1.16592L19.7041 14.6324C20.5649 16.1433 19.4445 18 17.6721 18H2.32788C0.555459 18 -0.564896 16.1433 0.29587 14.6324L7.96798 1.16592ZM10.9999 14C10.9999 14.5523 10.5522 15 9.99994 15C9.44765 15 8.99994 14.5523 8.99994 14C8.99994 13.4477 9.44765 13 9.99994 13C10.5522 13 10.9999 13.4477 10.9999 14ZM10.7499 6C10.7499 5.58579 10.4142 5.25 9.99994 5.25C9.58572 5.25 9.24994 5.58579 9.24994 6V11C9.24994 11.4142 9.58572 11.75 9.99994 11.75C10.4142 11.75 10.7499 11.4142 10.7499 11V6Z"
+                                                    fill="#FFDC00"
+                                                />
+                                            </svg>
+                                        </i>
+
+                                        <p class="ml-3">Các gói đã hủy vẫn sẽ được sử dụng đến hết tháng hiện tại</p>
+                                    </div>
+                                </div>
+
+                                <div class="account-software__list">
+                                    <div class="account-software__item">
+                                        <div class="account-software__item-left">
+                                            <h6>Duy trì tài khoản CQG</h6>
+                                            <p class="mt-1">
+                                                Phí 780.00đ/tháng. Giảm 70% còn 234.000 tới hết ngày 30/06/2024
+                                            </p>
+                                            <p>
+                                                Duy trì TKGD, đặt/sửa lệnh trên TKGD, sử dụng nền tảng CQG Desktop, CQG
+                                                QTrader, CQG Mobile
+                                            </p>
+                                        </div>
+
+                                        <div class="account-software__item-right">
+                                            <button class="btn btn--primary">Chọn gói</button>
+                                        </div>
+                                    </div>
+                                    <div class="account-software__item">
+                                        <div class="account-software__item-left">
+                                            <h6>Duy trì tài khoản CQG</h6>
+                                            <p class="mt-1">
+                                                Phí 780.00đ/tháng. Giảm 70% còn 234.000 tới hết ngày 30/06/2024
+                                            </p>
+                                            <p>
+                                                Duy trì TKGD, đặt/sửa lệnh trên TKGD, sử dụng nền tảng CQG Desktop, CQG
+                                                QTrader, CQG Mobile
+                                            </p>
+                                        </div>
+
+                                        <div class="account-software__item-right">
+                                            <button class="btn btn--primary">Chọn gói</button>
+                                        </div>
+                                    </div>
+                                    <div class="account-software__item">
+                                        <div class="account-software__item-left">
+                                            <h6>Duy trì tài khoản CQG</h6>
+                                            <p class="mt-1">
+                                                Phí 780.00đ/tháng. Giảm 70% còn 234.000 tới hết ngày 30/06/2024
+                                            </p>
+                                            <p>
+                                                Duy trì TKGD, đặt/sửa lệnh trên TKGD, sử dụng nền tảng CQG Desktop, CQG
+                                                QTrader, CQG Mobile
+                                            </p>
+                                        </div>
+
+                                        <div class="account-software__item-right">
+                                            <button class="btn btn--primary">Chọn gói</button>
+                                        </div>
+                                    </div>
+                                    <div class="account-software__item">
+                                        <div class="account-software__item-left">
+                                            <h6>Duy trì tài khoản CQG</h6>
+                                            <p class="mt-1">
+                                                Phí 780.00đ/tháng. Giảm 70% còn 234.000 tới hết ngày 30/06/2024
+                                            </p>
+                                            <p>
+                                                Duy trì TKGD, đặt/sửa lệnh trên TKGD, sử dụng nền tảng CQG Desktop, CQG
+                                                QTrader, CQG Mobile
+                                            </p>
+                                        </div>
+
+                                        <div class="account-software__item-right">
+                                            <button class="btn btn--primary">Chọn gói</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="account-software__line"></div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn--gray">Quay lại</button>
+                                    <button class="btn btn--cta">Gửi yêu cầu</button>
+                                </div>
                             </div>
                         </div>
                     </div>

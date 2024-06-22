@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Capi x Tornado | Lịch sử giao dịch</title>
+        <title>Capi x Tornado | Giao dịch có điều kiện</title>
 
         <link rel="icon" href="assets/img/logo/logo-1.png" />
         <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" />
@@ -150,7 +150,6 @@
             <main class="main">
                 <div class="container">
                     <div class="account-layout">
-                        <!-- Start sidebar -->
                         <div class="account-layout__left">
                             <div class="account-layout__top">
                                 <div class="account-layout__info">
@@ -326,122 +325,70 @@
                                 <img src="assets/img/background/bg-4.png" alt="F1" />
                             </div>
                         </div>
-                        <!-- End sidebar -->
                         <div class="account-layout__right">
-                            <div class="account__form__transaction__history">
-                                <div class="d-flex justify-content-md-between align-items-md-center">
-                                    <h6 class="account__form__suport__heading">Danh sách lệnh giao dịch</h6>
-                                    <button class="btn btn--primary">Xuất PDF</button>
+                            <div class="account-transaction">
+                                <div class="account-transaction__title">
+                                    <h4>Giao dịch sản phẩm có điều kiện</h4>
+
+                                    <button class="btn btn--primary">Hủy đăng ký</button>
                                 </div>
-                                <form id="form" class="row" style="gap: 20px">
-                                    <div class="row col-12" style="padding: 0; margin: auto 1px; gap: 40px">
-                                        <div class="col" style="padding: 0px">
-                                            <label for="birth" class="form-label mb-2"> Ngày bắt đầu </label>
-                                            <input
-                                                type="date"
-                                                class="form-control"
-                                                id="birth"
-                                                placeholder="Ngày sinh"
-                                            />
-                                        </div>
-                                        <div class="col" style="padding: 0px">
-                                            <label for="birth" class="form-label mb-2"> Ngày kết thúc </label>
-                                            <input
-                                                type="date"
-                                                class="form-control"
-                                                id="birth"
-                                                placeholder="Ngày sinh"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="row col-12" style="padding: 0; margin: auto 1px; gap: 40px">
-                                        <div class="col" style="padding: 0px">
-                                            <label for="fullname" class="form-label mb-2"> Trạng thái </label>
-                                            <select id="status" class="form-control form-select">
-                                                <option value=""></option>
-                                                <option value="">true</option>
-                                                <option value="">false</option>
-                                            </select>
-                                        </div>
-                                        <div class="col" style="padding: 0px">
-                                            <label for="birth" class="form-label mb-2"> Ngày kết thúc </label>
-                                            <div class="account-search__input">
-                                                <i>
-                                                    <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="18"
-                                                        height="18"
-                                                        viewBox="0 0 18 18"
-                                                        fill="none"
-                                                    >
-                                                        <path
-                                                            d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
-                                                            stroke="#8F8F8F"
-                                                            stroke-width="2"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        ></path>
-                                                        <path
-                                                            d="M15.7498 15.75L12.4873 12.4875"
-                                                            stroke="#8F8F8F"
-                                                            stroke-width="2"
-                                                            stroke-linecap="round"
-                                                            stroke-linejoin="round"
-                                                        ></path>
-                                                    </svg>
-                                                </i>
-                                                <input type="text" class="form-control" placeholder="Tìm kiếm" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="account__description__transaction__history">
+
+                                <div class="account-transaction__list">
+                                    <div class="account-transaction__item">
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="18"
+                                                viewBox="0 0 20 18"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M7.96798 1.16592C8.85365 -0.388639 11.1464 -0.388642 12.032 1.16592L19.7041 14.6324C20.5649 16.1433 19.4445 18 17.6721 18H2.32788C0.555459 18 -0.564896 16.1433 0.29587 14.6324L7.96798 1.16592ZM10.9999 14C10.9999 14.5523 10.5522 15 9.99994 15C9.44765 15 8.99994 14.5523 8.99994 14C8.99994 13.4477 9.44765 13 9.99994 13C10.5522 13 10.9999 13.4477 10.9999 14ZM10.7499 6C10.7499 5.58579 10.4142 5.25 9.99994 5.25C9.58572 5.25 9.24994 5.58579 9.24994 6V11C9.24994 11.4142 9.58572 11.75 9.99994 11.75C10.4142 11.75 10.7499 11.4142 10.7499 11V6Z"
+                                                    fill="#FFDC00"
+                                                />
+                                            </svg>
+                                        </i>
+
                                         <p>
-                                            * Để xem dữ liệu giao dịch của STKGD cũ, chọn ngày kết thúc trước hoặc bằng
-                                            ngày 04/01/2024
+                                            Căn cứ Quy định về “Dự phòng rủi ro thanh toán” (DPRRTT) của Sở Giao dịch
+                                            Hàng hóa Việt Nam (MXV) ban hành ngày 14/05/2020. Căn cứ Quy định về nguyên
+                                            tắc giao dịch hàng hóa tại F1 Commodities Trading
                                         </p>
                                     </div>
-                                    <div class="line"></div>
-                                    <div class="table__common my-4">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Mã hd</th>
-                                                    <th>Tên hợp đồng</th>
-                                                    <th>Mã lệnh</th>
-                                                    <th>loại lệnh</th>
-                                                    <th>chiều gd</th>
-                                                    <th>kl đặt</th>
-                                                    <th>KL khớp</th>
-                                                    <th>qiá giới hạn</th>
-                                                </tr>
-                                            </thead>
+                                    <div class="account-transaction__item">
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="18"
+                                                viewBox="0 0 20 18"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M7.96798 1.16592C8.85365 -0.388639 11.1464 -0.388642 12.032 1.16592L19.7041 14.6324C20.5649 16.1433 19.4445 18 17.6721 18H2.32788C0.555459 18 -0.564896 16.1433 0.29587 14.6324L7.96798 1.16592ZM10.9999 14C10.9999 14.5523 10.5522 15 9.99994 15C9.44765 15 8.99994 14.5523 8.99994 14C8.99994 13.4477 9.44765 13 9.99994 13C10.5522 13 10.9999 13.4477 10.9999 14ZM10.7499 6C10.7499 5.58579 10.4142 5.25 9.99994 5.25C9.58572 5.25 9.24994 5.58579 9.24994 6V11C9.24994 11.4142 9.58572 11.75 9.99994 11.75C10.4142 11.75 10.7499 11.4142 10.7499 11V6Z"
+                                                    fill="#FFDC00"
+                                                />
+                                            </svg>
+                                        </i>
 
-                                            <tbody>
-                                                <tr>
-                                                    <th>Mã hd</th>
-                                                    <th>Tên hợp đồng</th>
-                                                    <th>Mã lệnh</th>
-                                                    <th>loại lệnh</th>
-                                                    <th>chiều gd</th>
-                                                    <th>kl đặt</th>
-                                                    <th>KL khớp</th>
-                                                    <th>qiá giới hạn</th>
-                                                </tr>
-
-                                                <tr>
-                                                    <th>Mã hd</th>
-                                                    <th>Tên hợp đồng</th>
-                                                    <th>Mã lệnh</th>
-                                                    <th>loại lệnh</th>
-                                                    <th>chiều gd</th>
-                                                    <th>kl đặt</th>
-                                                    <th>KL khớp</th>
-                                                    <th>qiá giới hạn</th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <p>
+                                            Số tiền ký quỹ tối thiểu trên 1 hạn mức vị thế hợp đồng (nhóm năng lượng):
+                                            5.000.000 đồng/01 vị thế
+                                        </p>
                                     </div>
-                                </form>
+                                </div>
+
+                                <div class="account-transaction__line"></div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn--gray">Quay lại</button>
+                                    <button class="btn btn--cta">Gửi yêu cầu</button>
+                                </div>
                             </div>
                         </div>
                     </div>
