@@ -3020,6 +3020,61 @@ fw-7 {
 }
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.account-layout .account-layout__right .account__form__transaction__history .btn {
+		width: 124px;
+		font-size: 16px;
+	}
+	
+	.account-layout .account-layout__right .account__form__transaction__history .d-flex .account__form__suport__heading {
+		color: var(--cta-text);
+		font-size: 20px;
+	}
+
+	.account-layout .account-layout__right .account-overview {
+		padding: 40px;
+		border-radius: 12px;
+		box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+	}
+	
+	.account-layout .account-layout__right .account-overview .account-overview__title {
+		flex-wrap: wrap;
+		gap: 13px;
+	}
+	
+	.account-layout .account-layout__right .account-overview .account-overview__title h4  {
+		font-size: 20px !important;
+	}
+	
+	.account-layout .account-layout__right .account-overview .account-overview__title p {
+		font-size: 14px !important;
+		color: #8F8F8F;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		margin-bottom: 10px;
+	}
+	.account-layout .account-layout__right .account-overview .account-overview__text p {
+		color: #8F8F8F !important;
+		font-size: 16px !important;
+	}
+	.account-layout .account-layout__right .account-overview .account-overview__title i svg{
+		font-size: 14px !important;
+	}
+	
+	.account-layout .account-layout__right .account-overview .account-overview__title span {
+		font-size: 20px !important;
+	}
+
+	.account-layout .account-layout__right .account-overview .account-overview__row h5 {
+		font-size: 20px !important;
+	}
+	.account-layout .account-layout__right .account-overview .account-overview__row p {
+		font-size: 14px !important;
+	}
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
 

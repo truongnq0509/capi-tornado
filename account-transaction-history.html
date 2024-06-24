@@ -523,13 +523,16 @@
                         </div>
                         <div class="account-layout__right">
                             <div class="account__form__transaction__history">
-                                <div class="d-flex justify-content-md-between align-items-md-center">
+                                <div
+                                    class="d-flex flex-md-row flex-column justify-content-md-between align-items-md-center"
+                                    style="gap: 20px"
+                                >
                                     <h6 class="account__form__suport__heading">Danh sách lệnh giao dịch</h6>
                                     <button class="btn btn--primary">Xuất PDF</button>
                                 </div>
                                 <form id="form" class="row" style="gap: 20px">
                                     <div class="row col-12" style="padding: 0; margin: auto 1px; gap: 40px">
-                                        <div class="col" style="padding: 0px">
+                                        <div class="col-md col-12" style="padding: 0px">
                                             <label for="birth" class="form-label mb-2"> Ngày bắt đầu </label>
                                             <input
                                                 type="date"
@@ -538,7 +541,7 @@
                                                 placeholder="Ngày sinh"
                                             />
                                         </div>
-                                        <div class="col" style="padding: 0px">
+                                        <div class="col-md col-12" style="padding: 0px">
                                             <label for="birth" class="form-label mb-2"> Ngày kết thúc </label>
                                             <input
                                                 type="date"
@@ -549,7 +552,7 @@
                                         </div>
                                     </div>
                                     <div class="row col-12" style="padding: 0; margin: auto 1px; gap: 40px">
-                                        <div class="col" style="padding: 0px">
+                                        <div class="col-md col-12" style="padding: 0px">
                                             <label for="fullname" class="form-label mb-2"> Trạng thái </label>
                                             <select id="status" class="form-control form-select">
                                                 <option value=""></option>
@@ -557,8 +560,8 @@
                                                 <option value="">false</option>
                                             </select>
                                         </div>
-                                        <div class="col" style="padding: 0px">
-                                            <label for="birth" class="form-label mb-2"> Ngày kết thúc </label>
+                                        <div class="col-md col-12" style="padding: 0px">
+                                            <label for="birth" class="form-label mb-2">Tìm kiếm </label>
                                             <div class="account-search__input">
                                                 <i>
                                                     <svg
@@ -584,7 +587,11 @@
                                                         ></path>
                                                     </svg>
                                                 </i>
-                                                <input type="text" class="form-control" placeholder="Tìm kiếm" />
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    placeholder="Tìm kiếm theo mã lệnh"
+                                                />
                                             </div>
                                         </div>
                                     </div>
