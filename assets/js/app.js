@@ -9,7 +9,8 @@
 // :: 7.0 Slide đánh giá khách hàng
 // :: 8.0 Slide về công ty
 // :: 9.0 Toggle Menu
-// :: 10.0 Toggle menu quản lý tài khoản 
+// :: 10.0 Toggle menu quản lý tài khoản
+
 
 $(document).ready(function () {
 	var $window = $(window);
