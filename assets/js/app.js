@@ -10,6 +10,7 @@
 // :: 8.0 Slide về công ty
 // :: 9.0 Toggle Menu
 // :: 10.0 Toggle menu quản lý tài khoản
+// :: 11.0 Slide tin tức
 
 
 $(document).ready(function () {
@@ -470,6 +471,32 @@ $(document).ready(function () {
 				$ul.slideToggle(300);
 				$(".account-layout__sub").not($ul).slideUp(400);
 				return false;
+		}
+	});
+
+	// 11.0 Slide tin tức
+	var owlNews = $('.owl-carousel.news-header__info-list');
+	owlNews.owlCarousel({
+		dots: false,
+		loop: true,
+		nav: false,
+		margin: 20,
+		stagePadding: 0,
+		// smartSpeed: 10000,
+		// autoplay: true,
+		// autoplayTimeout: 3000,
+		autoplayHoverPause: false,
+		slideTransition: 'linear',
+		responsive: {
+			0: {
+				items: 1.2,
+			},
+			768: {
+				items: 3,
+			},
+			992: {
+				items: 4
+			}
 		}
 	});
 })
