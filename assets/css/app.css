@@ -3077,7 +3077,11 @@ fw-7 {
 	}
 
 	.account-layout .account-layout__right .account-overview .account-overview__title i svg {
-		font-size: 14px !important;
+		width: 20px;
+		height: 20px;
+	}
+	.account-layout .account-layout__right .account-overview .account-overview__title i {
+		padding-bottom: 5px;
 	}
 
 	.account-layout .account-layout__right .account-overview .account-overview__title span {
