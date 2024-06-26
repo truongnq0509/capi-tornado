@@ -11,6 +11,7 @@
 // :: 9.0 Toggle Menu
 // :: 10.0 Toggle menu quản lý tài khoản
 // :: 11.0 Slide tin tức
+// :: 12.0 Slide cơ hội nghề nghiệp
 
 
 $(document).ready(function () {
@@ -154,7 +155,6 @@ $(document).ready(function () {
 	owlNewspapers.trigger('next.owl.carousel');
 
 	// :: 4.0 Chartjs
-
 	var chartData = {
 		type: 'line',
 		data: {
@@ -496,6 +496,96 @@ $(document).ready(function () {
 			},
 			992: {
 				items: 4
+			}
+		}
+	});
+
+	// 12.0 Slide cơ hội nghề nghiệp
+	var owlJob = $('.owl-carousel.job-environment__list');
+	owlJob.owlCarousel({
+		dots: false,
+		loop: true,
+		nav: false,
+		margin: 48,
+		stagePadding: 0,
+		// smartSpeed: 10000,
+		// autoplay: true,
+		// autoplayTimeout: 3000,
+		autoplayHoverPause: false,
+		slideTransition: 'linear',
+		responsive: {
+			0: {
+				items: 1.2,
+			},
+			768: {
+				items: 2,
+			},
+			992: {
+				items: 3
+			}
+		}
+	});
+
+	$('#job-next').click(function() {
+		owlJob.trigger('next.owl.carousel');
+	})
+	$('#job-prev').click(function() {
+		owlJob.trigger('prev.owl.carousel', [300]);
+	})
+
+	var owlJobSlide = $('.owl-carousel.job-environment__slide-list');
+	owlJobSlide.owlCarousel({
+		dots: false,
+		loop: true,
+		nav: false,
+		margin: 48,
+		stagePadding: 0,
+		// smartSpeed: 10000,
+		// autoplay: true,
+		// autoplayTimeout: 3000,
+		autoplayHoverPause: false,
+		slideTransition: 'linear',
+		responsive: {
+			0: {
+				items: 1,
+			},
+			768: {
+				items: 1,
+			},
+			992: {
+				items: 1
+			}
+		}
+	});
+
+	$('#job-slide-next').click(function() {
+		owlJobSlide.trigger('next.owl.carousel');
+	})
+	$('#job-slide-prev').click(function() {
+		owlJobSlide.trigger('prev.owl.carousel', [300]);
+	})
+
+	// :: 7.0 Slide đánh giá khách hàng
+	var owlJobAuto = $('.owl-carousel.job-environment__auto');
+	owlJobAuto.owlCarousel({
+		dots: false,
+		loop: true,
+		margin: 24,
+		stagePadding: 0,
+		smartSpeed: 10000,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: false,
+		slideTransition: 'linear',
+		responsive: {
+			0: {
+				items: 2
+			},
+			768: {
+				items: 3
+			},
+			992: {
+				items: 5
 			}
 		}
 	});

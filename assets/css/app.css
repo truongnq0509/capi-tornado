@@ -37,9 +37,12 @@
 		:: 12.8 Request Withdrawal Page
 		:: 12.9 Info Transfer Page
 		:: 12.10 Account Overview Page
-	:: 13.0 News Page
-	 	:: 13.1 News Detail Page
+	:: 13.0 News Page (Tin tức giới thiệu &  Tin tức thị trường)
+	 	:: 13.1 News Detail Page ( Chi tiết tin tức giới thiêu & && Chi tiết tin tức thị trường )
 	:: 14.0 Contact Page
+	:: 15.0 Job Page (Cơ hội nghề nghiệp)
+		:: 15.1 Job Detail Page (Mô tả công việc)
+	:: 16.0 Report Page (Danh sách báo cáo)
 -----------------------------------------------------------------------------------*/
 
 
@@ -3080,6 +3083,7 @@ fw-7 {
 		width: 20px;
 		height: 20px;
 	}
+
 	.account-layout .account-layout__right .account-overview .account-overview__title i {
 		padding-bottom: 5px;
 	}
@@ -4975,7 +4979,7 @@ fw-7 {
 
 
 /*=============================
-	:: 13.0 News Page
+	:: 13.0 News Page (Tin tức giới thiệu &  Tin tức thị trường)
 ===============================*/
 
 .news-header {
@@ -5251,26 +5255,31 @@ fw-7 {
 	text-decoration: none;
 	font-weight: 600;
 }
-.news-list{
+
+.news-list {
 	margin-top: 60px;
 	margin-bottom: 40px;
 }
-.news-list .container .row{
+
+.news-list .container .row {
 	row-gap: 25px;
 }
-.news-list .container .news-title{
+
+.news-list .container .news-title {
 	text-align: center;
 	margin-bottom: 40px;
-	
+
 }
-.news-list .container .news-title h3{
-	color:  #161616;
+
+.news-list .container .news-title h3 {
+	color: #161616;
 	text-align: center;
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
 }
+
 .news-list .container .row .item-new {
 	background: rgba(255, 255, 255, 0.20);
 	border-radius: 16px;
@@ -5278,20 +5287,24 @@ fw-7 {
 	position: relative;
 	overflow: hidden;
 }
+
 .news-list .container .row .item-new .news-image {
 	text-align: center;
 	object-fit: cover;
 	overflow: hidden;
 }
-.news-list .container .row .item-new .news-image img{
+
+.news-list .container .row .item-new .news-image img {
 	width: 100%;
 }
-.news-list .container .row .item-new .new-description{
+
+.news-list .container .row .item-new .new-description {
 	padding: 24px;
 }
-.news-list .container .row .item-new .new-description h6{
+
+.news-list .container .row .item-new .new-description h6 {
 	overflow: hidden;
-	color:  #161616;
+	color: #161616;
 	text-overflow: ellipsis;
 	font-size: 20px;
 	font-style: normal;
@@ -5299,7 +5312,8 @@ fw-7 {
 	line-height: normal;
 	margin-bottom: 12px;
 }
-.news-list .container .row .item-new .new-description p{
+
+.news-list .container .row .item-new .new-description p {
 	overflow: hidden;
 	color: #9175B5;
 	text-overflow: ellipsis;
@@ -5308,13 +5322,14 @@ fw-7 {
 	font-weight: 500;
 	line-height: normal;
 }
-.news-list .container .row .item-new .background-news img{
+
+.news-list .container .row .item-new .background-news img {
 	position: absolute;
 	bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 100px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -5479,7 +5494,7 @@ fw-7 {
 
 
 /*=============================
-	:: 13.1 News Detail Page
+	:: 13.1 News Page (Tin tức chi tiết giới thiệu &  Tin tức chi tiết thị trường)
 ===============================*/
 
 .news-detail {}
@@ -5495,6 +5510,12 @@ fw-7 {
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
+	width: 100%;
+}
+
+.news-detail .news-detail__bg img {
+	width: 100%;
+	height: auto;
 }
 
 .news-detail .news-detail__box {
@@ -5579,9 +5600,48 @@ fw-7 {
 	bottom: 0;
 	width: 100%;
 	padding: 40px;
+	color: var(--white-text);
 }
 
-.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-item__box p {
+.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-wrapper {
+	display: none;
+}
+
+.news-detail .news-detail__desc .news-detail__desc-left .news-detail__search {
+	position: relative;
+}
+
+.news-detail .news-detail__desc .news-detail__desc-left .news-detail__search .news-detail__search-icon {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+}
+
+.news-detail .news-detail__desc .news-detail__desc-left .news-detail__search .form-control {
+	padding: 12px 12px 12px 32px;
+	border-radius: 8px;
+	border: 1px solid #ced4da;
+}
+
+.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-wrapper p {
+	font-size: 16px;
+	font-weight: 600;
+	color: #8F8F8F;
+}
+
+.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-wrapper span {
+	font-weight: 700;
+	color: var(--black-text);
+}
+
+.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-wrapper i {
+	display: inline-flex;
+	height: max-content;
+	margin-left: 6px;
+}
+
+.news-detail .news-detail__desc .news-detail__desc-left .news-detail__search .news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-item__box p {
 	font-size: 16px;
 	font-weight: 500;
 	color: var(--white-text);
@@ -5678,11 +5738,20 @@ fw-7 {
 }
 
 .news-detail .news-detail__desc-right .news-detail__desc-right__category,
-.news-detail .news-detail__desc-right .news-detail__desc-right__relate {
+.news-detail .news-detail__desc-right .news-detail__desc-right__relate.mobile {
 	margin-top: 32px;
 }
 
+.news-detail .news-detail__desc-right__relate {
+	padding: 24px 0 40px 0;
+}
+
+.news-detail .news-detail__desc-right__relate.mobile {
+	display: none;
+}
+
 .news-detail .news-detail__desc-right .news-detail__desc-right__relate h4,
+.news-detail .news-detail__desc-right__relate.mobile h4,
 .news-detail .news-detail__desc-right .news-detail__desc-right__category h4 {
 	font-size: 18px;
 	font-weight: 600;
@@ -5706,30 +5775,130 @@ fw-7 {
 	font-weight: 400;
 }
 
-.news-detail .news-detail__desc-right .news-detail__desc-right__relate ul li {
+.news-detail .news-detail__desc-right__relate ul li {
 	margin-top: 24px;
 }
 
-.news-detail .news-detail__desc-right .news-detail__desc-right__relate ul li img {
+.news-detail .news-detail__desc-right__relate ul li img {
 	width: 60px;
 	height: 60px;
 	object-fit: cover;
 	border-radius: 12px;
 }
 
-.news-detail .news-detail__desc-right .news-detail__desc-right__relate ul li span {
+.news-detail .news-detail__desc-right__relate ul li span {
 	color: #8F8F8F;
 	font-size: 12px;
 }
 
-.news-detail .news-detail__desc-right .news-detail__desc-right__relate ul li p {
+.news-detail .news-detail__desc-right__relate ul li p {
 	font-size: 14px;
 	font-weight: 600;
 	margin-top: 6px;
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+	.news-detail .news-detail__wrapper {
+		padding-top: 24px;
+	}
+
+	.news-detail .news-detail__box {
+		height: 200px;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	.news-detail .news-detail__box img {
+		border-radius: 8px;
+	}
+
+	.news-detail .news-detail__box .news-detail__box-content {
+		padding: 8px 20px;
+	}
+
+	.news-detail .news-detail__box .news-detail__box-content h5 {
+		font-size: 10px;
+	}
+
+	.news-detail .news-detail__box .news-detail__box-content span {
+		font-size: 10px;
+	}
+
+
+	.news-detail .news-detail__box .news-detail__box-content p {
+		font-size: 14px;
+	}
+
+	.news-detail .news-detail__box .news-detail__box-content {
+		border-radius: 0 0 8px 8px;
+	}
+
+
+	.news-detail .news-detail__desc {
+		margin-top: 24px;
+	}
+
+	.news-detail .news-detail__desc .news-detail__tags {
+		display: flex;
+		gap: 24px;
+		padding: 24px 0;
+		flex-wrap: wrap;
+	}
+
+
+	.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-wrapper {
+		display: block;
+	}
+
+	.news-detail .news-detail__desc .news-detail__desc-left h6,
+	.news-detail .news-detail__desc .news-detail__desc-left p {
+		font-size: 14px;
+	}
+
+
+	.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-list {
+		margin: 24px 0;
+	}
+
+	.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-item__box {
+		color: var(--white-text);
+		padding: 24px;
+	}
+
+	.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-common h4 {
+		font-size: 20px;
+		margin-bottom: 8px;
+	}
+
+	.news-detail .news-detail__desc .news-detail__desc-left .news-detail__desc-common {
+		margin-bottom: 24px;
+	}
+
+	.news-detail .news-detail__desc .news-detail__info .news-detail__info-right__text,
+	.news-detail .news-detail__desc .news-detail__info .news-detail__info-right__name {
+		font-size: 14px;
+	}
+
+	.news-detail .news-detail__desc .news-detail__info {
+		margin-bottom: 24px;
+	}
+
+	.news-detail .news-detail__desc .news-detail__info .news-detail__info-right__desc {
+		font-size: 14px;
+		font-weight: 400;
+		margin-top: 24px;
+	}
+
+	.news-detail__desc-right {
+		display: none;
+	}
+
+
+	.news-detail .news-detail__desc-right__relate.mobile {
+		display: block;
+	}
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {}
@@ -5881,6 +6050,1004 @@ fw-7 {
 		width: 100%;
 		height: 100%;
 	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/*=============================
+	:: 15.0 Job Page (Cơ hội nghề nghiệp)
+===============================*/
+
+.job {}
+
+.job .job-banner {
+	height: 600px;
+	max-height: 100%;
+	position: relative;
+	background-color: var(--black-bg);
+	margin-bottom: 140px;
+}
+
+.job .job-banner .job-banner__bg-1 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: auto;
+	height: 100%;
+}
+
+.job .job-banner .job-banner__bg-2 {
+	position: absolute;
+	right: 0;
+	bottom: -100px;
+	width: 900px;
+	height: auto;
+	z-index: 9;
+}
+
+.job .job-banner .job-banner__bg-3 {
+	position: absolute;
+	right: 200px;
+	bottom: -200px;
+	width: 600px;
+	height: 600px;
+	z-index: 10;
+}
+
+.job .job-banner .job-banner__bg-1 img,
+.job .job-banner .job-banner__bg-2 img,
+.job .job-banner .job-banner__bg-3 img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.job .job-banner .job-banner__box {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 99;
+}
+
+.job .job-banner .job-banner__content {
+	width: 800px;
+	max-width: 100%;
+}
+
+.job .job-banner .job-banner__content .job-banner__title {
+	display: flex;
+	align-items: center;
+}
+
+.job .job-banner .job-banner__content .job-banner__title h3 {
+	font-size: 60px;
+	font-weight: 700;
+	color: var(--white-text);
+}
+
+.job .job-banner .job-banner__content .job-banner__title p {
+	font-size: 16px;
+	color: #B399D4;
+	font-weight: 400;
+	max-width: 380px;
+	margin-left: 24px;
+}
+
+.job .job-banner .job-banner__content .job-banner__kKdtmD {
+	display: flex;
+	align-items: center;
+}
+
+.job .job-banner .job-banner__content .job-banner__kKdtmD {
+	position: relative;
+}
+
+.job .job-banner .job-banner__content .job-banner__kKdtmD i {
+	position: absolute;
+	top: 50%;
+	left: -80px;
+	transform: translateX(-50%);
+}
+
+.job .job-banner .job-banner__content .job-banner__kKdtmD p {
+	font-size: 60px;
+	font-weight: 700;
+	color: var(--white-text);
+	margin-left: 100px;
+}
+
+.job .job-banner .job-banner__content .job-banner__text {
+	font-size: 60px;
+	font-weight: 700;
+	font-style: italic;
+	color: var(--primary-text);
+}
+
+.job .job-recruitment,
+.job .job-environment {
+	margin-top: 40px;
+}
+
+.job .job-recruitment .job-recruitment__title,
+.job .job-environment .job-environment__title {
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+}
+
+.job .job-recruitment .job-recruitment__title h3,
+.job .job-environment .job-environment__title h3 {
+	font-size: 44px;
+	font-weight: 700;
+	color: var(--black-text);
+}
+
+.job .job-recruitment .job-recruitment__title span,
+.job .job-environment .job-environment__title span {
+	color: var(--cta-text);
+}
+
+.job .job-recruitment .job-recruitment__title a {
+	display: inline-flex;
+	align-items: end;
+	font-size: 18px;
+	color: var(--cta-text);
+	text-decoration: none;
+	position: relative;
+}
+
+
+
+.job .job-recruitment .job-recruitment__title a:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: var(--cta-bg);
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.job .job-environment .job-environment__title i {
+	cursor: pointer;
+}
+
+.job .job-recruitment .job-recruitment__title a i {
+	display: inline-flex;
+	max-height: max-content;
+}
+
+.job .job-recruitment .job-recruitment__list {
+	margin-top: 36px;
+	display: flex;
+	align-items: center;
+}
+
+.job .job-recruitment .job-recruitment__box {
+	flex: 1;
+}
+
+.job .job-recruitment .job-recruitment__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 32px 40px;
+	border-radius: 24px;
+	cursor: pointer;
+}
+
+.job .job-recruitment .job-recruitment__item:hover {
+	background-color: var(--primary-bg);
+}
+
+.job .job-recruitment .job-recruitment__item span {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.job .job-recruitment .job-recruitment__item .job-recruitment__item-desc {
+	width: 500px;
+	max-width: 100%;
+}
+
+.job .job-recruitment .job-recruitment__item .job-recruitment__item-desc h5 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.job .job-recruitment .job-recruitment__item .job-recruitment__item-desc p {
+	font-size: 18px;
+}
+
+.job .job-environment__list {
+	margin: 40px 0;
+}
+
+.job .job-environment__list .job-environment__item {
+	position: relative;
+	margin: 40px 0;
+}
+
+.job .job-environment__list .job-environment__item .job-environment__item-number {
+	color: rgba(255, 220, 0, 0.30);
+	font-size: 120px;
+	font-weight: 500;
+
+}
+
+.job .job-environment__list .job-environment__item .job-environment__item-content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: max-content;
+	padding-left: 70px;
+}
+
+.job .job-environment__list .job-environment__item .job-environment__item-content h5 {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.job .job-environment__list .job-environment__item .job-environment__item-content p {
+	font-size: 16px;
+	font-weight: 400;
+
+}
+
+.job .job-environment__note {
+	font-size: 14px;
+	font-style: italic;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #D9D9D9;
+}
+
+.job .job-environment__slide {
+	margin-top: 80px;
+}
+
+.job .job-environment__slide .job-environment__slide-wrapper {
+	position: relative;
+	width: 100%;
+	height: 450px;
+	overflow: hidden;
+	border-radius: 40px;
+}
+
+.job .job-environment__slide .job-environment__slide-wrapper:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	z-index: 0;
+}
+
+
+
+
+
+.job .job-environment__slide .job-environment__slide-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.job .job-environment__slide .job-environment__slide-bg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.job .job-environment__slide .job-environment__slide-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	width: 600px;
+	max-width: 100%;
+	height: auto;
+}
+
+.job .job-environment__slide .job-environment__slide-box i {
+	cursor: pointer;
+}
+
+.job .job-environment__slide .job-environment__slide-box .job-environment__slide-item p {
+	font-weight: 400;
+	font-size: 18px;
+	color: var(--white-text);
+	margin-top: 20px;
+}
+
+.job .job-environment__slide .job-environment__slide-box .job-environment__slide-item h6 {
+	font-weight: 600;
+	font-size: 18px;
+	color: var(--white-text);
+	margin-top: 20px;
+}
+
+.job .job-environment__slide .job-environment__slide-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: end;
+}
+
+.job .job-environment__slide .job-environment__slide-title h4 {
+	font-size: 44px;
+	font-weight: 600;
+}
+
+.job .job-environment__auto {
+	padding: 60px 0 80px 0;
+}
+
+.job .job-environment__auto .job-environment__auto-item {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+}
+
+.job .job-environment__auto .job-environment__auto-item .job-environment__auto-crile {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: var(--primary-bg);
+}
+
+.job .job-environment__auto .job-environment__auto-item p {
+	color: var(--primary-text);
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/*=============================
+	:: 15.1 Job Detail Page (Mô tả công việc)
+===============================*/
+
+
+.job-detail {}
+
+
+.job-detail .job-detail__wrapper {
+	padding-top: 80px;
+	position: relative;
+}
+
+.job-detail .job-detail__bg {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.job-detail .job-detail__bg img {
+	width: 100%;
+	height: auto;
+}
+
+.job-detail .job-detail__box {
+	height: 470px;
+	max-height: 100%;
+	position: relative;
+	z-index: 10;
+
+}
+
+.job-detail .job-detail__box img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.job-detail .job-detail__box .job-detail__box-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 12px 80px;
+	background: rgba(0, 0, 0, 0.08);
+	backdrop-filter: blur(20px);
+	border-radius: 0 0 20px 20px;
+}
+
+.job-detail .job-detail__box .job-detail__box-content h5 {
+	font-size: 18px;
+	font-weight: 400;
+	color: var(--white-text);
+}
+
+.job-detail .job-detail__box .job-detail__box-content p {
+	font-size: 24px;
+	font-weight: 600;
+	color: var(--white-text);
+}
+
+.job-detail .job-detail__box .job-detail__box-content span {
+	font-size: 16px;
+	font-weight: 500px;
+	color: var(--white-text);
+	height: max-content;
+}
+
+.job-detail .job-detail__desc {
+	margin-top: 56px;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left h6 {
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 20px;
+	border-left: 1px solid var(--primary-bg);
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-list {
+	margin: 60px 0;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-item {
+	width: 100%;
+	height: 400px;
+	max-height: 100%;
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .btn {
+	font-size: 18px;
+	margin: 24px 0 60px 0;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-item__box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 40px;
+	color: var(--white-text);
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-wrapper {
+	display: none;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__search {
+	position: relative;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__search .job-detail__search-icon {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__search .form-control {
+	padding: 12px 12px 12px 32px;
+	border-radius: 8px;
+	border: 1px solid #ced4da;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-wrapper p {
+	font-size: 16px;
+	font-weight: 600;
+	color: #8F8F8F;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-wrapper span {
+	font-weight: 700;
+	color: var(--black-text);
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-wrapper i {
+	display: inline-flex;
+	height: max-content;
+	margin-left: 6px;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__search .job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-item__box p {
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--white-text);
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-common {
+	margin-bottom: 60px;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-common h4 {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.job-detail .job-detail__desc .job-detail__desc-left .job-detail__dess-common p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.job-detail .job-detail__desc .job-detail__info {
+	margin-bottom: 60px;
+}
+
+.job-detail .job-detail__desc .job-detail__info .job-detail__info-right__text {
+	font-size: 18px;
+	font-size: 500;
+	margin-top: 8px;
+}
+
+.job-detail .job-detail__desc .job-detail__info .job-detail__info-right__name {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 8px;
+}
+
+.job-detail .job-detail__desc .job-detail__info .job-detail__info-right__desc {
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 60px;
+}
+
+.job-detail .job-detail__desc .job-detail__tags {
+	display: flex;
+	gap: 48px;
+	align-items: center;
+	padding: 40px 0;
+	border-top: 1px solid #D9D9D9;
+}
+
+.job-detail .job-detail__desc .job-detail__tags .job-detail__tags-item a {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--cta-text);
+}
+
+.job-detail .job-detail__desc-right {
+	padding: 40px;
+	overflow: hidden;
+	border-radius: 24px;
+	background: rgba(255, 255, 255, 0.10);
+	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+	backdrop-filter: blur(50px);
+	position: sticky;
+	top: 24px;
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__wrapper {
+	position: relative;
+	z-index: 10;
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__search {
+	position: relative;
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__icon {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__search .form-control {
+	padding: 12px 12px 12px 36px;
+	border-radius: 10px;
+	border: 1px solid #D9D9D9;
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__category,
+.job-detail .job-detail__desc-right .job-detail__desc-right__relate.mobile {
+	margin-top: 32px;
+}
+
+.job-detail .job-detail__desc-right__relate {
+	padding: 24px 0 40px 0;
+}
+
+.job-detail .job-detail__desc-right__relate.mobile {
+	display: none;
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__relate h4,
+.job-detail .job-detail__desc-right__relate.mobile h4,
+.job-detail .job-detail__desc-right .job-detail__desc-right__category h4 {
+	font-size: 18px;
+	font-weight: 600;
+	padding-left: 8px;
+	line-height: 100%;
+	border-left: 3px solid var(--primary-bg);
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__category ul,
+.job-detail .job-detail__desc-right .job-detail__desc-right__relate ul {
+	margin-top: 24px;
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__category ul li {
+	margin-top: 8px;
+}
+
+.job-detail .job-detail__desc-right .job-detail__desc-right__category ul li a {
+	font-size: 14px;
+	color: #8F8F8F;
+	font-weight: 400;
+}
+
+.job-detail .job-detail__desc-right__relate ul li {
+	margin-top: 24px;
+}
+
+.job-detail .job-detail__desc-right__relate ul li img {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+.job-detail .job-detail__desc-right__relate ul li span {
+	color: #8F8F8F;
+	font-size: 12px;
+}
+
+.job-detail .job-detail__desc-right__relate ul li p {
+	font-size: 14px;
+	font-weight: 600;
+	margin-top: 6px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.job-detail .job-detail__wrapper {
+		padding-top: 24px;
+	}
+
+	.job-detail .job-detail__box {
+		height: 200px;
+		border-radius: 8px;
+		overflow: hidden;
+	}
+
+	.job-detail .job-detail__box img {
+		border-radius: 8px;
+	}
+
+	.job-detail .job-detail__box .job-detail__box-content {
+		padding: 8px 20px;
+	}
+
+	.job-detail .job-detail__box .job-detail__box-content h5 {
+		font-size: 10px;
+	}
+
+	.job-detail .job-detail__box .job-detail__box-content span {
+		font-size: 10px;
+	}
+
+
+	.job-detail .job-detail__box .job-detail__box-content p {
+		font-size: 14px;
+	}
+
+	.job-detail .job-detail__box .job-detail__box-content {
+		border-radius: 0 0 8px 8px;
+	}
+
+
+	.job-detail .job-detail__desc {
+		margin-top: 24px;
+	}
+
+	.job-detail .job-detail__desc .job-detail__tags {
+		display: flex;
+		gap: 24px;
+		padding: 24px 0;
+		flex-wrap: wrap;
+	}
+
+
+	.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-wrapper {
+		display: block;
+	}
+
+	.job-detail .job-detail__desc .job-detail__desc-left h6,
+	.job-detail .job-detail__desc .job-detail__desc-left p {
+		font-size: 14px;
+	}
+
+
+	.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-list {
+		margin: 24px 0;
+	}
+
+	.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-item__box {
+		color: var(--white-text);
+		padding: 24px;
+	}
+
+	.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-common h4 {
+		font-size: 20px;
+		margin-bottom: 8px;
+	}
+
+	.job-detail .job-detail__desc .job-detail__desc-left .job-detail__desc-common {
+		margin-bottom: 24px;
+	}
+
+	.job-detail .job-detail__desc .job-detail__info .job-detail__info-right__text,
+	.job-detail .job-detail__desc .job-detail__info .job-detail__info-right__name {
+		font-size: 14px;
+	}
+
+	.job-detail .job-detail__desc .job-detail__info {
+		margin-bottom: 24px;
+	}
+
+	.job-detail .job-detail__desc .job-detail__info .job-detail__info-right__desc {
+		font-size: 14px;
+		font-weight: 400;
+		margin-top: 24px;
+	}
+
+	.job-detail__desc-right {
+		display: none;
+	}
+
+
+	.job-detail .job-detail__desc-right__relate.mobile {
+		display: block;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+
+/*=============================
+	:: 16.0 Report Page (Danh sách báo cáo)
+===============================*/
+
+.report {}
+
+.report .report-top {
+	margin-top: 60px;
+}
+
+.report .report-top .report-top__wrapper {
+	width: 100%;
+	height: 320px;
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.report .report-top .report-top__wrapper .report-top__bg-1 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: auto;
+}
+
+.report .report-top .report-top__wrapper .report-top__bg-2 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: auto;
+}
+
+.report .report-top .report-top__wrapper .report-top__bg-1 img,
+.report .report-top .report-top__wrapper .report-top__bg-2 img {
+	border-radius: 20px;
+}
+
+.report .report-top .report-top__wrapper .report-top__box {
+	position: absolute;
+	top: 50%;
+	right: 40px;
+	transform: translateY(-50%);
+	width: 700px;
+	max-width: 100%;
+}
+
+
+.report .report-top .report-top__wrapper .report-top__box h4 {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+
+.report .report-top .report-top__wrapper .report-top__box p {
+	width: 230px;
+	max-width: 100%;
+}
+
+.report .report-search {
+	margin: 60px 0;
+}
+
+.report .report-search .report-search__wrapper {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+}
+
+.report .report-search .report-search__input {
+	flex: 1;
+	position: relative;
+}
+
+.report .report-search .report-search__icon {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+}
+
+
+.report .report-search .report-search__input .form-control {
+	padding: 12px 24px 12px 48px;
+	border: 1px solid #D9D9D9;
+	border-radius: 10px;
+}
+
+.report .report-search .report-search__filter p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.report .report-search .report-search__filter p span {
+	font-weight: 700;
+}
+
+.report .report-search .report-search__filter p i {
+	display: inline-flex;
+	height: max-content;
+	margin-left: 8px;
+}
+
+.report .report-list__wrapper .report-list__item {
+	padding: 32px;
+	border-radius: 20px;
+	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+	transition: all 0.3 ease;
+}
+
+.report .report-list__wrapper .report-list__item:hover {
+	background-color: var(--primary-bg);
+}
+
+.report .report-list__wrapper .report-list__item h5 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.report .report-list__wrapper .report-list__item .report-list__item-desc {
+	margin-top: 48px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.report .report-list__wrapper .report-list__item .report-list__item-date {
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 24px;
+}
+
+.report .report-list__pagination {
+	margin-top: 48px;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	justify-content: center;
+}
+
+.report .report-list__pagination a {
+	display: inline-flex;
+	width: 36px;
+	height: 36px;
+	padding: 8px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #D9D9D9;
+	border-radius: 8px;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #D9D9D9;
+}
+
+.report .report-list__pagination a i {
+	display: inline-flex;
+	height: max-content;
+}
+
+.report .report-list__pagination a.active {
+	color: var(--white-text);
+	background-color: var(--black-bg);
+}
+
+.report .report-tags {
+	padding: 60px 0;
+}
+
+.report .report-tags .report-tags__list {
+	display: flex;
+	gap: 48px;
+	align-items: center;
+	justify-content: center;
+}
+
+.report .report-tags .report-tags__list .report-tags__item a {
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--cta-text);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

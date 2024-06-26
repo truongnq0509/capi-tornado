@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Capi x Tornado | Cơ hội nghề nghiệp</title>
+
+        <link rel="icon" href="assets/img/logo/logo-1.png" />
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css" type="text/css" />
+        <link rel="stylesheet" href="vendor/owl-carousel/css/owl.theme.default.min.css" type="text/css" />
+        <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    </head>
+
+    <body>
+        <div id="app">
+            <!--@@@ Start Header  -->
+            <header class="header">
+                <div class="header__container container d-flex align-items-center">
+                    <div class="header__left">
+                        <a href="index.html" class="header__logo">
+                            <img src="assets/img/logo/logo-1.png" alt="F1" />
+                        </a>
+
+                        <nav class="header__nav">
+                            <ul class="d-flex">
+                                <li class="nav__item">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#">Giao dịch</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#">Kiến thức và đào tạo</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#">Thông tin thị trường</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header__right d-flex align-items-center">
+                        <div class="header__search">
+                            <img src="assets/img/icon/icon-search.png" alt="Search" />
+                        </div>
+
+                        <a href="login.html" class="btn btn--login text-uppercase">Đăng Nhập</a>
+                        <a href="register.html" class="btn btn--register text-uppercase">Đăng Ký</a>
+
+                        <div class="header__menu-icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                id="bar"
+                            >
+                                <path
+                                    d="M8 10H23M8 16H23M8 22H23"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                />
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                id="close"
+                            >
+                                <path
+                                    d="M21.6565 10.3432L10.3428 21.6569M21.6565 21.6569L10.3428 10.3431"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Nav Mobile -->
+                    <div id="menu" class="header-nav__mobile">
+                        <div class="header-nav__mobile-input">
+                            <i class="header-nav__mobile-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
+                                        stroke="#8F8F8F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M15.7498 15.75L12.4873 12.4875"
+                                        stroke="#8F8F8F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </i>
+                            <input type="text" class="form-control" placeholder="Tìm kiếm" />
+                        </div>
+                        <nav class="header-nav__mobile-list">
+                            <ul class="d-flex flex-column">
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Giao dịch</a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Kiến thức và đào tạo</a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Thông tin thị trường</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="header-nav__mobile-btn">
+                            <a href="login.html" class="btn btn__login btn--primary">Đăng Nhập</a>
+                            <a href="register.html" class="btn btn__register btn--primary">Đăng Ký</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--@@@ End Header  -->
+            <!--@@@ Start Main  -->
+            <main class="main">
+                <div class="job">
+                    <div class="job-banner">
+                        <div class="job-banner__bg-1">
+                            <img src="assets/img/background/bg-1.png" alt="F1" />
+                        </div>
+
+                        <div class="job-banner__bg-2">
+                            <img src="assets/img/home/banner-1.png" alt="F1" />
+                        </div>
+
+                        <div class="job-banner__bg-3">
+                            <img src="assets/img/background/bg-7.png" alt="F1" />
+                        </div>
+
+                        <div class="job-banner__box">
+                            <div class="container">
+                                <div class="job-banner__content">
+                                    <div class="job-banner__title">
+                                        <h3>Hãy gia nhập</h3>
+                                        <p>
+                                            Chúng tôi luôn chào đón những ứng viên tiềm năng và mang đến nhiều chính
+                                            sách đãi ngộ tốt
+                                        </p>
+                                    </div>
+
+                                    <div class="job-banner__kKdtmD mt-3">
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="299"
+                                                height="15"
+                                                viewBox="0 0 299 15"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M298.707 8.20713C299.098 7.81661 299.098 7.18344 298.707 6.79292L292.343 0.428958C291.953 0.0384333 291.319 0.0384333 290.929 0.428958C290.538 0.819482 290.538 1.45265 290.929 1.84317L296.586 7.50003L290.929 13.1569C290.538 13.5474 290.538 14.1806 290.929 14.5711C291.319 14.9616 291.953 14.9616 292.343 14.5711L298.707 8.20713ZM-8.74228e-08 8.5L298 8.50003L298 6.50003L8.74228e-08 6.5L-8.74228e-08 8.5Z"
+                                                    fill="#FFDC00"
+                                                />
+                                            </svg>
+                                        </i>
+
+                                        <p>Đội ngũ nhân sự</p>
+                                    </div>
+
+                                    <p class="job-banner__text">F1 Commodities Trading</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job-recruitment">
+                        <div class="container">
+                            <div class="job-recruitment__title">
+                                <h3>
+                                    Công việc <br />
+                                    <span>đang tuyển dụng</span>
+                                </h3>
+
+                                <a href="#">
+                                    Xem tất cả
+
+                                    <i>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M10.5856 16.2426L16.2425 16.2426M16.2425 16.2426L16.2425 10.5858M16.2425 16.2426L7.75721 7.75734"
+                                                stroke="#6D15A2"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+
+                            <div class="job-recruitment__list">
+                                <div class="job-recruitment__img">
+                                    <img src="assets/img/home/method/Iinvoice.png" alt="F1" />
+                                </div>
+
+                                <div class="d-flex flex-column job-recruitment__box">
+                                    <div class="job-recruitment__item">
+                                        <span>01</span>
+                                        <div class="job-recruitment__item-desc">
+                                            <h5>Chuyên viên môi giới</h5>
+                                            <p>Mức lương: thỏa thuận</p>
+                                        </div>
+
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="40"
+                                                height="41"
+                                                viewBox="0 0 40 41"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M23.3333 27.1666L30 20.5M30 20.5L23.3333 13.8333M30 20.5L10 20.5"
+                                                    stroke="#161616"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </i>
+                                    </div>
+
+                                    <div class="job-recruitment__item">
+                                        <span>02</span>
+                                        <div class="job-recruitment__item-desc">
+                                            <h5>Chuyên viên phân tích</h5>
+                                            <p>Mức lương: thỏa thuận</p>
+                                        </div>
+
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="40"
+                                                height="41"
+                                                viewBox="0 0 40 41"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M23.3333 27.1666L30 20.5M30 20.5L23.3333 13.8333M30 20.5L10 20.5"
+                                                    stroke="#161616"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </i>
+                                    </div>
+
+                                    <div class="job-recruitment__item">
+                                        <span>03</span>
+                                        <div class="job-recruitment__item-desc">
+                                            <h5>Chuyên viên quản lý rủi ro</h5>
+                                            <p>Mức lương: thỏa thuận</p>
+                                        </div>
+
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="40"
+                                                height="41"
+                                                viewBox="0 0 40 41"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M23.3333 27.1666L30 20.5M30 20.5L23.3333 13.8333M30 20.5L10 20.5"
+                                                    stroke="#161616"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </i>
+                                    </div>
+
+                                    <div class="job-recruitment__item">
+                                        <span>04</span>
+                                        <div class="job-recruitment__item-desc">
+                                            <h5>Chuyên viên quản lý</h5>
+                                            <p>Mức lương: thỏa thuận</p>
+                                        </div>
+
+                                        <i>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="40"
+                                                height="41"
+                                                viewBox="0 0 40 41"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M23.3333 27.1666L30 20.5M30 20.5L23.3333 13.8333M30 20.5L10 20.5"
+                                                    stroke="#161616"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="job-environment">
+                        <div class="container">
+                            <div class="job-environment__title">
+                                <h3>
+                                    Môi trường năng động tại <br />
+                                    <span>F1 Commodities Trading</span>
+                                </h3>
+
+                                <div class="d-inline-flex align-items-center">
+                                    <i id="job-prev">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="40"
+                                            height="40"
+                                            viewBox="0 0 40 40"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M23.333 11.6666L16.6663 20L23.333 28.3333"
+                                                stroke="#D9D9D9"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </i>
+
+                                    <i id="job-next">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="40"
+                                            height="40"
+                                            viewBox="0 0 40 40"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M16.667 11.6666L23.3337 20L16.667 28.3333"
+                                                stroke="#161616"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+
+                            <div class="owl-carousel job-environment__list owl-theme">
+                                <div class="item">
+                                    <div class="job-environment__item">
+                                        <div class="job-environment__item-number">01</div>
+
+                                        <div class="job-environment__item-content">
+                                            <h5>Chế độ đãi ngộ tốt</h5>
+                                            <p>Kênh truyền thông nội bộ hữu ích, giúp nâng cao tinh thần đoàn kết</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="job-environment__item">
+                                        <div class="job-environment__item-number">02</div>
+
+                                        <div class="job-environment__item-content">
+                                            <h5>Chế độ đãi ngộ tốt</h5>
+                                            <p>Kênh truyền thông nội bộ hữu ích, giúp nâng cao tinh thần đoàn kết</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="job-environment__item">
+                                        <div class="job-environment__item-number">03</div>
+
+                                        <div class="job-environment__item-content">
+                                            <h5>Chế độ đãi ngộ tốt</h5>
+                                            <p>Kênh truyền thông nội bộ hữu ích, giúp nâng cao tinh thần đoàn kết</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="job-environment__item">
+                                        <div class="job-environment__item-number">04</div>
+
+                                        <div class="job-environment__item-content">
+                                            <h5>Chế độ đãi ngộ tốt</h5>
+                                            <p>Kênh truyền thông nội bộ hữu ích, giúp nâng cao tinh thần đoàn kết</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="job-environment__note">F1 Commodities Trading</p>
+
+                            <div class="job-environment__slide">
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <div class="job-environment__slide-wrapper">
+                                            <div class="job-environment__slide-bg">
+                                                <img
+                                                    src="assets/img/background/pexels-tomas-malik-793526-2581922.jpg"
+                                                    alt="F1"
+                                                />
+                                            </div>
+
+                                            <div class="job-environment__slide-box">
+                                                <div class="job-environment__slide-list owl-carousel owl-theme">
+                                                    <div class="item">
+                                                        <div class="job-environment__slide-item">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="37"
+                                                                    height="24"
+                                                                    viewBox="0 0 37 24"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M32.4658 9.03969C33.8356 9.49624 34.9315 10.318 35.7534 11.5051C36.5753 12.6008 36.9863 13.8335 36.9863 15.2031C37.0776 16.5728 36.7123 17.9424 35.8904 19.3121C35.1598 20.5904 33.9726 21.6861 32.3288 22.5992C29.6804 23.9689 27.3516 24.3341 25.3425 23.6949C23.3333 22.9645 21.9178 21.8687 21.0959 20.4078C20.6393 19.6773 20.274 18.6729 20 17.3946C19.8174 16.1162 19.726 14.7922 19.726 13.4226C19.8174 11.9616 20 10.5463 20.274 9.17665C20.5479 7.807 20.9589 6.66563 21.5068 5.75253C21.9635 5.11336 22.5114 4.42853 23.1507 3.69805C23.6986 3.05888 24.3379 2.41971 25.0685 1.78054C25.8904 1.14137 26.8037 0.54786 27.8082 0L32.6027 0.27393C31.9635 1.00441 31.3699 1.68923 30.8219 2.3284C30.3653 2.87626 29.9543 3.37847 29.589 3.83502C29.2237 4.29157 28.8584 4.70246 28.4932 5.0677C27.8539 5.70687 27.3516 6.34604 26.9863 6.98521C26.621 7.53307 26.3014 8.12659 26.0274 8.76576C25.8447 9.40493 25.8447 10.0441 26.0274 10.6833C27.2146 9.40493 28.5845 8.76576 30.137 8.76576C30.8676 8.76576 31.6438 8.85707 32.4658 9.03969ZM13.5616 9.72451C14.8402 10.455 15.7534 11.4594 16.3014 12.7377C16.9406 13.9248 17.1689 15.2031 16.9863 16.5728C16.8037 17.9424 16.21 19.2208 15.2055 20.4078C14.2922 21.5948 12.9224 22.5079 11.0959 23.1471C8.26484 24.0602 5.93607 24.0145 4.10959 23.0101C2.28311 21.9144 1.05023 20.5904 0.410959 19.0381C0.136986 18.2163 0 17.1663 0 15.8879C0 14.6096 0.136986 13.2856 0.410959 11.916C0.684932 10.5463 1.05023 9.22231 1.50685 7.94397C1.96347 6.66563 2.55708 5.61556 3.28767 4.79377C3.83562 4.1546 4.47489 3.56109 5.20548 3.01323C5.84475 2.55668 6.57534 2.05447 7.39726 1.50661C8.3105 0.958755 9.31507 0.45655 10.411 0L15.2055 1.23268C14.4749 1.87185 13.79 2.41971 13.1507 2.87626C12.6027 3.33281 12.1005 3.74371 11.6438 4.10895C11.1872 4.47419 10.7306 4.83943 10.274 5.20467C9.6347 5.75253 9.08676 6.30039 8.63014 6.84825C8.17352 7.3048 7.76256 7.85266 7.39726 8.49183C7.03196 9.03969 6.89498 9.6332 6.9863 10.2724C7.7169 9.72451 8.44749 9.40493 9.17808 9.31362C10 9.131 10.7306 9.08534 11.3699 9.17665C12.1005 9.26796 12.831 9.45058 13.5616 9.72451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+
+                                                            <p>
+                                                                Nullam vitae diam sit amet risus laoreet lobortis. Sed
+                                                                euismod risus eu enim consectetur, sit amet lobortis
+                                                                enim auctor. Duis sed odio sit amet ligula semper
+                                                                mollis. Morbi ac diam sed lorem facilisis hendrerit.
+                                                                Nullam dolor sit amet consecteture.
+                                                            </p>
+
+                                                            <h6>Curabitur arcu erat</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="job-environment__slide-item">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="37"
+                                                                    height="24"
+                                                                    viewBox="0 0 37 24"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M32.4658 9.03969C33.8356 9.49624 34.9315 10.318 35.7534 11.5051C36.5753 12.6008 36.9863 13.8335 36.9863 15.2031C37.0776 16.5728 36.7123 17.9424 35.8904 19.3121C35.1598 20.5904 33.9726 21.6861 32.3288 22.5992C29.6804 23.9689 27.3516 24.3341 25.3425 23.6949C23.3333 22.9645 21.9178 21.8687 21.0959 20.4078C20.6393 19.6773 20.274 18.6729 20 17.3946C19.8174 16.1162 19.726 14.7922 19.726 13.4226C19.8174 11.9616 20 10.5463 20.274 9.17665C20.5479 7.807 20.9589 6.66563 21.5068 5.75253C21.9635 5.11336 22.5114 4.42853 23.1507 3.69805C23.6986 3.05888 24.3379 2.41971 25.0685 1.78054C25.8904 1.14137 26.8037 0.54786 27.8082 0L32.6027 0.27393C31.9635 1.00441 31.3699 1.68923 30.8219 2.3284C30.3653 2.87626 29.9543 3.37847 29.589 3.83502C29.2237 4.29157 28.8584 4.70246 28.4932 5.0677C27.8539 5.70687 27.3516 6.34604 26.9863 6.98521C26.621 7.53307 26.3014 8.12659 26.0274 8.76576C25.8447 9.40493 25.8447 10.0441 26.0274 10.6833C27.2146 9.40493 28.5845 8.76576 30.137 8.76576C30.8676 8.76576 31.6438 8.85707 32.4658 9.03969ZM13.5616 9.72451C14.8402 10.455 15.7534 11.4594 16.3014 12.7377C16.9406 13.9248 17.1689 15.2031 16.9863 16.5728C16.8037 17.9424 16.21 19.2208 15.2055 20.4078C14.2922 21.5948 12.9224 22.5079 11.0959 23.1471C8.26484 24.0602 5.93607 24.0145 4.10959 23.0101C2.28311 21.9144 1.05023 20.5904 0.410959 19.0381C0.136986 18.2163 0 17.1663 0 15.8879C0 14.6096 0.136986 13.2856 0.410959 11.916C0.684932 10.5463 1.05023 9.22231 1.50685 7.94397C1.96347 6.66563 2.55708 5.61556 3.28767 4.79377C3.83562 4.1546 4.47489 3.56109 5.20548 3.01323C5.84475 2.55668 6.57534 2.05447 7.39726 1.50661C8.3105 0.958755 9.31507 0.45655 10.411 0L15.2055 1.23268C14.4749 1.87185 13.79 2.41971 13.1507 2.87626C12.6027 3.33281 12.1005 3.74371 11.6438 4.10895C11.1872 4.47419 10.7306 4.83943 10.274 5.20467C9.6347 5.75253 9.08676 6.30039 8.63014 6.84825C8.17352 7.3048 7.76256 7.85266 7.39726 8.49183C7.03196 9.03969 6.89498 9.6332 6.9863 10.2724C7.7169 9.72451 8.44749 9.40493 9.17808 9.31362C10 9.131 10.7306 9.08534 11.3699 9.17665C12.1005 9.26796 12.831 9.45058 13.5616 9.72451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+
+                                                            <p>
+                                                                Nullam vitae diam sit amet risus laoreet lobortis. Sed
+                                                                euismod risus eu enim consectetur, sit amet lobortis
+                                                                enim auctor. Duis sed odio sit amet ligula semper
+                                                                mollis. Morbi ac diam sed lorem facilisis hendrerit.
+                                                                Nullam dolor sit amet consecteture.
+                                                            </p>
+
+                                                            <h6>Curabitur arcu erat</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="job-environment__slide-item">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="37"
+                                                                    height="24"
+                                                                    viewBox="0 0 37 24"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M32.4658 9.03969C33.8356 9.49624 34.9315 10.318 35.7534 11.5051C36.5753 12.6008 36.9863 13.8335 36.9863 15.2031C37.0776 16.5728 36.7123 17.9424 35.8904 19.3121C35.1598 20.5904 33.9726 21.6861 32.3288 22.5992C29.6804 23.9689 27.3516 24.3341 25.3425 23.6949C23.3333 22.9645 21.9178 21.8687 21.0959 20.4078C20.6393 19.6773 20.274 18.6729 20 17.3946C19.8174 16.1162 19.726 14.7922 19.726 13.4226C19.8174 11.9616 20 10.5463 20.274 9.17665C20.5479 7.807 20.9589 6.66563 21.5068 5.75253C21.9635 5.11336 22.5114 4.42853 23.1507 3.69805C23.6986 3.05888 24.3379 2.41971 25.0685 1.78054C25.8904 1.14137 26.8037 0.54786 27.8082 0L32.6027 0.27393C31.9635 1.00441 31.3699 1.68923 30.8219 2.3284C30.3653 2.87626 29.9543 3.37847 29.589 3.83502C29.2237 4.29157 28.8584 4.70246 28.4932 5.0677C27.8539 5.70687 27.3516 6.34604 26.9863 6.98521C26.621 7.53307 26.3014 8.12659 26.0274 8.76576C25.8447 9.40493 25.8447 10.0441 26.0274 10.6833C27.2146 9.40493 28.5845 8.76576 30.137 8.76576C30.8676 8.76576 31.6438 8.85707 32.4658 9.03969ZM13.5616 9.72451C14.8402 10.455 15.7534 11.4594 16.3014 12.7377C16.9406 13.9248 17.1689 15.2031 16.9863 16.5728C16.8037 17.9424 16.21 19.2208 15.2055 20.4078C14.2922 21.5948 12.9224 22.5079 11.0959 23.1471C8.26484 24.0602 5.93607 24.0145 4.10959 23.0101C2.28311 21.9144 1.05023 20.5904 0.410959 19.0381C0.136986 18.2163 0 17.1663 0 15.8879C0 14.6096 0.136986 13.2856 0.410959 11.916C0.684932 10.5463 1.05023 9.22231 1.50685 7.94397C1.96347 6.66563 2.55708 5.61556 3.28767 4.79377C3.83562 4.1546 4.47489 3.56109 5.20548 3.01323C5.84475 2.55668 6.57534 2.05447 7.39726 1.50661C8.3105 0.958755 9.31507 0.45655 10.411 0L15.2055 1.23268C14.4749 1.87185 13.79 2.41971 13.1507 2.87626C12.6027 3.33281 12.1005 3.74371 11.6438 4.10895C11.1872 4.47419 10.7306 4.83943 10.274 5.20467C9.6347 5.75253 9.08676 6.30039 8.63014 6.84825C8.17352 7.3048 7.76256 7.85266 7.39726 8.49183C7.03196 9.03969 6.89498 9.6332 6.9863 10.2724C7.7169 9.72451 8.44749 9.40493 9.17808 9.31362C10 9.131 10.7306 9.08534 11.3699 9.17665C12.1005 9.26796 12.831 9.45058 13.5616 9.72451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+
+                                                            <p>
+                                                                Nullam vitae diam sit amet risus laoreet lobortis. Sed
+                                                                euismod risus eu enim consectetur, sit amet lobortis
+                                                                enim auctor. Duis sed odio sit amet ligula semper
+                                                                mollis. Morbi ac diam sed lorem facilisis hendrerit.
+                                                                Nullam dolor sit amet consecteture.
+                                                            </p>
+
+                                                            <h6>Curabitur arcu erat</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="mt-3 d-flex align-items-center">
+                                                    <i id="job-slide-prev">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="40"
+                                                            height="40"
+                                                            viewBox="0 0 40 40"
+                                                            fill="none"
+                                                        >
+                                                            <path
+                                                                d="M23.333 11.6667L16.6663 20.0001L23.333 28.3334"
+                                                                stroke="#ffffff"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            />
+                                                        </svg>
+                                                    </i>
+
+                                                    <i id="job-slide-next" class="ml-4">
+                                                        <svg
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            width="40"
+                                                            height="40"
+                                                            viewBox="0 0 40 40"
+                                                            fill="none"
+                                                        >
+                                                            <path
+                                                                d="M16.667 11.6667L23.3337 20.0001L16.667 28.3334"
+                                                                stroke="white"
+                                                                stroke-width="2"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            />
+                                                        </svg>
+                                                    </i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                                            <div class="job-environment__slide-title">
+                                                <h4>
+                                                    <span class="text-cta">Văn hóa</span> &
+                                                    <span class="text-cta">tin tức</span> đổi mới tại công ty
+                                                </h4>
+
+                                                <i class="mt-5">
+                                                    <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="305"
+                                                        height="15"
+                                                        viewBox="0 0 305 15"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M0.466126 8.20713C0.0755921 7.81661 0.075592 7.18344 0.466125 6.79292L6.83008 0.428958C7.22061 0.0384333 7.85376 0.0384333 8.24429 0.428958C8.6348 0.819482 8.6348 1.45265 8.24429 1.84317L2.58743 7.50003L8.24429 13.1569C8.6348 13.5474 8.6348 14.1806 8.24429 14.5711C7.85376 14.9616 7.22061 14.9616 6.83008 14.5711L0.466126 8.20713ZM305 8.5L1.17322 8.50003L1.17322 6.50003L305 6.5L305 8.5Z"
+                                                            fill="#FFDC00"
+                                                        />
+                                                    </svg>
+                                                </i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="owl-carousel job-environment__auto owl-theme">
+                        <div class="item">
+                            <div class="job-environment__auto-item">
+                                <div class="job-environment__auto-crile"></div>
+                                <p>F1 Commodities Trading</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="job-environment__auto-item">
+                                <div class="job-environment__auto-crile"></div>
+                                <p>F1 Commodities Trading</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="job-environment__auto-item">
+                                <div class="job-environment__auto-crile"></div>
+                                <p>F1 Commodities Trading</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="job-environment__auto-item">
+                                <div class="job-environment__auto-crile"></div>
+                                <p>F1 Commodities Trading</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="job-environment__auto-item">
+                                <div class="job-environment__auto-crile"></div>
+                                <p>F1 Commodities Trading</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="job-environment__auto-item">
+                                <div class="job-environment__auto-crile"></div>
+                                <p>F1 Commodities Trading</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="job-environment__auto-item">
+                                <div class="job-environment__auto-crile"></div>
+                                <p>F1 Commodities Trading</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!--@@@ End Main  -->
+
+            <!--@@@ Start Footer  -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="index.html" class="footer__logo">
+                                <img src="assets/img/logo/logo-1.png" alt="F1" />
+                            </a>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="social">
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/facebook.png" alt="Facebook" />
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/youtube.png" alt="Youtube" />
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/linkedin.png" alt="Linkedin" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="container p-0">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <h3 class="footer__title">Giới thiệu</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Về công ty</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Về nền tảng giao dịch Vượt trội CQG</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tin tức nội bộ</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Cơ hội nghề nghiệp</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Thông tin liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3 class="footer__title">Giao dịch</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Nền tảng giao dịch Vượt trội CQG</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Hướng dẫn giao dịch A-Z</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Lịch giao dịch & sự kiện</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Biểu phí</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Ký quỹ & đòn bẩy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3 class="footer__title">Kiến thức & Đào tạo</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Hướng dẫn sử dụng phần mềm </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tài liệu khoá học</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Khoá học</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3 class="footer__title">Thông tin thị trường</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Nhận định hàng ngày</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Báo cáo bởi Tornado</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tin tức</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="copy-right">
+                        <p>@2024 Commomdities Trading. All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+            <!--@@@ End Footer  -->
+        </div>
+
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+        <script src="vendor/chartjs/chart.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
