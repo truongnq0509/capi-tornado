@@ -37,12 +37,12 @@
 		:: 12.8 Request Withdrawal Page
 		:: 12.9 Info Transfer Page
 		:: 12.10 Account Overview Page
-	:: 13.0 News Page (Tin tức giới thiệu &  Tin tức thị trường)
-	 	:: 13.1 News Detail Page ( Chi tiết tin tức giới thiêu & && Chi tiết tin tức thị trường )
+	:: 13.0 News Page (Tin tức giới thiệu |  Tin tức thị trường)
+	 	:: 13.1 News Detail Page ( Chi tiết tin tức giới thiêu | Chi tiết tin tức thị trường | Báo cáo chi tiết | Nhận định chi tiết )
 	:: 14.0 Contact Page
 	:: 15.0 Job Page (Cơ hội nghề nghiệp)
 		:: 15.1 Job Detail Page (Mô tả công việc)
-	:: 16.0 Report Page (Danh sách báo cáo)
+	:: 16.0 Report Page (Danh sách báo cáo | Danh sách nhận định)
 -----------------------------------------------------------------------------------*/
 
 
@@ -262,14 +262,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	height: 20px;
 	border-width: thin;
 }
+
 @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    } 
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -5305,8 +5308,20 @@ fw-7 {
 	width: 100%;
 }
 
+.news-list .container .row .item-new .new-description p {
+	overflow: hidden;
+	color: var(--black);
+	text-overflow: ellipsis;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
 .news-list .container .row .item-new .new-description {
 	padding: 24px;
+	position: relative;
+	z-index: 10;
 }
 
 .news-list .container .row .item-new .new-description h6 {
@@ -5322,7 +5337,7 @@ fw-7 {
 
 .news-list .container .row .item-new .new-description p {
 	overflow: hidden;
-	color: #9175B5;
+	color: var(--black);
 	text-overflow: ellipsis;
 	font-size: 14px;
 	font-style: normal;
@@ -5330,13 +5345,124 @@ fw-7 {
 	line-height: normal;
 }
 
-.news-list .container .row .item-new .background-news img {
+.news-list .container .row .item-new .background-news {
 	position: absolute;
-	bottom: -20px;
-	left: 50%;
-	transform: translateX(-50%);
+	bottom: 0;
+	left: 0;
 	width: 100%;
-	height: 100px;
+	height: auto;
+}
+
+.news-list .container .row .item-new .background-news img {
+	width: 100%;
+	height: auto;
+}
+
+.news-list .container .news-paination {
+	margin-top: 40px;
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	justify-content: center;
+}
+
+.news-list .container .news-paination li a {
+	display: flex;
+	width: 36px;
+	height: 36px;
+	padding: 8px;
+	border-radius: 8px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #D9D9D9;
+	font-weight: 400;
+	text-decoration: none;
+	border: 1px solid #D9D9D9;
+}
+
+.news-list .container .news-paination li a:hover {
+	color: var(--white-text);
+	background-color: var(--black-bg);
+}
+
+.news-footer {
+	position: relative;
+	padding: 160px 0;
+}
+
+.news-footer .news-footer__wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+.news-footer .news-footer__icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+}
+
+.news-footer .news-footer__icon img {
+	width: auto;
+	height: auto;
+}
+
+.news-footer .news-footer__card {
+	border-radius: 24px;
+	padding: 60px;
+	border: 1px solid var(--1, #FFF);
+	background: rgba(255, 255, 255, 0.30);
+	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+	backdrop-filter: blur(30px);
+	position: absolute;
+
+}
+
+.news-footer .news-footer__card.top {
+	left: 0;
+	top: -100px;
+}
+
+.news-footer .news-footer__card.bottom {
+	right: 0;
+	bottom: -100px;
+}
+
+
+.news-footer .news-footer__card h6 {
+	font-size: 40px;
+	font-weight: 600;
+}
+
+
+.news-footer .news-footer__card p {
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 12px;
+}
+
+.news-footer .news-footer__card .btn {
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+.news-footer .news-footer__bg {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: auto;
+}
+
+.news-footer .news-footer__bg img {
+	width: 100%;
+	height: 100%;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -6933,48 +7059,174 @@ fw-7 {
 	max-width: 100%;
 }
 
+.report .report-grid {
+	margin-top: 60px;
+}
+
 .report .report-search {
-	margin: 60px 0;
+	padding: 40px;
+	border-radius: 24px;
+	overflow: hidden;
+	position: relative;
+	background: rgba(255, 255, 255, 0.10);
+	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+	backdrop-filter: blur(50px);
+	position: sticky;
+	top: 24px;
+}
+
+.report .report-search .report-search__bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: auto;
+}
+
+.report .report-search .report-search__bg img {
+	width: 100%;
+	height: auto;
 }
 
 .report .report-search .report-search__wrapper {
-	display: flex;
-	gap: 32px;
-	align-items: center;
+	position: relative;
+	z-index: 10;
 }
 
 .report .report-search .report-search__input {
-	flex: 1;
 	position: relative;
 }
 
 .report .report-search .report-search__icon {
 	position: absolute;
-	top: 50%;
 	left: 12px;
+	top: 50%;
 	transform: translateY(-50%);
 }
 
-
 .report .report-search .report-search__input .form-control {
-	padding: 12px 24px 12px 48px;
+	padding: 12px 12px 12px 40px;
 	border: 1px solid #D9D9D9;
 	border-radius: 10px;
 }
 
-.report .report-search .report-search__filter p {
+.report .report-search .report-search__box {
+	margin-top: 32px;
+}
+
+.report .report-search .report-search__box h6 {
+	font-size: 18px;
+	padding-left: 12px;
+	position: relative;
+	font-weight: 700;
+	line-height: 100%;
+}
+
+.report .report-search .report-search__box h6:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 3px;
+	height: 100%;
+	background-color: var(--primary-bg);
+}
+
+.report .report-search .report-search__box ul {
+	margin-top: 24px;
+}
+
+.report .report-search .report-search__box ul li {
+	margin-top: 8px;
+}
+
+.report .report-search .report-search__box ul li a {
+	color: #8F8F8F;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.report .report-title {
+	height: 320px;
+	max-height: 100%;
+	border-radius: 20px;
+	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
+	position: relative;
+	margin: 0 15px;
+}
+
+.report .report-title .report-title__box {
+	position: absolute;
+	left: 48px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 460px;
+	max-width: 100%;
+}
+
+.report .report-title .report-title__bg-1 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+}
+
+.report .report-title .report-title__bg-2 {
+	position: absolute;
+	top: 50%;
+	right: -80px;
+	transform: translateY(-50%);
+	width: 280px;
+	height: 280px;
+}
+
+.report .report-title .report-title__bg-1 img {
+	width: auto;
+	height: auto;
+}
+
+.report .report-title .report-title__bg-2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.report .report-title .report-title__box .report-title__box-tag {
+	display: inline-flex;
+	padding: 6px 20px;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--black-text);
+	background-color: var(--primary-bg);
+	margin-bottom: 28px;
+}
+
+.report .report-title .report-title__box h5 {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.report .report-title .report-title__box .report-title__box-desc {
 	font-size: 16px;
 	font-weight: 400;
 }
 
-.report .report-search .report-search__filter p span {
-	font-weight: 700;
+.report .report-title .report-title__box .report-title__box-date {
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 40px;
 }
 
-.report .report-search .report-search__filter p i {
-	display: inline-flex;
-	height: max-content;
+.report .report-title .report-title__box .report-title__box-date p {
+	font-size: 14px;
 	margin-left: 8px;
+}
+
+.report .report-list {
+	margin-top: 48px;
 }
 
 .report .report-list__wrapper .report-list__item {
@@ -6988,21 +7240,33 @@ fw-7 {
 	background-color: var(--primary-bg);
 }
 
+.report .report-list__wrapper .report-list__item:hover .report-list__item-date {
+	background-color: var(--white-bg);
+}
+
 .report .report-list__wrapper .report-list__item h5 {
 	font-size: 24px;
 	font-weight: 700;
 }
 
 .report .report-list__wrapper .report-list__item .report-list__item-desc {
-	margin-top: 48px;
+	padding-top: 24px;
+	margin-top: 8px;
 	font-size: 16px;
 	font-weight: 500;
+	border-top: 1px solid var(--primary-bg);
 }
 
 .report .report-list__wrapper .report-list__item .report-list__item-date {
+	display: inline-flex;
+	width: max-content;
 	font-size: 14px;
-	font-weight: 400;
-	margin-top: 24px;
+	font-weight: 600;
+	margin-bottom: 24px;
+	padding: 6px 20px;
+	border-radius: 20px;
+	color: var(--black-text);
+	background-color: var(--primary-bg);
 }
 
 .report .report-list__pagination {
@@ -7056,31 +7320,36 @@ fw-7 {
 	text-decoration: none;
 	color: var(--cta-text);
 }
+
 .report-top__mb {
 	display: none;
 	border-radius: 20px;
 	background: #FFF;
 	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
 }
+
 .report-top__mb .report-top__box__heading-mb {
 	margin-top: 32px;
 }
-.report-top__mb .report-top__box__heading-mb h4{
-	color:  #161616;
+
+.report-top__mb .report-top__box__heading-mb h4 {
+	color: #161616;
 	text-align: center;
 	font-size: 40px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
 }
-.report-top__mb .report-top__box__heading-mb .d-flex h4{
-	color:  #161616;
+
+.report-top__mb .report-top__box__heading-mb .d-flex h4 {
+	color: #161616;
 	font-size: 40px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
 }
-.report-top__mb .report-top__box__heading-mb .sub-heading p{
+
+.report-top__mb .report-top__box__heading-mb .sub-heading p {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 32px;
@@ -7088,17 +7357,20 @@ fw-7 {
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 20px; 
+	line-height: 20px;
 }
+
 @media only screen and (max-width: 600px) {
 	.report .report-top .report-top__wrapper {
 		display: none;
 	}
+
 	.report-top__mb {
 		display: block;
-		
+
 	}
-	.report-top__mb .report-top__bg-mb img{
+
+	.report-top__mb .report-top__bg-mb img {
 		width: 100%;
 	}
 }
