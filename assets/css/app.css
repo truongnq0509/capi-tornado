@@ -5724,6 +5724,12 @@ fw-7 {
 	position: absolute;
 
 }
+.news-footer .news-footer__box .news-footer__logo{
+	animation: rotation;
+    animation-duration: 20000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
 .news-footer .news-footer__card.top {
 	left: 0;
