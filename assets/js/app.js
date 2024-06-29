@@ -12,6 +12,8 @@
 // :: 10.0 Toggle menu quản lý tài khoản
 // :: 11.0 Slide tin tức
 // :: 12.0 Slide cơ hội nghề nghiệp
+// :: 13.0 Slide công việc
+// :: 14.0 Active Tabs (Hướng dẫn giao dịch A-Z)
 
 
 $(document).ready(function () {
@@ -461,16 +463,16 @@ $(document).ready(function () {
 		$("#menu").slideToggle("slow");
 	});
 
-    // 10.0 Toggle menu quản lý tài khoản 
+	// 10.0 Toggle menu quản lý tài khoản 
 	$(".account-layout__sub").hide();
-	
+
 	$('.account-layout__item .account-layout__link').click(function () {
 		$(this).toggleClass('active')
 		var $ul = $(this).siblings('ul');
 		if ($ul.length > 0) {
-				$ul.slideToggle(300);
-				$(".account-layout__sub").not($ul).slideUp(400);
-				return false;
+			$ul.slideToggle(300);
+			$(".account-layout__sub").not($ul).slideUp(400);
+			return false;
 		}
 	});
 
@@ -526,10 +528,10 @@ $(document).ready(function () {
 		}
 	});
 
-	$('#job-next').click(function() {
+	$('#job-next').click(function () {
 		owlJob.trigger('next.owl.carousel');
 	})
-	$('#job-prev').click(function() {
+	$('#job-prev').click(function () {
 		owlJob.trigger('prev.owl.carousel', [300]);
 	})
 
@@ -558,14 +560,14 @@ $(document).ready(function () {
 		}
 	});
 
-	$('#job-slide-next').click(function() {
+	$('#job-slide-next').click(function () {
 		owlJobSlide.trigger('next.owl.carousel');
 	})
-	$('#job-slide-prev').click(function() {
+	$('#job-slide-prev').click(function () {
 		owlJobSlide.trigger('prev.owl.carousel', [300]);
 	})
 
-	// :: 7.0 Slide đánh giá khách hàng
+	// :: 13.0 Slide công việc
 	var owlJobAuto = $('.owl-carousel.job-environment__auto');
 	owlJobAuto.owlCarousel({
 		dots: false,
@@ -589,11 +591,101 @@ $(document).ready(function () {
 			}
 		}
 	});
+
+	// :: 14.0 Giao dịch A-Z
+	$('.transaction-az__tabs-account__step-content').hide();
+	$('.transaction-az__tabs-account__step-4').show();
+
+	$('.transaction-az__tabs-account__item').click(function () {
+		$('.transaction-az__tabs-account__item').removeClass('active');
+
+		$(this).addClass('active');
+		var stepIndex = $(this).index() + 1;
+
+		$('.transaction-az__tabs-account__step-content').hide();
+
+		$('.transaction-az__tabs-account__step-' + stepIndex).show();
+	});
+
+	// 
+	$('.transaction-az__tabs-common').hide();
+	$('.transaction-az__tabs-4').show();
+
+	$('.transaction-az__tabs-grid .transaction-az__tabs-item').click(function () {
+		$('.transaction-az__tabs-grid .transaction-az__tabs-item').removeClass('active');
+
+		$(this).addClass('active');
+		var index = $(this).closest('.col-3').index() + 1;
+
+		$('.transaction-az__tabs-common').hide();
+
+		$('.transaction-az__tabs-' + index).show();
+	});
+
+
+	// 
+	$(".transaction-az__question-box").hide();
+
+	$('.transaction-az__question-list .transaction-az__question-click').click(function () {
+		$(this).toggleClass('active')
+
+		var $ul = $(this).siblings('ul');
+		if ($ul.length > 0) {
+			$ul.slideToggle(300);
+			$(".transaction-az__question-box").not($ul).slideUp(400);
+			return false;
+		}
+	});
+
+	$(".transaction-az__tabs-money__list .transaction-az__tabs-common").hide();
+	$(".transaction-az__tabs-money__list .transaction-az__tabs-common").first().show().addClass('active');
+	$('.transaction-az__tabs-money__list .transaction-az__tabs-money__item-click').click(function () {
+		$('.transaction-az__tabs-money__list .transaction-az__tabs-money__item').toggleClass('active');
+
+		var $ul = $(this).siblings('ul');
+		if ($ul.length > 0) {
+			$ul.slideToggle(300);
+			$(".transaction-az__tabs-money__list .transaction-az__tabs-common").not($ul).slideUp(400);
+			return false;
+		}
+	});
+
+	$(".transaction-az__tabs-cmd__list .transaction-az__tabs-cmd__ul").hide();
+	$(".transaction-az__tabs-cmd__list .transaction-az__tabs-cmd__ul").first().show().addClass('active');
+	$('.transaction-az__tabs-cmd__list .transaction-az__tabs-cmd__item-click').click(function () {
+		$('.transaction-az__tabs-cmd__list .transaction-az__tabs-cmd__item').toggleClass('active');
+
+		var $ul = $(this).siblings('ul');
+		if ($ul.length > 0) {
+			$ul.slideToggle(300);
+			$(".transaction-az__tabs-cmd__list .transaction-az__tabs-cmd__ul").not($ul).slideUp(400);
+			return false;
+		}
+	});
+
+	var owlTransactionAZAuto = $('.owl-carousel.transaction-az__auto');
+	owlTransactionAZAuto.owlCarousel({
+		dots: false,
+		loop: true,
+		margin: 24,
+		stagePadding: 0,
+		smartSpeed: 10000,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: false,
+		slideTransition: 'linear',
+		responsive: {
+			0: {
+				items: 2
+			},
+			768: {
+				items: 3
+			},
+			992: {
+				items: 5
+			}
+		}
+	});
+
 })
-
-// (function ($) {
-// 	'use strict';
-
-	
-// }(jQuery));
 

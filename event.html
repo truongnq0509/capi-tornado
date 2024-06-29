@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Capi x Tornado | Lịch sử giao dịch và sự kiện</title>
+
+        <link rel="icon" href="assets/img/logo/logo-1.png" />
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css" type="text/css" />
+        <link rel="stylesheet" href="vendor/owl-carousel/css/owl.theme.default.min.css" type="text/css" />
+        <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css" type="text/css" />
+        <link rel="stylesheet" href="assets/css/app.css" type="text/css" />
+    </head>
+
+    <body>
+        <div id="app">
+            <!--@@@ Start Header  -->
+            <header class="header">
+                <div class="header__container container d-flex align-items-center">
+                    <div class="header__left">
+                        <a href="index.html" class="header__logo">
+                            <img src="assets/img/logo/logo-1.png" alt="F1" />
+                        </a>
+
+                        <nav class="header__nav">
+                            <ul class="d-flex">
+                                <li class="nav__item">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#">Giao dịch</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#">Kiến thức và đào tạo</a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#">Thông tin thị trường</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="header__right d-flex align-items-center">
+                        <div class="header__search">
+                            <img src="assets/img/icon/icon-search.png" alt="Search" />
+                        </div>
+
+                        <a href="login.html" class="btn btn--login text-uppercase">Đăng Nhập</a>
+                        <a href="register.html" class="btn btn--register text-uppercase">Đăng Ký</a>
+
+                        <div class="header__menu-icon">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                id="bar"
+                            >
+                                <path
+                                    d="M8 10H23M8 16H23M8 22H23"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                />
+                            </svg>
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                id="close"
+                            >
+                                <path
+                                    d="M21.6565 10.3432L10.3428 21.6569M21.6565 21.6569L10.3428 10.3431"
+                                    stroke="white"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Nav Mobile -->
+                    <div id="menu" class="header-nav__mobile">
+                        <div class="header-nav__mobile-input">
+                            <i class="header-nav__mobile-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 18 18"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
+                                        stroke="#8F8F8F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M15.7498 15.75L12.4873 12.4875"
+                                        stroke="#8F8F8F"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </i>
+                            <input type="text" class="form-control" placeholder="Tìm kiếm" />
+                        </div>
+                        <nav class="header-nav__mobile-list">
+                            <ul class="d-flex flex-column">
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Trang chủ</a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Giao dịch</a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Kiến thức và đào tạo</a>
+                                </li>
+                                <li class="header-nav__mobile-item">
+                                    <a href="#">Thông tin thị trường</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="header-nav__mobile-btn">
+                            <a href="login.html" class="btn btn__login btn--primary">Đăng Nhập</a>
+                            <a href="register.html" class="btn btn__register btn--primary">Đăng Ký</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--@@@ End Header  -->
+            <!--@@@ Start Main  -->
+            <main class="main">
+                <div class="event">
+                    <div class="container">
+                        <div class="event-container">
+                            <div class="event-top">
+                                <div class="event-top__img">
+                                    <img src="assets/img/background/20. Financial Report (1).png" alt="F1" />
+                                </div>
+
+                                <i class="event-top__icon">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="115"
+                                        height="136"
+                                        viewBox="0 0 115 136"
+                                        fill="none"
+                                    >
+                                        <path
+                                            d="M44.3303 136C35.1838 136 27.2885 134.363 20.6443 131.09C14.0002 127.816 8.88764 123.38 5.3067 117.781C1.7689 112.138 0 105.85 0 98.915C0 93.7463 1.03545 89.1591 3.10636 85.1535C5.17726 81.1478 8.0679 77.4651 11.7783 74.1055C15.4887 70.7028 19.803 67.3216 24.7214 63.962L50.4136 47.0993C53.7357 44.9888 56.1733 42.7705 57.7265 40.4447C59.2797 38.0757 60.0563 35.5129 60.0563 32.7563C60.0563 30.1289 58.9992 27.6953 56.8852 25.4556C54.7711 23.2158 51.7726 22.1175 47.8897 22.1606C45.3011 22.1606 43.0576 22.742 41.1593 23.905C39.2609 25.0249 37.7725 26.5108 36.6939 28.3629C35.6584 30.172 35.1407 32.1964 35.1407 34.4361C35.1407 37.1927 35.9173 39.9924 37.4704 42.8352C39.0236 45.6779 41.0945 48.693 43.6832 51.8803C46.2718 55.0245 49.0977 58.4272 52.1609 62.0884L115 134.062H86.2662L33.8464 75.7853C30.3949 71.8657 26.9433 67.7739 23.4918 63.5097C20.0835 59.2025 17.236 54.6369 14.9494 49.8128C12.6627 44.9457 11.5194 39.6694 11.5194 33.9838C11.5194 27.5661 13.0079 21.7945 15.9848 16.6689C19.0049 11.5433 23.233 7.49454 28.6691 4.52256C34.1052 1.50752 40.4474 0 47.6955 0C54.7711 0 60.876 1.44292 66.0101 4.32874C71.1874 7.1715 75.1566 10.9618 77.9178 15.6998C80.7222 20.3946 82.1244 25.5633 82.1244 31.2057C82.1244 37.4511 80.5712 43.1151 77.4648 48.1976C74.4016 53.2371 70.0872 57.7596 64.5217 61.7653L37.4704 81.2123C33.8032 83.8828 31.0852 86.6179 29.3163 89.4176C27.5905 92.1742 26.7276 94.8231 26.7276 97.3644C26.7276 100.509 27.5042 103.33 29.0574 105.828C30.6106 108.326 32.8109 110.308 35.6584 111.772C38.5059 113.193 41.8496 113.904 45.6894 113.904C50.3489 113.904 54.9437 112.849 59.4738 110.738C64.0471 108.585 68.1889 105.548 71.8993 101.629C75.6528 97.6659 78.6513 92.971 80.8948 87.5439C83.1382 82.1169 84.26 76.1083 84.26 69.5183H107.105C107.105 77.6158 106.22 84.9165 104.451 91.4204C102.682 97.8812 100.223 103.524 97.0737 108.348C93.9242 113.129 90.3217 117.048 86.2662 120.106C84.9719 120.925 83.7207 121.7 82.5126 122.432C81.3046 123.165 80.0535 123.94 78.7591 124.758C73.8407 128.721 68.3399 131.585 62.2566 133.351C56.2165 135.117 50.241 136 44.3303 136Z"
+                                            fill="white"
+                                            fill-opacity="0.4"
+                                        />
+                                    </svg>
+                                </i>
+
+                                <div class="event-top__box">
+                                    <div class="event-top__box-left">
+                                        <p>Lịch giao dịch</p>
+                                        <p>Sự kiện</p>
+                                    </div>
+                                    <div class="event-top__box-right">
+                                        <p>Lịch trình chi tiết, cập nhật liên tục, không bỏ lỡ cơ hội đầu tư.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-tags">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="event-tags__item d-flex align-items-center">
+                                            <i>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="25"
+                                                    height="24"
+                                                    viewBox="0 0 25 24"
+                                                    fill="none"
+                                                >
+                                                    <path
+                                                        d="M7.5 14V17"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M11.5 12V17"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M15.5 14V17"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M19.5 12V17"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M2.5 2V18C2.5 20.2091 4.29086 22 6.5 22H22.5"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M7.5 10L10.0858 7.41421C10.8668 6.63316 12.1332 6.63317 12.9142 7.41421L14.0858 8.58579C14.8668 9.36684 16.1332 9.36683 16.9142 8.58579L19.5 6"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                </svg>
+                                            </i>
+
+                                            <p class="ml-2">Thời gian giao dịch</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="event-tags__item d-flex align-items-center">
+                                            <i>
+                                                <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="25"
+                                                    height="24"
+                                                    viewBox="0 0 25 24"
+                                                    fill="none"
+                                                >
+                                                    <rect
+                                                        x="2.5"
+                                                        y="2"
+                                                        width="20"
+                                                        height="16"
+                                                        rx="3"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                    />
+                                                    <path
+                                                        d="M9.5 22H12.5M15.5 22H12.5M12.5 22V18"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                    />
+                                                    <path
+                                                        d="M11.5 15H13.5"
+                                                        stroke="#161616"
+                                                        stroke-width="1.5"
+                                                        stroke-linecap="round"
+                                                    />
+                                                </svg>
+                                            </i>
+                                            <p class="ml-2">Lịch đáo hạn</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-table">
+                                <div class="event-table__bg">
+                                    <img src="assets/img/background/Group 46882 (4).png" alt="F1" />
+                                </div>
+
+                                <div class="event-table__wrapper">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Tên hàng hóa</th>
+                                                <th>Nhóm hàng hóa</th>
+                                                <th>Sở giao dịch nước ngoài liên thông</th>
+                                                <th>Thời gian giao dịch</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Ngô</td>
+                                                <td>Nông sản</td>
+                                                <td>CBOT</td>
+                                                <td>
+                                                    <p>Thứ 2 - Thứ 6</p>
+
+                                                    <div class="d-flex">
+                                                        <div class="d-flex">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                        <div class="d-flex ml-4">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>(ngày hôm sau)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Ngô</td>
+                                                <td>Nông sản</td>
+                                                <td>CBOT</td>
+                                                <td>
+                                                    <p>Thứ 2 - Thứ 6</p>
+
+                                                    <div class="d-flex">
+                                                        <div class="d-flex">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                        <div class="d-flex ml-4">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>(ngày hôm sau)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Ngô</td>
+                                                <td>Nông sản</td>
+                                                <td>CBOT</td>
+                                                <td>
+                                                    <p>Thứ 2 - Thứ 6</p>
+
+                                                    <div class="d-flex">
+                                                        <div class="d-flex">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                        <div class="d-flex ml-4">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>(ngày hôm sau)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Ngô</td>
+                                                <td>Nông sản</td>
+                                                <td>CBOT</td>
+                                                <td>
+                                                    <p>Thứ 2 - Thứ 6</p>
+
+                                                    <div class="d-flex">
+                                                        <div class="d-flex">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                        <div class="d-flex ml-4">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>(ngày hôm sau)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Ngô</td>
+                                                <td>Nông sản</td>
+                                                <td>CBOT</td>
+                                                <td>
+                                                    <p>Thứ 2 - Thứ 6</p>
+
+                                                    <div class="d-flex">
+                                                        <div class="d-flex">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                        <div class="d-flex ml-4">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>(ngày hôm sau)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Ngô</td>
+                                                <td>Nông sản</td>
+                                                <td>CBOT</td>
+                                                <td>
+                                                    <p>Thứ 2 - Thứ 6</p>
+
+                                                    <div class="d-flex">
+                                                        <div class="d-flex">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                        <div class="d-flex ml-4">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>(ngày hôm sau)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Ngô</td>
+                                                <td>Nông sản</td>
+                                                <td>CBOT</td>
+                                                <td>
+                                                    <p>Thứ 2 - Thứ 6</p>
+
+                                                    <div class="d-flex">
+                                                        <div class="d-flex">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                        <div class="d-flex ml-4">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>(ngày hôm sau)</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>Ngô</td>
+                                                <td>Nông sản</td>
+                                                <td>CBOT</td>
+                                                <td>
+                                                    <p>Thứ 2 - Thứ 6</p>
+
+                                                    <div class="d-flex">
+                                                        <div class="d-flex">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                        <div class="d-flex ml-4">
+                                                            <i>
+                                                                <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="8"
+                                                                    height="9"
+                                                                    viewBox="0 0 8 9"
+                                                                    fill="none"
+                                                                >
+                                                                    <path
+                                                                        d="M0.0538688 0.0388451C0.00266607 0.0838356 -0.0128537 0.155209 0.0135281 0.215718L1.84895 4.49942L0.0135285 8.78313C-0.047562 8.91099 0.11102 9.05736 0.233847 8.97706C0.233841 8.97707 7.68107 4.63285 7.68107 4.63285C7.78225 4.57859 7.78381 4.42024 7.68106 4.366C7.68107 4.366 0.23384 0.0217819 0.23384 0.0217819C0.176435 -0.0123558 0.103508 -0.00614548 0.0538688 0.0388451Z"
+                                                                        fill="#FFDC00"
+                                                                    />
+                                                                </svg>
+                                                            </i>
+                                                            <p class="ml-2">Phiên 1: 07:00 - 19:45</p>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>(ngày hôm sau)</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!--@@@ End Main  -->
+
+            <!--@@@ Start Footer  -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__top">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="index.html" class="footer__logo">
+                                <img src="assets/img/logo/logo-1.png" alt="F1" />
+                            </a>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="social">
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/facebook.png" alt="Facebook" />
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/youtube.png" alt="Youtube" />
+                                </a>
+                                <a href="#" class="social__link">
+                                    <img src="assets/img/icon/social/linkedin.png" alt="Linkedin" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <div class="container p-0">
+                            <div class="row">
+                                <div class="col-12 col-md-3">
+                                    <h3 class="footer__title">Giới thiệu</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Về công ty</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Về nền tảng giao dịch Vượt trội CQG</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tin tức nội bộ</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Cơ hội nghề nghiệp</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Thông tin liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3 class="footer__title">Giao dịch</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Nền tảng giao dịch Vượt trội CQG</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Hướng dẫn giao dịch A-Z</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Lịch giao dịch & sự kiện</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Biểu phí</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Ký quỹ & đòn bẩy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3 class="footer__title">Kiến thức & Đào tạo</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Hướng dẫn sử dụng phần mềm </a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tài liệu khoá học</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Khoá học</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-3 mt-5 mt-md-0">
+                                    <h3 class="footer__title">Thông tin thị trường</h3>
+
+                                    <ul class="footer__nav">
+                                        <li class="footer__item">
+                                            <a href="#">Nhận định hàng ngày</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Báo cáo bởi Tornado</a>
+                                        </li>
+                                        <li class="footer__item">
+                                            <a href="#">Tin tức</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="copy-right">
+                        <p>@2024 Commomdities Trading. All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
+            <!--@@@ End Footer  -->
+        </div>
+
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+        <script src="vendor/chartjs/chart.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
