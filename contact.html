@@ -144,133 +144,104 @@
             <!--@@@ Start Main  -->
             <main class="main">
                 <!--@@@ Start Main  -->
-                <div class="contact">
-                    <div class="contact__bg-1">
-                        <img src="assets/img/background/bg-1.png" alt="F1" />
-                    </div>
-                    <div class="contact__bg-2">
-                        <img src="assets/img/background/1375.png" alt="F1" />
-                    </div>
-
-                    <div class="contact__bg-3">
-                        <img src="assets/img/background/1401.png" alt="F1" />
-                    </div>
-
-                    <div class="contact__wrapper">
-                        <div class="container">
-                            <form class="contact__form">
-                                <div class="contact__logo">
-                                    <img src="assets/img/logo/logo-1.png" alt="F1" />
-                                </div>
-
-                                <p>Liên hệ tư vấn đầu tư</p>
-
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="contact__label">
-                                            <i class="contact__icon">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="32"
-                                                    height="32"
-                                                    viewBox="0 0 32 32"
-                                                    fill="none"
-                                                >
-                                                    <path
-                                                        fill-rule="evenodd"
-                                                        clip-rule="evenodd"
-                                                        d="M29.3337 16C29.3337 20.0178 27.5565 23.6205 24.7454 26.0651C22.4044 28.1008 19.3463 29.3333 16.0003 29.3333C12.6544 29.3333 9.59624 28.1008 7.25521 26.0651C4.44412 23.6205 2.66699 20.0178 2.66699 16C2.66699 8.63616 8.63653 2.66663 16.0003 2.66663C23.3641 2.66663 29.3337 8.63616 29.3337 16ZM16.0004 25.3333C18.3425 25.3333 20.4832 24.4706 22.1219 23.0455C22.3106 22.8815 22.4926 22.71 22.6675 22.5315C21.2262 20.2004 18.7781 18.6666 16.0004 18.6666C13.2227 18.6666 10.7745 20.2004 9.33325 22.5315C9.50814 22.71 9.69013 22.8815 9.87878 23.0455C11.5175 24.4706 13.6582 25.3333 16.0004 25.3333ZM16.0003 16C18.2095 16 20.0003 14.2091 20.0003 12C20.0003 9.79082 18.2095 7.99996 16.0003 7.99996C13.7912 7.99996 12.0003 9.79082 12.0003 12C12.0003 14.2091 13.7912 16 16.0003 16Z"
-                                                        fill="white"
-                                                    />
-                                                </svg>
-                                            </i>
-
-                                            <input type="text" placeholder="Họ và tên" class="form-control" />
-                                        </div>
+                <section class="container__login">
+                    <div class="container">
+                        <div class="row mx-0">
+                            <!--@@@ Start col left  -->
+                            <div class="login__col__left col-md-4 col-lg-4 bg-primary col-sm-12">
+                                <div class="login__group text-sm-start">
+                                    <div class="logo__login">
+                                        <img src="assets/img/logo/logo-2.png" alt="" />
                                     </div>
-
-                                    <div class="col-12 mt-4 mt-md-5">
+                                    <div class="title__login">
+                                        <h1>Liên hệ
+                                            tư vấn đầu tư</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--@@@ End col left  -->
+                            <!--@@@ Start col Right  -->
+                            <div class="login__col__right col-md-8 col-lg-8 col-sm-12">
+                                <form class="login__form">
+                                    <div class="login__control">
+                                        <div class="login__icon">
+                                            <img src="assets/img/icon/login/user-circle.svg" alt="F1" />
+                                        </div>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="fullname"
+                                            placeholder="Họ và tên"
+                                        />
+                                    </div>
+                                    <div class="mt-4 login__control">
                                         <div class="row">
                                             <div class="col-12 col-md-6">
-                                                <div class="contact__label">
-                                                    <i class="contact__icon">
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            width="24"
-                                                            height="24"
-                                                            viewBox="0 0 24 24"
-                                                            fill="none"
-                                                        >
-                                                            <path
-                                                                d="M24 21.3333V19.1387C24 18.0483 23.3361 17.0677 22.3237 16.6628L19.6115 15.5779C18.3238 15.0628 16.8563 15.6208 16.236 16.8613L16 17.3333C16 17.3333 12.6667 16.6666 10 13.9999C7.33333 11.3333 6.66667 7.99994 6.66667 7.99994L7.13869 7.76393C8.37917 7.14369 8.93714 5.67612 8.42206 4.38841L7.33718 1.67623C6.93221 0.663809 5.95166 -6.10352e-05 4.86125 -6.10352e-05H2.66667C1.19391 -6.10352e-05 0 1.19385 0 2.66661C0 14.4487 9.55126 23.9999 21.3333 23.9999C22.8061 23.9999 24 22.806 24 21.3333Z"
-                                                                fill="white"
-                                                            />
-                                                        </svg>
-                                                    </i>
-
-                                                    <input
-                                                        type="text"
-                                                        placeholder="Số điện thoại"
-                                                        class="form-control"
-                                                    />
+                                                <div class="login__icon" style="left: 30px;">
+                                                    <img src="assets/img/icon/call.svg" alt="F1" />
                                                 </div>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="number"
+                                                    placeholder="Số điện thoại"
+                                                />
                                             </div>
-                                            <div class="col-12 col-md-6 mt-4 mt-md-0">
-                                                <div class="contact__label">
-                                                    <i class="contact__icon">
-                                                        <svg
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            width="28"
-                                                            height="24"
-                                                            viewBox="0 0 28 24"
-                                                            fill="none"
-                                                        >
-                                                            <path
-                                                                fill-rule="evenodd"
-                                                                clip-rule="evenodd"
-                                                                d="M6.00033 -6.10352e-05C3.05481 -6.10352e-05 0.666992 2.38775 0.666992 5.33327V18.6666C0.666992 21.6121 3.05481 23.9999 6.00033 23.9999H22.0003C24.9458 23.9999 27.3337 21.6121 27.3337 18.6666V5.33327C27.3337 2.38775 24.9458 -6.10352e-05 22.0003 -6.10352e-05H6.00033ZM6.55503 5.8345C6.0955 5.52815 5.47463 5.65232 5.16828 6.11185C4.86193 6.57138 4.9861 7.19225 5.44563 7.4986L10.4872 10.8597C12.6146 12.2779 15.3861 12.2779 17.5134 10.8597L22.555 7.4986C23.0146 7.19225 23.1387 6.57138 22.8324 6.11185C22.526 5.65232 21.9052 5.52815 21.4456 5.8345L16.404 9.19557C14.9485 10.1659 13.0522 10.1659 11.5966 9.19557L6.55503 5.8345Z"
-                                                                fill="white"
-                                                            />
-                                                        </svg>
-                                                    </i>
-
-                                                    <input type="email" placeholder="Email" class="form-control" />
+                                            <div class="col-12 col-md-6">
+                                                <div class="login__icon" style="left: 30px;">
+                                                    <img src="assets/img/icon/mail.svg" alt="F1" />
                                                 </div>
+                                                <input
+                                                    type="email"
+                                                    class="form-control"
+                                                    id="mail"
+                                                    placeholder="Email"
+                                                />
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-12 mt-4 mt-md-5">
-                                        <div class="contact__label">
-                                            <i class="contact__icon">
-                                                <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="28"
-                                                    height="24"
-                                                    viewBox="0 0 28 24"
-                                                    fill="none"
-                                                >
-                                                    <path
-                                                        fill-rule="evenodd"
-                                                        clip-rule="evenodd"
-                                                        d="M12.667 -6.10352e-05H15.3337C21.9611 -6.10352e-05 27.3337 5.37252 27.3337 11.9999C27.3337 18.6274 21.9611 23.9999 15.3337 23.9999H6.00033C3.05481 23.9999 0.666992 21.6121 0.666992 18.6666V11.9999C0.666992 5.37252 6.03958 -6.10352e-05 12.667 -6.10352e-05ZM8.66699 15.6666C8.11471 15.6666 7.66699 15.2189 7.66699 14.6666C7.66699 14.1143 8.11471 13.6666 8.66699 13.6666H14.0003C14.5526 13.6666 15.0003 14.1143 15.0003 14.6666C15.0003 15.2189 14.5526 15.6666 14.0003 15.6666H8.66699ZM8.66699 10.3333C8.11471 10.3333 7.66699 9.88556 7.66699 9.33327C7.66699 8.78099 8.11471 8.33327 8.66699 8.33327H19.3337C19.8859 8.33327 20.3337 8.78099 20.3337 9.33327C20.3337 9.88556 19.8859 10.3333 19.3337 10.3333H8.66699Z"
-                                                        fill="white"
-                                                    />
-                                                </svg>
-                                            </i>
-
-                                            <input type="text" placeholder="Nhu cầu" class="form-control" />
+                                    <div class="mt-4 login__control">
+                                        <div class="login__icon">
+                                            <img src="assets/img/icon/chat.svg" alt="F1" />
                                         </div>
+                                        <input
+                                            type=""
+                                            class="form-control"
+                                            id="description"
+                                            placeholder="Nhu cầu"
+                                        />
                                     </div>
 
-                                    <div class="col-12 mt-4 mt-md-5">
-                                        <button class="btn btn--primary">Gửi đi</button>
+                                   
+
+                                    <div class="login__btn row">
+                                       <div class="col-12">
+                                        <button class="btn btn--primary " style="width: 100%;">gửi đi</button>
+                                       </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--@@@ End col Right  -->
+                        </div>
+                        <div class="login__link__login">
+                            <div
+                                class="d-flex flex-column flex-md-row flex-lg-row align-items-md-center align-items-lg-center justify-content-between justify-content-md-between align-items-sm-start"
+                            >
+                                <div class="d-flex login__link__login__content">
+                                    <img src="assets/img/icon/user-circle.svg" alt="" />
+                                    <div>
+                                        <p class="login__note__title">Bạn chưa có tài khoản?</p>
+                                        <p>Hãy đăng ký tài khoản của bạn</p>
                                     </div>
                                 </div>
-                            </form>
+                                <div class="btn__link__login">
+                                    <a href="register.html" class="btn">Đăng Ký</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </main>
             <!--@@@ End Main  -->
 
