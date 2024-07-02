@@ -248,7 +248,19 @@ input[type="color"]:focus,
 	width: 1200px;
 	max-width: 100%;
 }
-
+.badge{
+	border-radius: 30px;
+	padding: 4px 16px !important;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.72px;
+	
+}
+.badge-secondary{
+	background: #303030 !important;
+}
 .line {
 	width: 100%;
 	height: 1px;
@@ -264,7 +276,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	height: 20px;
 	border-width: thin;
 }
+.bg-gray{
+	background-color: #f6f6f6;
 
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+.pagination .page__number{
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	font-size: 14px;
+	transform: translate(50%);
+	border: 1px solid #D9D9D9;
+	padding: 6px;
+	border-radius:6px ;
+}
+.pagination  .active{
+	background: #161616;
+	color: #fff;
+}
 @keyframes rotation {
 	0% {
 		transform: rotate(0deg);
@@ -3882,6 +3917,27 @@ fw-7 {
 	color: #161616;
 	font-style: italic;
 }
+.account-layout .account-layout__right .acount-info .account-info__request p,
+.account-layout .account-layout__right .acount-info .account-info__history p,
+.account-layout .account-layout__right .acount-info .account-info__list .account-info__list-item h6 {
+	color: #161616;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 1.12px;
+}
+.account-layout .account-layout__right .acount-info .account-info__request p,
+.account-layout .account-layout__right .acount-info .account-info__history p,
+.account-layout .account-layout__right .acount-info .account-info__list .account-info__list-item .percent{
+	color: #0BCF5A;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.8px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -3934,10 +3990,7 @@ fw-7 {
 		font-size: 14px;
 	}
 
-	.account-layout .account-layout__right table.table .table__tag {
-		font-size: 14px;
-		padding: 8px 16px;
-	}
+	
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -4027,11 +4080,16 @@ fw-7 {
 .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature {
 	margin-top: 20px;
 }
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__content{
+	border: 1px solid #D9D9D9;
+	border-radius: 12px;
+	padding: 24px;
+	
+}
 
 .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left {
 	display: flex;
 	height: 100%;
-	flex-direction: column;
 	justify-content: center;
 }
 
@@ -4041,7 +4099,7 @@ fw-7 {
 }
 
 .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left .btn {
-	margin-top: 60px;
+	margin-top: 20px;
 	display: inline-flex;
 	width: max-content;
 	align-items: center;
@@ -7692,15 +7750,14 @@ fw-7 {
 	background-color: var(--primary-bg);
 }
 
-.report .report-list__pagination {
-	margin-top: 48px;
+ .report-list__pagination {
 	display: flex;
 	gap: 8px;
 	align-items: center;
 	justify-content: center;
 }
 
-.report .report-list__pagination a {
+.report-list__pagination a {
 	display: inline-flex;
 	width: 36px;
 	height: 36px;
@@ -7716,12 +7773,12 @@ fw-7 {
 	color: #D9D9D9;
 }
 
-.report .report-list__pagination a i {
+ .report-list__pagination a i {
 	display: inline-flex;
 	height: max-content;
 }
 
-.report .report-list__pagination a.active {
+.report-list__pagination a.active {
 	color: var(--white-text);
 	background-color: var(--black-bg);
 }
