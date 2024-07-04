@@ -1,8 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Capi x Tornado
-    Support: truongmoba157@gmail.com
-    Description: Capi x Tornado
+    Theme Name: Capi x F1
+    Description: Capi x F1
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -279,26 +278,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .bg-gray{
 	background-color: #f6f6f6;
 
-}
-.pagination {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 8px;
-}
-.pagination .page__number{
-	width: 28px;
-	height: 28px;
-	text-align: center;
-	font-size: 14px;
-	transform: translate(50%);
-	border: 1px solid #D9D9D9;
-	padding: 6px;
-	border-radius:6px ;
-}
-.pagination  .active{
-	background: #161616;
-	color: #fff;
 }
 @keyframes rotation {
 	0% {
