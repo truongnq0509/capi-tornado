@@ -242,7 +242,12 @@ input[type="color"]:focus,
 /*=============================
 	:: 4.0 Class Global	
 ===============================*/
-
+a:hover{
+	text-decoration: none !important;
+}
+button:focus{
+	outline: none !important;
+}
 .container {
 	width: 1200px;
 	max-width: 100%;
@@ -3923,7 +3928,9 @@ fw-7 {
 	.account-layout .account-layout__left {
 		display: none;
 	}
-
+	.account-layout {
+		display: block !important;
+	}
 
 }
 
