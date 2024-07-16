@@ -1,8 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
-    Theme Name: Capi x Tornado
-    Support: truongmoba157@gmail.com
-    Description: Capi x Tornado
+    Theme Name: Capi x F1
+    Description: Capi x F1
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -248,7 +247,19 @@ input[type="color"]:focus,
 	width: 1200px;
 	max-width: 100%;
 }
-
+.badge{
+	border-radius: 30px;
+	padding: 4px 16px !important;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.72px;
+	
+}
+.badge-secondary{
+	background: #303030 !important;
+}
 .line {
 	width: 100%;
 	height: 1px;
@@ -264,7 +275,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 	height: 20px;
 	border-width: thin;
 }
+.bg-gray{
+	background-color: #f6f6f6;
 
+}
 @keyframes rotation {
 	0% {
 		transform: rotate(0deg);
@@ -4009,6 +4023,27 @@ fw-7 {
 	color: #161616;
 	font-style: italic;
 }
+.account-layout .account-layout__right .acount-info .account-info__request p,
+.account-layout .account-layout__right .acount-info .account-info__history p,
+.account-layout .account-layout__right .acount-info .account-info__list .account-info__list-item h6 {
+	color: #161616;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 1.12px;
+}
+.account-layout .account-layout__right .acount-info .account-info__request p,
+.account-layout .account-layout__right .acount-info .account-info__history p,
+.account-layout .account-layout__right .acount-info .account-info__list .account-info__list-item .percent{
+	color: #0BCF5A;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.8px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -4061,10 +4096,7 @@ fw-7 {
 		font-size: 14px;
 	}
 
-	.account-layout .account-layout__right table.table .table__tag {
-		font-size: 14px;
-		padding: 8px 16px;
-	}
+	
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -4154,11 +4186,16 @@ fw-7 {
 .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature {
 	margin-top: 20px;
 }
+.account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__content{
+	border: 1px solid #D9D9D9;
+	border-radius: 12px;
+	padding: 24px;
+	
+}
 
 .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left {
 	display: flex;
 	height: 100%;
-	flex-direction: column;
 	justify-content: center;
 }
 
@@ -4168,7 +4205,7 @@ fw-7 {
 }
 
 .account-layout .account-layout__right .account-change .account-change__form .account-change__form-signature .account-change__form-signature__left .btn {
-	margin-top: 60px;
+	margin-top: 20px;
 	display: inline-flex;
 	width: max-content;
 	align-items: center;
@@ -6679,140 +6716,11 @@ fw-7 {
 	:: 14.0 Contact Page
 ===============================*/
 
-.contact {
-	height: 900px;
-	max-width: 100%;
-	position: relative;
-	background-color: #090618;
-}
 
-.contact .contact__bg-1 {
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 7;
-}
-
-.contact .contact__bg-2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 8;
-}
-
-.contact .contact__bg-3 {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	z-index: 8;
-}
-
-.contact__wrapper {
-	position: relative;
-	z-index: 10;
-	height: 100%;
-	display: flex;
-	align-items: center;
-}
-
-.contact .contact__form {
-	padding: 60px 100px;
-	border-radius: 40px;
-	background: rgba(255, 255, 255, 0.20);
-	backdrop-filter: blur(60px);
-}
-
-.contact .contact__form .contact__logo {
-	height: 80px;
-}
-
-.contact .contact__form .contact__logo img {
-	width: auto;
-	height: 100%;
-}
-
-.contact .contact__form p {
-	font-size: 40px;
-	font-weight: 700;
-	color: var(--white-text);
-	margin: 40px 0;
-}
-
-.contact .contact__form .contact__label {
-	position: relative;
-}
-
-.contact .contact__form .contact__label .contact__icon {
-	position: absolute;
-	left: 12px;
-	top: 50%;
-	z-index: 9;
-	transform: translateY(-50%);
-}
-
-.contact .contact__form .contact__label .form-control {
-	padding: 12px 24px 12px 48px;
-	background-color: transparent;
-	border: 1px solid var(--white-bg);
-	border-radius: 12px;
-	color: var(--white-text);
-}
-
-
-.contact .contact__form .contact__label .form-control::placeholder {
-	color: var(--white-text);
-	font-weight: 400;
-}
-
-.contact .contact__form .btn {
-	width: 100%;
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	.contact {
-		height: 100vh;
-	}
-
-	.contact .contact__form {
-		padding: 40px 24px;
-		border-radius: 20px;
-	}
-
-	.contact .contact__bg-1,
-	.contact .contact__bg-2,
-	.contact .contact__bg-3 {
-		width: 100%;
-		height: 50%;
-	}
-
-	.contact .contact__bg-1 img,
-	.contact .contact__bg-2 img,
-	.contact .contact__bg-3 img {
-		width: 100%;
-		height: 50%;
-	}
-
-	.contact .contact__form .contact__logo {
-		height: 40px;
-	}
-
-	.contact .contact__form p {
-		font-size: 24px;
-		font-weight: 700;
-		color: var(--white-text);
-		margin: 24px 0;
-	}
-
-	.contact .contact__form .contact__icon {
-		width: 24px;
-		height: 24px;
-	}
-
-	.contact .contact__form .contact__icon svg {
-		width: 100%;
-		height: 100%;
-	}
+	
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -7948,15 +7856,14 @@ fw-7 {
 	background-color: var(--primary-bg);
 }
 
-.report .report-list__pagination {
-	margin-top: 48px;
+ .report-list__pagination {
 	display: flex;
 	gap: 8px;
 	align-items: center;
 	justify-content: center;
 }
 
-.report .report-list__pagination a {
+.report-list__pagination a {
 	display: inline-flex;
 	width: 36px;
 	height: 36px;
@@ -7972,12 +7879,12 @@ fw-7 {
 	color: #D9D9D9;
 }
 
-.report .report-list__pagination a i {
+ .report-list__pagination a i {
 	display: inline-flex;
 	height: max-content;
 }
 
-.report .report-list__pagination a.active {
+.report-list__pagination a.active {
 	color: var(--white-text);
 	background-color: var(--black-bg);
 }
@@ -9085,9 +8992,6 @@ fw-7 {
 .event .event-tags {
 	margin-top: 90px;
 	padding: 20px;
-	border-radius: 12px;
-	background: #FFF;
-	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 .event .event-tags .event-tags__item {
