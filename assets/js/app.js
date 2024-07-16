@@ -463,6 +463,18 @@ $(document).ready(function () {
 		$("#menu").slideToggle("slow");
 	});
 
+	$('.button-fixed__cs').click(function (event) {
+		$('.button-fixed__list').slideToggle();
+		$('.icon-1').toggle();
+		$('.icon-2').toggle();
+	});
+
+	$('.menu-toggle').click(function (event) {
+		event.preventDefault(); // Prevent default anchor behavior
+		$(this).next('.header-nav__mobile-sub').slideToggle();
+		$(this).find('.header-nav__mobile-arrow').toggleClass('rotate');
+	});
+
 	// 10.0 Toggle menu quản lý tài khoản 
 	$(".account-layout__sub").hide();
 

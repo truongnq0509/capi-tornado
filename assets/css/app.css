@@ -430,6 +430,61 @@ fw-7 {
 
 #app {}
 
+.button-fixed {
+	position: fixed;
+	z-index: 99999;
+	right: 32px;
+	bottom: 32px;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100px;
+	background: #FFF;
+	box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.10);
+}
+
+.button-fixed__cs {
+	cursor: pointer;
+
+	svg {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+.button-fixed__cs .icon-2 {
+	display: none;
+}
+
+.button-fixed__list {
+	position: absolute;
+	transform: translateY(-100%);
+	top: -16px;
+	display: none;
+	gap: 16px;
+	flex-direction: column;
+}
+
+.button-fixed__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+	background: #FFF;
+	box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.10);
+	margin-top: 16px;
+
+	img {
+		width: 32px;
+		height: 32px;
+		object-fit: contain;
+	}
+}
+
 /*=============================
 	:: 5.1 Header
 ===============================*/
@@ -477,8 +532,57 @@ fw-7 {
 }
 
 .header__nav>ul>li>a {
+	display: inline-flex;
+	gap: 6px;
+	align-items: center;
 	color: var(--white-text);
+	text-decoration: none;
+}
 
+.header__nav>ul>li>a:hover {
+	color: var(--primary-text);
+}
+
+.header__nav>ul>li {
+	position: relative;
+}
+
+.header__nav>ul>li:hover .nav__item-sub {
+	display: block;
+}
+
+.header__nav .nav__item .nav__item-sub {
+	position: absolute;
+	top: 48px;
+	z-index: 999;
+	padding: 12px;
+	background-color: #191919;
+	min-width: 220px;
+	display: none;
+	border-radius: 16px;
+}
+
+.header__nav .nav__item .nav__item-sub::after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 20px;
+	background-color: transparent;
+}
+
+.header__nav .nav__item .nav__item-sub>a {
+	padding: 12px;
+	display: flex;
+	font-size: 14px;
+	color: #AEAEAE;
+	text-decoration: none;
+}
+
+.header__nav .nav__item .nav__item-sub>a:hover {
+	color: var(--primary-text);
 }
 
 .header__right {
@@ -597,9 +701,32 @@ fw-7 {
 }
 
 .header-nav__mobile .header-nav__mobile-list .header-nav__mobile-item a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	font-size: 14px;
 	font-weight: 600;
 	color: var(--black);
+	text-decoration: none;
+}
+
+.header-nav__mobile .header-nav__mobile-list .header-nav__mobile-sub {
+	display: none;
+}
+
+.rotate {
+	transform: rotate(180deg);
+	transition: transform 0.3s ease;
+}
+
+.header-nav__mobile-arrow {
+	transition: transform 0.3s ease;
+}
+
+.header-nav__mobile .header-nav__mobile-list .header-nav__mobile-sub a {
+	display: flex;
+	padding: 12px;
+	font-size: 14px;
 }
 
 .header-nav__mobile .header-nav__mobile-btn {

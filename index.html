@@ -16,6 +16,61 @@
 
     <body>
         <div id="app">
+            <!--@@@ Button Fixed  -->
+            <div class="button-fixed">
+                <i class="button-fixed__cs d-inline-flex">
+                    <svg
+                        class="icon-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                    >
+                        <path
+                            d="M14.4775 6.81063C16.7491 7.83079 18.3337 10.1343 18.3337 12.8125V15.625C18.3337 16.6605 17.5046 17.5 16.4818 17.5H10.9263C8.50733 17.5 6.44948 15.9347 5.68682 13.75M14.4775 6.81063C13.8929 4.33805 11.6956 2.5 9.0744 2.5H8.14847C4.56885 2.5 1.66699 5.43813 1.66699 9.0625V11.875C1.66699 12.9105 2.49609 13.75 3.51884 13.75H5.68682M14.4775 6.81063C14.5772 7.23229 14.63 7.6724 14.63 8.125C14.63 11.2316 12.1426 13.75 9.0744 13.75H5.68682M8.33366 8.33333C9.25413 8.33333 10.0003 7.58714 10.0003 6.66667C10.0003 5.74619 9.25413 5 8.33366 5C7.41318 5 6.66699 5.74619 6.66699 6.66667"
+                            stroke="#6D15A2"
+                            stroke-width="1.25"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M9.16667 10.8333C9.16667 11.2936 8.79357 11.6667 8.33333 11.6667C7.8731 11.6667 7.5 11.2936 7.5 10.8333C7.5 10.3731 7.8731 10 8.33333 10C8.79357 10 9.16667 10.3731 9.16667 10.8333Z"
+                            fill="#6D15A2"
+                        />
+                    </svg>
+
+                    <svg
+                        class="icon-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                    >
+                        <path
+                            d="M13.5359 6.4644L6.46484 13.5355M13.5359 13.5354L6.46484 6.46436"
+                            stroke="#5D5A68"
+                            stroke-width="1.25"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </i>
+
+                <div class="button-fixed__list">
+                    <div class="button-fixed__item">
+                        <img src="assets/img/home/d74b7b4b33c64877f1b2a36f69ce1f45.png" />
+                    </div>
+                    <div class="button-fixed__item">
+                        <img src="assets/img/home/d74b7b4b33c64877f1b2a36f69ce1f45.png" />
+                    </div>
+                    <div class="button-fixed__item">
+                        <img src="assets/img/home/deb88889fdb9b20690b1273902cfa1c0.png" />
+                    </div>
+                </div>
+            </div>
+
             <!--@@@ Start Header  -->
             <header class="header">
                 <div class="header__container container d-flex align-items-center">
@@ -30,7 +85,33 @@
                                     <a href="#">Trang chủ</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="#">Giao dịch</a>
+                                    <a href="#">
+                                        <span>Giao dịch</span>
+                                        <i class="d-inline-flex">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 20 20"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M14.166 8.33333L9.99935 11.6667L5.83268 8.33333"
+                                                    stroke="white"
+                                                    stroke-width="1.25"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </i>
+                                    </a>
+
+                                    <div class="nav__item-sub">
+                                        <a href="#">Hướng dẫn giao dịch A-Z</a>
+                                        <a href="#">Lịch giao dịch & sự kiện</a>
+                                        <a href="#">Biểu phí</a>
+                                        <a href="#">Ký quỹ & đòn bẩy</a>
+                                    </div>
                                 </li>
                                 <li class="nav__item">
                                     <a href="#">Kiến thức và đào tạo</a>
@@ -121,10 +202,62 @@
                                     <a href="#">Trang chủ</a>
                                 </li>
                                 <li class="header-nav__mobile-item">
-                                    <a href="#">Giao dịch</a>
+                                    <a href="#" class="menu-toggle">
+                                        <span>Giao dịch</span>
+                                        <i class="header-nav__mobile-arrow d-inline-flex">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 20 20"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M14.166 8.33333L9.99935 11.6667L5.83268 8.33333"
+                                                    stroke="#090618"
+                                                    stroke-width="1.25"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </i>
+                                    </a>
+
+                                    <ul class="header-nav__mobile-sub">
+                                        <a href="#">Hướng dẫn giao dịch A-Z</a>
+                                        <a href="#">Lịch giao dịch & sự kiện</a>
+                                        <a href="#">Biểu phí</a>
+                                        <a href="#">Ký quỹ & đòn bẩy</a>
+                                    </ul>
                                 </li>
                                 <li class="header-nav__mobile-item">
-                                    <a href="#">Kiến thức và đào tạo</a>
+                                    <a href="#" class="menu-toggle">
+                                        <span>Kiến thức và đào tạo</span>
+                                        <i class="header-nav__mobile-arrow d-inline-flex">
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 20 20"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M14.166 8.33333L9.99935 11.6667L5.83268 8.33333"
+                                                    stroke="#090618"
+                                                    stroke-width="1.25"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </i>
+                                    </a>
+
+                                    <ul class="header-nav__mobile-sub">
+                                        <a href="#">Hướng dẫn giao dịch A-Z</a>
+                                        <a href="#">Lịch giao dịch & sự kiện</a>
+                                        <a href="#">Biểu phí</a>
+                                        <a href="#">Ký quỹ & đòn bẩy</a>
+                                    </ul>
                                 </li>
                                 <li class="header-nav__mobile-item">
                                     <a href="#">Thông tin thị trường</a>
@@ -556,7 +689,7 @@
                             </div>
                         </div>
                     </div>
-                </section> 
+                </section>
                 <!--@@@ End Invest  -->
 
                 <!--@@@ Start Newspapers -->
