@@ -6965,6 +6965,56 @@ fw-7 {
 .job .job-recruitment .job-recruitment__item .job-recruitment__item-desc p {
 	font-size: 18px;
 }
+.job .job-member{
+	margin-top: 130px;
+	margin-bottom: 130px;
+}
+.job .job-member .row{
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+.job .job-member .card-member{
+	position: relative;
+	max-width: 368px;
+	padding: 40px 24px;
+	background-color: #F5EFF9;
+	border-radius: 20px;
+}
+.job .job-member .card-member .card-member-name{
+	max-width: 150px;
+	padding-top: 102px;
+	padding-bottom: 12px;
+	color: #161616;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 40px; /* 142.857% */
+}
+.job .job-member .card-member .card-member-bio{
+	max-width: 150px;
+	color: #706582;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: normal;
+}
+.job .job-member .card-member h5{
+	max-width: 250px;
+	color: #D8C6E3;
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;background-color: #F5EFF9;
+}
+.job .job-member .card-member .card-member-avatar img{
+	bottom:-20px;
+	right: -40px;
+	position: absolute;
+	max-width: 260px;
+	height: 371px;
+	object-fit: contain;
+}
 
 .job .job-environment__list {
 	margin: 40px 0;
