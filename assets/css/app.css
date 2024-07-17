@@ -5762,6 +5762,7 @@ fw-7 {
 	box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.05);
 	position: relative;
 	overflow: hidden;
+	transition-duration: 3s;
 }
 
 .news-list .container .row .item-new .news-image {
@@ -5799,26 +5800,39 @@ fw-7 {
 	font-weight: 600;
 	line-height: normal;
 	margin-bottom: 12px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	/* number of lines to show */
+	line-clamp: 1;
+	-webkit-box-orient: vertical;
 }
 
 .news-list .container .row .item-new .new-description p {
-	overflow: hidden;
 	color: var(--black);
-	text-overflow: ellipsis;
 	font-size: 14px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: normal;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-top: 8px;
+	
 }
 
+
 .news-list .container .row .item-new .background-news {
+	display: none;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: auto;
 }
-
+.news-list .container .row .item-new:hover .background-news{
+	display:inline-block;
+}
 .news-list .container .row .item-new .background-news img {
 	width: 100%;
 	height: auto;
