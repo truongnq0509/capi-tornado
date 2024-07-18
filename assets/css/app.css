@@ -7495,6 +7495,10 @@ fw-7 {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.job .job-recruitment .job-recruitment__list {
+		flex-wrap: wrap;
+	}
+
 	.job-detail .job-detail__wrapper {
 		padding-top: 24px;
 	}
